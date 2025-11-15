@@ -9,6 +9,8 @@
 
 # Solution
 
+- Think deeply about the problem.
+- You don't need to open any other files to look for more information.
 - Choose a solution_name.
 - Create a solution_name.py at the /solutions folder.
 - In that script, at least one function must be called solution_name, it will be the entry point for the evaluator.
@@ -25,9 +27,9 @@
 # Evaluation
 
 - We are trying to model the last stage of training, where the loss converges in a predictable way.
-- The function you will make models the fist derivative of the loss once it starts converging.
-- The function will be used extrapolate the rest of the training.
-- The function will be evaluated by how early can it correctly predict the final loss within a certan error.
+- The function you will make models the first derivative of the loss once it starts converging.
+- The function will be used to extrapolate the rest of the training.
+- The function will be evaluated by how early can it correctly predict the final loss within a certain error.
 - The function will be run on several curves, the final evaluation metric is the average step of early stop.  
 - The sooner, the better. That is we want to minimize the average step.
 

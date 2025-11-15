@@ -2,7 +2,7 @@ from pathlib import Path
 from visualization import rank_results, top_n_solutions
 
 
-def render_prompt(template_path="src/prompt_template.md", output_path="src/prompt.md", n_rank=15, n_solutions=3):
+def render_prompt(template_path="src/prompt_template.md", output_path=".cursor/rules/optimize.mdc", n_rank=15, n_solutions=3):
     """Render the prompt template by filling in rank_results and top_n_solutions."""
     template = Path(template_path).read_text()
     
@@ -29,7 +29,9 @@ def render_prompt(template_path="src/prompt_template.md", output_path="src/promp
         dummy=dummy_code
     )
     
-    Path(output_path).write_text(rendered)
+    output_file = Path(output_path)
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    output_file.write_text(rendered)
     return rendered
 
 
