@@ -10,3 +10,10 @@ wheels/
 .venv
 
 .DS_Store
+solutions/
+results
+__marimo__/
+deprecated/
+outputs/
+results/
+solutions/

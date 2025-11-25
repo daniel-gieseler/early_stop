@@ -1,90 +1,106 @@
 import math
-from itertools import accumulate
 import pandas as pd
 import json
+import numpy as np
 
-TOTAL = 4300
 
-def minimum_loss_at(loss_values: list[float]) -> int:
+def _subsample_uniformly(df, col, gap):
     """
-    Find the step at which the minimum loss value occurs.
+    Uniformly subsample rows by uniquely binning `col` with width `gap`.
     """
-    minimum_loss = min(loss_values)
-    for step, loss in enumerate(loss_values):
-        if loss == minimum_loss:
-            return (step+1, minimum_loss)
-
-def cumulative_min(nums):
-    """
-    Returns the cumulative minimum of a list of numbers.
-    
-    Example:
-        cumulative_min([5, 2, 6, 1, 3]) -> [5, 2, 2, 1, 1]
-    """
-    return list(accumulate(nums, func=min))
+    key = np.floor(df[col] / gap).astype(int)
+    return df.loc[key.drop_duplicates().index]
 
 
-def subsample_average_simple(points, subsample_step=0.1, min_points=5):
-    """
-    points: list[(x, y)], will be sorted by x
-    subsample_step: spacing between kept centers AND half-window radius for averaging
-    min_points: require at least this many points in the window
-    """
-    if not points:
-        return []
-
-    pts = sorted(points)  # ensure x-sorted
-    out = []
-    last_x = pts[0][0] - subsample_step  # so first eligible candidate can pass
-
-    for x, _ in pts:
-        # enforce spacing between chosen centers
-        if x - last_x < subsample_step:
-            continue
-
-        # simple window: all points with |xx - x| <= subsample_step
-        lo, hi = x - subsample_step, x + subsample_step
-        neighbors_y = [yy for xx, yy in pts if lo <= xx <= hi]
-
-        if len(neighbors_y) >= min_points:
-            out.append((x, sum(neighbors_y)/len(neighbors_y)))
-            last_x = x
-        # else: not enough points around -> skip
-
-    return out
-
-def process_runs_experiments(runs_experiments: list, total: int = TOTAL) -> pd.DataFrame:
-    """
-    Process runs_experiments and create a dataframe with processed loss data.
-    """
-    results = []
-    for run in runs_experiments:
-        if len(run['loss']) > total:
-            loss_list = run['loss'][:total]
-            m = minimum_loss_at(loss_list)
-            res = {
-                "experiment_name": run['experiment_name'],
-                "min_step": m[0],
-                "min_loss": m[1],
-                "loss": [(s_+1, x) for s_, x in enumerate(loss_list)],
-            }
-            res["cumulative_min_loss"] = [(s_+1, x) for s_, x in enumerate(cumulative_min(loss_list))]
-            res["log_log_loss"] = [(math.log(s, 10), math.log(x, 10)) for s, x in res["cumulative_min_loss"]]
-            res["subsampled_loss"] = subsample_average_simple(res['log_log_loss'], subsample_step=0.02, min_points=1)
-            results.append(res)
-
-    df = pd.DataFrame(results)
-    df["lr"] = df["experiment_name"].str.extract(r"(\d+(?:\.\d+)?)(?=xlr\b)").astype(int)
-    df = df.sort_values(by='lr')
+def _preprocess_run(df):
+    df['cum_min_loss'] = df['loss'].cummin()
+    #df['log_cum_min_loss'] = df['cum_min_loss'].apply(lambda x: math.log(x, 10))
+    df['log_step'] = df['step'].apply(lambda x: math.log(x, 10))
+    df = _subsample_uniformly(df, 'log_step', 0.02)
     return df
 
-def get_dataset(path: str):
+
+def preprocess_runs(path: str = 'src/runs_data.json', total: int = 4300) -> pd.DataFrame:
+    """
+    Process runs_experiments and create a dataframe with processed loss data.
+    """ 
     with open(path, 'r') as f:
         runs_experiments = json.load(f)
 
+    preprocessed_dataset = []
     for run in runs_experiments:
-        run['loss'] = sorted(run['loss'], key=lambda x: x[0])
-        run['loss'] = [x[2] for x in run['loss']]
-    
-    df = process_runs_experiments(runs_experiments)
-    return df['subsampled_loss'].tolist()
+        if len(run['train_loss']) > total:
+            values_list = [(i+1, l, lr) for i, (l, lr) in enumerate(list(zip(run['train_loss'], run['lr']))[:total])]
+            df = pd.DataFrame(values_list, columns=['step', 'loss', 'lr'])
+            preprocessed_df = _preprocess_run(df)
+            preprocessed_dataset.append({
+                'run_id': run['run_id'],
+                'steps': preprocessed_df['log_step'].tolist(),
+                'losses': preprocessed_df['cum_min_loss'].tolist(),
+                'lr': preprocessed_df['lr'].tolist(),
+            })
+            
+    return preprocessed_dataset
+
+
+def _create_datapoints(length, gap: int, feature_cutoff = 0.4, target_cutoff = 0.1):
+    assert gap > 0
+    target_ids = list(range(int(length - length * target_cutoff), length, gap))
+    feature_ids = list(range(int(length - length * feature_cutoff), length, gap))
+    pairs = [(f, t) for f in feature_ids for t in target_ids if f < t]
+    return pairs
+
+def create_dataset(preprocessed_dataset: list, gap=1, feature_cutoff=0.4, target_cutoff=0.1):
+    dfs = []
+    for run in preprocessed_dataset:
+        pairs = _create_datapoints(len(run['steps']), gap, feature_cutoff, target_cutoff)
+        df = pd.DataFrame({
+            'run_id': run['run_id'],
+            'feature_step_id': [f for f, _ in pairs],
+            'target_step_id': [t for _, t in pairs],
+        })
+        df['feature_step'] = [run['steps'][f] for f, _ in pairs]
+        df['target_step'] = [run['steps'][t] for _, t in pairs]
+        df['target_loss'] = [run['losses'][t] for _, t in pairs]
+        dfs.append(df)
+    return pd.concat(dfs, ignore_index=True)
+
+
+def get_data(preprocessed_dataset: list, run_id, feature_step_id) -> dict:
+    for run in preprocessed_dataset:
+        if run['run_id'] == run_id:
+            return {
+                'steps': run['steps'][:feature_step_id+1],
+                'loss': run['losses'][:feature_step_id+1],
+            }
+    return None
+
+def f_last_loss(data: dict) -> float:
+    return data['loss'][-1]
+
+def calculate_features(dataset: pd.DataFrame, preprocessed_dataset: list, features: dict[str, callable]) -> pd.DataFrame:
+    for name, fn in features.items():
+        for idx, row in dataset.iterrows():
+            data = get_data(preprocessed_dataset, row['run_id'], row['feature_step_id'])
+            dataset.loc[idx, name] = fn(data)
+    return dataset
+
+def get_dataset(features, path: str = 'src/runs_data.json'):
+    preprocessed_runs = preprocess_runs(path=path)
+    df = create_dataset(preprocessed_runs, gap=4, feature_cutoff=0.4, target_cutoff=0.1)
+    dataset = calculate_features(df, preprocessed_runs, features)
+    return dataset
+
+# def get_complete_dataset(features, run_order: int, path: str = 'src/runs_data.json'):
+#     # this function should create the dtaset with the 
+#     run_df = preprocess_runs(path=path)[run_order]
+#     for step_id in range(len(run_df['steps'])):
+#         data = {
+#             'loss': run_df['losses'][:step_id+1],
+#         }
+#         for name, fn in features.items():
+#             dataset.loc[idx, name] = fn(data)
+
+#     dataset = calculate_features(df, preprocessed_runs, features)
+
+

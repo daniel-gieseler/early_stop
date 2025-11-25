@@ -6,5 +6,13 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "ipykernel>=7.1.0",
+    "marimo[recommended]>=0.17.8",
+    "matplotlib>=3.10.7",
     "pandas>=2.3.3",
+    "plotly>=6.4.0",
+    "pysr>=1.5.9",
+    "watchdog>=6.0.0",
 ]
+
+[tool.marimo.runtime]
+watcher_on_save = "autorun"
