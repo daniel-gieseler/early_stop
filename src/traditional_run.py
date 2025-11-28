@@ -16,10 +16,10 @@ def fit_pysr_model_on_df(df, step_features, features, timeout_in_seconds=5):
     y = df[['target_loss']]
 
     model = PySRRegressor(
-        maxsize=15,
+        maxsize=16,
         niterations=10_000_000,
         timeout_in_seconds=timeout_in_seconds,
-        maxdepth=7,
+        maxdepth=10,
         binary_operators=["+", "*", "-", "/", "pow"],
         unary_operators=[
             "exp",

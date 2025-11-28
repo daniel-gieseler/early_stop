@@ -2,6 +2,7 @@ import math
 import pandas as pd
 import json
 import numpy as np
+from features import FEATURE_MARKET
 
 
 def _subsample_uniformly(df, col, gap):
@@ -75,9 +76,6 @@ def get_data(preprocessed_dataset: list, run_id, feature_step_id) -> dict:
             }
     return None
 
-def f_last_loss(data: dict) -> float:
-    return data['loss'][-1]
-
 def calculate_features(dataset: pd.DataFrame, preprocessed_dataset: list, features: dict[str, callable]) -> pd.DataFrame:
     for name, fn in features.items():
         for idx, row in dataset.iterrows():
@@ -104,3 +102,14 @@ def get_dataset(features, path: str = 'src/runs_data.json'):
 #     dataset = calculate_features(df, preprocessed_runs, features)
 
 
+if __name__ == "__main__":
+    features = {
+        'last_loss': FEATURE_MARKET['last_loss'],
+        'first_derivative_tail_10pct': FEATURE_MARKET['first_derivative_tail_10pct'],
+    }
+    
+    dataset = get_dataset(features)
+    print(f"Dataset shape: {dataset.shape}")
+    print(f"\nDataset columns: {dataset.columns.tolist()}")
+    print(f"\nFirst few rows:\n{dataset.head()}")
+    print(f"\nDataset info:\n{dataset.info()}")
