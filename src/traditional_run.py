@@ -24,6 +24,7 @@ def fit_pysr_model_on_df(df, step_features, features, timeout_in_seconds=5):
         unary_operators=[
             "exp",
             "log",
+            ""
         ],
         precision=16,
         constraints={
