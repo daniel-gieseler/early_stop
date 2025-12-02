@@ -6,43 +6,40 @@ import numpy as np
 from typing import Iterable, Dict, List
 import json
 
-def fit_pysr_model_on_df(df, step_features, features, timeout_in_seconds=5):
+def fit_pysr_model_on_df(X, y, timeout_in_seconds=5):
     """
     Fit a PySRRegressor model on the provided dataframe `df`.
     Assumes df has columns: ['feature_step', 'target_step', 'last_loss', 'first_derivative_ws2', 'target_loss'].
     Returns the fitted model.
     """
-    X = df[step_features + features]
-    y = df[['target_loss']]
-
     model = PySRRegressor(
-        maxsize=16,
+        maxsize=20,
         niterations=10_000_000,
         timeout_in_seconds=timeout_in_seconds,
-        maxdepth=10,
+        maxdepth=16,
         binary_operators=["+", "*", "-", "/", "pow"],
         unary_operators=[
             "exp",
             "log",
-            ""
+            "sqrt",
         ],
         precision=16,
         constraints={
-            "pow": (9, 4)
+            "pow": (-1, 4),
+            "sqrt": (1),
         },
         nested_constraints={
-            "log": {"log": 0, "pow": 0, "exp": 0},
-            "pow": {"log": 0, "pow": 0, "exp": 0},
-            "exp": {"log": 0, "pow": 0, "exp": 0},
+            "log": {"log": 1, "pow": 1, "exp": 1},
+            "pow": {"log": 1, "pow": 1, "exp": 1},
+            "exp": {"log": 1, "pow": 1, "exp": 1},
         }
     )
     model.fit(X, y)
     return model
 
 
-def compute_model_losses(model_equations, df, step_features, features):
-    third_dataset = df[['run_id', 'target_loss'] + step_features + features].copy()
-    X = df[step_features + features]
+def compute_model_losses(model_equations, df, X):
+    third_dataset = df.copy()
     for _, row in model_equations.iterrows():
         c = row['complexity']
         third_dataset[f'loss_model_{c}'] = row['lambda_format'](X)
@@ -131,4 +128,54 @@ def run_traditional_run(timeout_in_seconds, features):
         json.dump(pivoted, f, indent=4)
 
 
+from dataset_v2 import simple_create_dataset
+from dataset_v2 import curve_create_dataset
 
+def run_traditional_run_v2(timeout_in_seconds, features):
+    df = simple_create_dataset()
+    #
+    X = df[features]
+    y = df[['target_loss']]
+    model = fit_pysr_model_on_df(X, y, timeout_in_seconds=timeout_in_seconds)
+    #
+    df2 = curve_create_dataset()
+    X2 = df2[features]
+    third_dataset = compute_model_losses(model.equations_, df2, X2)
+    curve = threshold_curve_by_model(third_dataset, epsilons=[0.001, 0.002, 0.004, 0.006, 0.008, 0.01, 0.012, 0.014, 0.016, 0.018, 0.02])
+    
+    # Pivot: key = complexity number, value = list of (epsilon, value) tuples
+    pivoted = {}
+    for col in curve.columns:
+        complexity = col.replace("model_", "")
+        pivoted[complexity] = [(eps, val) for eps, val in zip(curve.index, curve[col])]
+    
+    with open(f"outputs/{model.run_id_}/tradeoff_curve.json", "w") as f:
+        json.dump(pivoted, f, indent=4)
+
+
+from custom_loss_2 import fit_pysr_model_on_df_customized
+
+def run_traditional_run_v3(timeout_in_seconds, features):
+    df = simple_create_dataset()
+    #
+    X = df[features]
+    y = df[['target_loss']]
+    model = fit_pysr_model_on_df_customized(df, timeout_in_seconds=timeout_in_seconds)
+    #
+    df2 = curve_create_dataset()
+    X2 = df2[features]
+    third_dataset = compute_model_losses(model.equations_, df2, X2)
+    curve = threshold_curve_by_model(third_dataset, epsilons=[0.001, 0.002, 0.004, 0.006, 0.008, 0.01, 0.012, 0.014, 0.016, 0.018, 0.02])
+    
+    # Pivot: key = complexity number, value = list of (epsilon, value) tuples
+    pivoted = {}
+    for col in curve.columns:
+        complexity = col.replace("model_", "")
+        pivoted[complexity] = [(eps, val) for eps, val in zip(curve.index, curve[col])]
+    
+    with open(f"outputs/{model.run_id_}/tradeoff_curve.json", "w") as f:
+        json.dump(pivoted, f, indent=4)
+
+
+if __name__ == "__main__":
+    run_traditional_run_v3(timeout_in_seconds=6000, features=["delta_steps", "last_loss", "derivative_3"])#, "curve_id"])
