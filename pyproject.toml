@@ -8,6 +8,7 @@ dependencies = [
     "ipykernel>=7.1.0",
     "marimo[recommended]>=0.17.8",
     "matplotlib>=3.10.7",
+    "mlflow>=3.6.0",
     "pandas>=2.3.3",
     "plotly>=6.4.0",
     "pysr>=1.5.9",

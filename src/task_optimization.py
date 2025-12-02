@@ -53,7 +53,7 @@ def collect_all_equations(N: int | None = None):
 import numpy as np
 
 def evaluate_model(path: str = 'src/runs_data.json', total: int = 4300, variable_names: list[str] = [],
-    epsilons: list[float] = (0.05, 0.02, 0.01, 0.005),
+    epsilons: list[float] = (0.02, 0.015, 0.01, 0.008, 0.006, 0.004, 0.002, 0.001),
 ) -> pd.DataFrame:
     """
     Process runs_experiments and create a dataframe with processed loss data.
@@ -76,12 +76,18 @@ def evaluate_model(path: str = 'src/runs_data.json', total: int = 4300, variable
 
 
     models_df = collect_all_equations()
-    latest_model_df = models_df[models_df['run_id'] == models_df['run_id'].max()]
-    latest_model_df = latest_model_df[latest_model_df['complexity'].isin([7, 9])]
+    # constraint 1: length of 'features_used' is 3
+    # constraint 2: complexity is below 15 or equal to it
+    latest_model_df = models_df[
+        (models_df['features_used'].apply(len) == 3) & 
+        (models_df['complexity'] <= 15)
+    ]
+
+    print(f"Evaluating {len(latest_model_df)} models")
     
     for _, row in latest_model_df.iterrows():
-        print(f"Evaluating model {row['run_id']}")
         complexity = row['complexity']
+        print(f"Evaluating complexity {complexity}")
         callable_equation = row['lambda_format']
         variable_names = row['features_in']
 
@@ -107,6 +113,15 @@ def evaluate_model(path: str = 'src/runs_data.json', total: int = 4300, variable
                 step = exceed_indices[-1] + 1 if len(exceed_indices) > 0 else total
                 first_exceed_steps.append(step)
             rows.append({'complexity': complexity, 'epsilon': epsilon, 'steps': np.mean(first_exceed_steps)})
+    
+    results_df = pd.DataFrame(rows)
+    # Keep best performing equation per complexity (highest steps at epsilon 0.004)
+    score_df = results_df[results_df['epsilon'] == 0.004].copy()
+    best_per_complexity = score_df.loc[score_df.groupby('complexity')['steps'].idxmax()]
+    best_complexity_df = best_per_complexity.merge(
+        latest_model_df[['complexity', 'sympy_format']].drop_duplicates('complexity'),
+        on='complexity', how='left'
+    )
 
     # Build per-run dataframe for plotting
     plot_rows = []
@@ -123,7 +138,7 @@ def evaluate_model(path: str = 'src/runs_data.json', total: int = 4300, variable
             row[f'predicted_C{c}'] = data[f'C_{c}']['predicted']
         plot_rows.append(row)
 
-    return pd.DataFrame(rows), pd.DataFrame(plot_rows)
+    return results_df, pd.DataFrame(plot_rows), best_complexity_df
 
 
 def plot_tradeoff_curve(df):
@@ -223,3 +238,16 @@ def plot_predicted_vs_true_loss(df, n_th=0, margin=0.004, complexity=7, minimum_
         xaxis_type="log", legend=dict(x=0.8, y=0.99)
     )
     fig.show()
+
+
+import sympy as sp
+from IPython.display import display, Markdown
+
+def display_best_complexity(best_complexity_df):
+    """Display the best equations per complexity as a formatted table."""
+    df = best_complexity_df.sort_values("complexity")
+    equations_md = "## Best Equations per Complexity\n\n| C | Steps | Equation |\n|---|---|---|\n"
+    for _, row in df.iterrows():
+        latex_eq = sp.latex(row['sympy_format'])
+        equations_md += f"| {row['complexity']} | {row['steps']:.1f} | ${latex_eq}$ |\n"
+    display(Markdown(equations_md))

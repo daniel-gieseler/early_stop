@@ -103,7 +103,7 @@ def fit_pysr_model_on_df(X, y, timeout_in_seconds=5):
     return model
 
 
-def run_pysr_optimization():
+def run_pysr_optimization(min_step: int, n_targets: int):
     variable_names = ['delta_steps', 'last_loss', 'derivative_3']
     df = create_dataset(
         path='src/runs_data.json',
@@ -112,7 +112,7 @@ def run_pysr_optimization():
         gap=0.01,
         min_step=1800,
         n_targets=5,
-        max_datapoints_per_target=50
+        max_datapoints_per_target=30
     )
     print(f'Number of datapoints: {len(df)}')
     model = fit_pysr_model_on_df(df[variable_names], df[['target_loss']], timeout_in_seconds=600)
@@ -120,14 +120,5 @@ def run_pysr_optimization():
 
 
 if __name__ == "__main__":
-    run_pysr_optimization()
-
-# pairs = _create_datapoints(length=4300, gap=0.01, min_step=1000, n_targets=5, max_datapoints_per_target=50)
-
-# for target_step, feature_steps in pairs.items():
-#     print(target_step, sorted(feature_steps))
-#     print(len(feature_steps))
-
-# df = create_dataset(path='runs_data.json', total=4300, variable_names=['delta_steps', 'last_loss', 'derivative_3'], gap=0.01, min_step=1500, n_targets=5, max_datapoints_per_target=50)
-
-# df
+    #run_pysr_optimization(min_step=1800, n_targets=5)
+    run_pysr_optimization(min_step=2000, n_targets=5)
