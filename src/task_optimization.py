@@ -1,30 +1,34 @@
-import json
 import pandas as pd
-from lossmoother import LosSmoother
-from extrapolator import Extrapolator
-from losstrapolator import LosStrapolator
-
-
-
+import numpy as np
 from pathlib import Path
-import pandas as pd
 from pysr import PySRRegressor
+import plotly.graph_objects as go
+import sympy as sp
+from IPython.display import display, Markdown
 
-def collect_all_equations(N: int | None = None):
+from src.lossmoother import LosSmoother
+from src.extrapolator import Extrapolator
+from src.losstrapolator import LosStrapolator
+from src.pysr_optimization import load_curves
+
+
+def collect_all_equations(N: int | None = None, run_id: str | None = None):
     """Collect and aggregate all symbolic equations from saved PySRRegressor runs in 'outputs/'.
 
     Returns:
         pd.DataFrame: DataFrame containing all equations, their corresponding run_ids, features present,
                     and features actually used in each equation.
     """
-
-
-    outputs_dir = Path("/Users/danielgieseler/Documents/Code/early_stop/outputs")
-    run_folders = [f for f in outputs_dir.iterdir() if f.is_dir()]
-    run_folders = sorted(run_folders, key=lambda x: x.name)
+    outputs_dir = Path(__file__).parent.parent / "outputs"
+    
+    if run_id is not None:
+        run_folders = [outputs_dir / run_id]
+    else:
+        run_folders = [f for f in outputs_dir.iterdir() if f.is_dir()]
+        run_folders = sorted(run_folders, key=lambda x: x.name)
+        run_folders = run_folders[:-N] if N is not None else run_folders
 
     summary = []
-    run_folders = run_folders[:-N] if N is not None else run_folders
     for run_folder in run_folders:
         try:
             model = PySRRegressor.from_file(run_directory=str(run_folder))
@@ -45,37 +49,31 @@ def collect_all_equations(N: int | None = None):
     return all_equations
 
 
-# df = collect_all_equations()
-# df
-
-
-
-import numpy as np
-
-def evaluate_model(path: str = 'src/runs_data.json', total: int = 4300, variable_names: list[str] = [],
+def evaluate_model(
+    curves: list[tuple[str, list[float]]] | None = None,
+    models_df: pd.DataFrame | None = None,
+    path: str = 'src/runs_data.json',
+    total: int = 4300,
     epsilons: list[float] = (0.02, 0.015, 0.01, 0.008, 0.006, 0.004, 0.002, 0.001),
 ) -> pd.DataFrame:
     """
     Process runs_experiments and create a dataframe with processed loss data.
     """ 
-    with open(path, 'r') as f:
-        runs_experiments = json.load(f)
+    if curves is None:
+        curves = load_curves(path, total)
     
     runs_data = {}
-    for run in runs_experiments:
-        if len(run['train_loss']) > total:
-            run_id = run['run_id']
-            raw_losses = run['train_loss'][:total]
-            lossmother = LosSmoother()
-            preprocessed_losses = [lossmother.update(loss)[1] for loss in raw_losses]
-            runs_data[run_id] = {
-                'raw_losses': raw_losses,
-                'preprocessed_losses': preprocessed_losses,
-                'target_loss': preprocessed_losses[-1],
-            }
+    for run_id, raw_losses in curves:
+        lossmother = LosSmoother()
+        preprocessed_losses = [lossmother.update(loss) for loss in raw_losses]
+        runs_data[run_id] = {
+            'raw_losses': raw_losses,
+            'preprocessed_losses': preprocessed_losses,
+            'target_loss': preprocessed_losses[-1],
+        }
 
-
-    models_df = collect_all_equations()
+    if models_df is None:
+        models_df = collect_all_equations()
     # constraint 1: length of 'features_used' is 3
     # constraint 2: complexity is below 15 or equal to it
     latest_model_df = models_df[
@@ -139,6 +137,7 @@ def evaluate_model(path: str = 'src/runs_data.json', total: int = 4300, variable
     return results_df, pd.DataFrame(plot_rows), all_equations_df
 
 
+
 def plot_tradeoff_curve(df):
     """
     Plot the trade-off between early stopping and accuracy.
@@ -183,10 +182,6 @@ def plot_tradeoff_curve(df):
     )
     fig.show()
 
-
-import plotly.graph_objects as go
-
-import json
 
 
 def plot_predicted_vs_true_loss(df, label, n_th=0, margin=0.004, minimum_step=100):
@@ -244,8 +239,6 @@ def plot_predicted_vs_true_loss(df, label, n_th=0, margin=0.004, minimum_step=10
     fig.show()
 
 
-import sympy as sp
-from IPython.display import display, Markdown
 
 def display_all_equations(all_equations_df):
     """Display all equations as a formatted table."""

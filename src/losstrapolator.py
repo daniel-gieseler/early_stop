@@ -1,17 +1,10 @@
-from lossmoother import LosSmoother
-from mlflow.tracking import MlflowClient
-
 import math
+from mlflow.tracking import MlflowClient
+from src.lossmoother import LosSmoother
 
-def get_mlflow_metric(
-    run_id: str,
-    metric_name: str = 'train_mlm_loss/tok'
-) -> list[float]:
-    client = MlflowClient()
-    measurements = [(measurement.timestamp, measurement.value) for measurement in client.get_metric_history(run_id, metric_name)]
-    measurements.sort(key=lambda x: x[0])
-    return [measurement[1] for measurement in measurements]
-
+def get_mlflow_metric(run_id: str, metric_name: str = 'train_mlm_loss/tok') -> list[float]:
+    history = sorted(MlflowClient().get_metric_history(run_id, metric_name), key=lambda m: m.timestamp)
+    return [m.value for m in history]
 
 class LosStrapolator:
     def __init__(self,
@@ -27,47 +20,37 @@ class LosStrapolator:
         self._set_target(target_step, reference_run)
 
     def _set_target(self, target_step: int, reference_run: str | None):
-        self.target_loss = None
-        self.target_step = target_step
-        if reference_run is not None:
-            try:
-                loss_curve = get_mlflow_metric(reference_run)
-                lossmother = LosSmoother()
-                min_losses = [lossmother.update(loss)[1] for loss in loss_curve]
-                self.target_loss = min_losses[-1]
-                self.target_step = len(min_losses)
-            except Exception as e:
-                print(f"Could not set reference run {reference_run}: {e}")
+        self.target_loss, self.target_step = None, target_step
+        if reference_run is None:
+            return
+        try:
+            loss_curve = get_mlflow_metric(reference_run)
+            smoother = LosSmoother()
+            min_losses = [smoother.update(loss) for loss in loss_curve]
+            self.target_loss, self.target_step = min_losses[-1], len(min_losses)
+        except Exception as e:
+            print(f"Could not set reference run {reference_run}: {e}")
 
-    def _dynamic_ema_update(self, loss: float):
-        N = max(1, math.floor(self.sqrt_steps_fraction * math.sqrt(self.lossmoother.step)))
-        alpha = 2 / (N + 1)
-        self.mean_predicted_loss = alpha * loss + (1 - alpha) * self.mean_predicted_loss
-
-    def update(self, loss: float):
-        _, min_loss = self.lossmoother.update(loss)
-        predicted_loss = self.extrapolator.update(min_loss, self.lossmoother.step)
-        self._dynamic_ema_update(predicted_loss)
+    def _dynamic_ema_update(self, loss: float, step: int) -> float:
+        alpha = 2 / (max(1, int(self.sqrt_steps_fraction * math.sqrt(step))) + 1)
+        self.mean_predicted_loss += alpha * (loss - self.mean_predicted_loss)
         return self.mean_predicted_loss
+
+    def get_diff_prediction(self) -> float:
+        if self.target_loss is None:
+            return None
+        return self.mean_predicted_loss - self.target_loss
+
+    def update(self, loss: float) -> float:
+        min_loss = self.lossmoother.update(loss)
+        predicted = self.extrapolator.update(min_loss)
+        return self._dynamic_ema_update(predicted, self.lossmoother.step)
 
     def update_batch(self, losses: list[float]) -> list[float]:
         """Vectorized update - returns same results as calling update() in a loop."""
-        # Step 1: Run losses through smoother sequentially (cheap, updates state)
-        min_losses, steps = [], []
-        for loss in losses:
-            _, min_loss = self.lossmoother.update(loss)
-            min_losses.append(min_loss)
-            steps.append(self.lossmoother.step)
-        
-        # Step 2: Batch extrapolation (expensive part - now vectorized)
-        raw_predictions = self.extrapolator.update_batch(min_losses, steps)
-        
-        # Step 3: Apply EMA sequentially (cheap)
-        results = []
-        for pred in raw_predictions:
-            self._dynamic_ema_update(float(pred))
-            results.append(self.mean_predicted_loss)
-        return results
+        min_losses = [self.lossmoother.update(loss) for loss in losses]
+        predictions = self.extrapolator.update_batch(min_losses)
+        return [self._dynamic_ema_update(float(p), i + 1) for i, p in enumerate(predictions)]
 
 
 

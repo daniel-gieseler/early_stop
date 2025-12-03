@@ -16,10 +16,10 @@ class LosSmoother:
         self.z_thresh = z_thresh
         self.step = 0
         self.mean, self.var = 0.0, 0.0
-        self.minimum = float('inf')
+        self.minimum = math.inf
 
     def _dynamic_window(self):
-        return max(1, math.floor(self.sqrt_steps_fraction * math.sqrt(self.step)))
+        return max(1, int(self.sqrt_steps_fraction * math.sqrt(self.step)))
 
     def _ema_update(self, x, N):
         alpha = 2 / (N + 1)
@@ -27,14 +27,14 @@ class LosSmoother:
         self.var  = alpha * (x - self.mean) ** 2 + (1 - alpha) * self.var
 
     def _z_score(self, x):
-        return 0 if self.var == 0 else (x - self.mean) / self.var ** 0.5
+        return 0 if self.var == 0 else (x - self.mean) / math.sqrt(self.var)
+
+    def get_smoothed(self) -> float:
+        return self.mean
 
     def update(self, x: float) -> float:
         self.step += 1
-
         if self._z_score(x) < self.z_thresh:
-            N = self._dynamic_window()
-            self._ema_update(x, N)
+            self._ema_update(x, self._dynamic_window())
             self.minimum = min(self.minimum, self.mean)
-
-        return self.mean, self.minimum
+        return self.minimum

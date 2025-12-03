@@ -35,9 +35,12 @@ class Extrapolator:
         }
         assert all(v in self._feature_fns for v in variable_names), f"Unknown variable in {variable_names}"
 
-    def update(self, loss: float) -> float:
+    def calculate_features(self, loss: float, step: int) -> list[float]:
         self.losses.append(loss)
-        features = [self._feature_fns[v][0](len(self.losses), self.losses) for v in self.variable_names]
+        return [self._feature_fns[v][0](step, self.losses) for v in self.variable_names]
+
+    def update(self, loss: float) -> float:
+        features = self.calculate_features(loss, len(self.losses) + 1)
         return self.equation(np.array([features])).item()
 
     def update_batch(self, losses: list[float]) -> np.ndarray:
