@@ -85,47 +85,44 @@ def evaluate_model(path: str = 'src/runs_data.json', total: int = 4300, variable
 
     print(f"Evaluating {len(latest_model_df)} models")
     
-    for _, row in latest_model_df.iterrows():
+    for eq_id, (_, row) in enumerate(latest_model_df.iterrows()):
         complexity = row['complexity']
-        print(f"Evaluating complexity {complexity}")
+        print(f"Evaluating C_{complexity}_{eq_id}")
         callable_equation = row['lambda_format']
         variable_names = row['features_in']
 
         for run_id in runs_data.keys():
             extrapolator = Extrapolator(target_step=total, variable_names=variable_names, equation=callable_equation)
             losstrapolator = LosStrapolator(extrapolator=extrapolator, target_step=total)
-            #
             predicted = losstrapolator.update_batch(runs_data[run_id]['preprocessed_losses'])
             errors = np.abs(np.array(predicted) - runs_data[run_id]['target_loss'])
-            runs_data[run_id][f'C_{complexity}'] = {'predicted': predicted, 'errors': errors}
-    
+            runs_data[run_id][f'C_{complexity}_{eq_id}'] = {'predicted': predicted, 'errors': errors}
     
 
-    # Build list of (complexity, epsilon, avg_step)
+    # Build list of (complexity, eq_id, epsilon, avg_step)
     rows = []
-    for _, row in latest_model_df.iterrows():
+    for eq_id, (_, row) in enumerate(latest_model_df.iterrows()):
         complexity = row['complexity']
         for epsilon in epsilons:
             first_exceed_steps = []
             for run_id in runs_data.keys():
-                errors = runs_data[run_id][f'C_{complexity}']['errors']
+                errors = runs_data[run_id][f'C_{complexity}_{eq_id}']['errors']
                 exceed_indices = np.where(errors > epsilon)[0]
                 step = exceed_indices[-1] + 1 if len(exceed_indices) > 0 else total
                 first_exceed_steps.append(step)
-            rows.append({'complexity': complexity, 'epsilon': epsilon, 'steps': np.mean(first_exceed_steps)})
+            rows.append({'complexity': complexity, 'eq_id': eq_id, 'epsilon': epsilon, 'steps': np.mean(first_exceed_steps)})
     
     results_df = pd.DataFrame(rows)
-    # Keep best performing equation per complexity (highest steps at epsilon 0.004)
-    score_df = results_df[results_df['epsilon'] == 0.004].copy()
-    best_per_complexity = score_df.loc[score_df.groupby('complexity')['steps'].idxmax()]
-    best_complexity_df = best_per_complexity.merge(
-        latest_model_df[['complexity', 'sympy_format']].drop_duplicates('complexity'),
-        on='complexity', how='left'
-    )
+    # Compute avg steps across epsilons 0.006, 0.004, 0.002 for all equations
+    score_df = results_df[results_df['epsilon'].isin([0.006, 0.004, 0.002])].copy()
+    score_df = score_df.groupby(['complexity', 'eq_id'])['steps'].mean().reset_index()
+    score_df['label'] = score_df.apply(lambda r: f"C_{int(r['complexity'])}_{int(r['eq_id'])}", axis=1)
+    latest_model_df = latest_model_df.reset_index(drop=True)
+    latest_model_df['eq_id'] = latest_model_df.index
+    all_equations_df = score_df.merge(latest_model_df[['eq_id', 'complexity', 'sympy_format']], on=['complexity', 'eq_id'], how='left')
 
     # Build per-run dataframe for plotting
     plot_rows = []
-    complexities = latest_model_df['complexity'].unique()
     for run_id, data in runs_data.items():
         row = {
             'run_id': run_id,
@@ -134,11 +131,12 @@ def evaluate_model(path: str = 'src/runs_data.json', total: int = 4300, variable
             'target_loss': data['target_loss'],
             'target_step': total,
         }
-        for c in complexities:
-            row[f'predicted_C{c}'] = data[f'C_{c}']['predicted']
+        for eq_id, r in latest_model_df.iterrows():
+            c = r['complexity']
+            row[f'predicted_C_{c}_{eq_id}'] = data[f'C_{c}_{eq_id}']['predicted']
         plot_rows.append(row)
 
-    return results_df, pd.DataFrame(plot_rows), best_complexity_df
+    return results_df, pd.DataFrame(plot_rows), all_equations_df
 
 
 def plot_tradeoff_curve(df):
@@ -146,7 +144,7 @@ def plot_tradeoff_curve(df):
     Plot the trade-off between early stopping and accuracy.
 
     Args:
-        df (pd.DataFrame): DataFrame with columns: complexity, epsilon, steps
+        df (pd.DataFrame): DataFrame with columns: complexity, eq_id, epsilon, steps
     """
     import plotly.graph_objs as go
     import numpy as np
@@ -156,17 +154,18 @@ def plot_tradeoff_curve(df):
     min_c, max_c = min(complexities), max(complexities)
     green_red = LinearSegmentedColormap.from_list("greenred", ["#2ca02c", "#d62728"])
     norm = Normalize(vmin=min_c, vmax=max_c)
-    model_colors = {c: to_hex(green_red(norm(c))) for c in complexities}
 
     fig = go.Figure()
     max_y = df['steps'].max()
 
-    for complexity in complexities:
-        subset = df[df['complexity'] == complexity].sort_values('epsilon')
+    for (complexity, eq_id), subset in df.groupby(['complexity', 'eq_id']):
+        label = f"C_{int(complexity)}_{int(eq_id)}"
+        color = to_hex(green_red(norm(complexity)))
+        subset = subset.sort_values('epsilon')
         fig.add_trace(go.Scatter(
             x=subset['epsilon'], y=subset['steps'],
-            mode="lines+markers", name=f"complexity {complexity}",
-            line=dict(color=model_colors[complexity])
+            mode="lines+markers", name=label,
+            line=dict(color=color)
         ))
 
     # Max step line
@@ -180,7 +179,7 @@ def plot_tradeoff_curve(df):
     fig.update_layout(
         title="Trade-off: early-stop vs. accuracy",
         xaxis_title="Max Error", yaxis_title="Avg Step",
-        xaxis_type="log", yaxis_type="log", legend_title="Complexity"
+        xaxis_type="log", yaxis_type="log", legend_title="Equation"
     )
     fig.show()
 
@@ -190,14 +189,14 @@ import plotly.graph_objects as go
 import json
 
 
-def plot_predicted_vs_true_loss(df, n_th=0, margin=0.004, complexity=7, minimum_step=100):
+def plot_predicted_vs_true_loss(df, label, n_th=0, margin=0.004, minimum_step=100):
     """Plot raw, preprocessed, and predicted losses for a single run."""
     selected_run_id = sorted(df['run_id'].unique())[n_th]
     run = df[df['run_id'] == selected_run_id].iloc[0]
 
     raw_losses = run['raw_losses'][minimum_step - 1:]
     preprocessed_losses = run['preprocessed_losses'][minimum_step - 1:]
-    predicted = run[f'predicted_C{complexity}'][minimum_step - 1:]
+    predicted = run[f'predicted_{label}'][minimum_step - 1:]
     target_loss = run['target_loss']
     target_step = run['target_step']
 
@@ -205,28 +204,23 @@ def plot_predicted_vs_true_loss(df, n_th=0, margin=0.004, complexity=7, minimum_
 
     fig = go.Figure()
 
-    # Raw losses
     fig.add_trace(go.Scatter(
         x=X, y=raw_losses, mode='lines', name='Raw Loss',
         line=dict(color="black", width=1)
     ))
 
-    # Preprocessed losses
     fig.add_trace(go.Scatter(
         x=X, y=preprocessed_losses, mode='lines', name='Preprocessed Loss',
         line=dict(color="green", width=2)
     ))
 
-    # Predicted losses
     fig.add_trace(go.Scatter(
-        x=X, y=predicted, mode='lines', name=f'Predicted (C{complexity})',
+        x=X, y=predicted, mode='lines', name=f'Predicted ({label})',
         line=dict(color="red", width=2)
     ))
 
-    # Target loss horizontal line
     fig.add_shape(type="line", x0=minimum_step, x1=target_step, y0=target_loss, y1=target_loss,
                   line=dict(color="gray", width=2, dash="dot"))
-    # Margin lines
     fig.add_shape(type="line", x0=minimum_step, x1=target_step, y0=target_loss + margin, y1=target_loss + margin,
                   line=dict(color="gray", width=1, dash="dash"))
     fig.add_shape(type="line", x0=minimum_step, x1=target_step, y0=target_loss - margin, y1=target_loss - margin,
@@ -243,11 +237,11 @@ def plot_predicted_vs_true_loss(df, n_th=0, margin=0.004, complexity=7, minimum_
 import sympy as sp
 from IPython.display import display, Markdown
 
-def display_best_complexity(best_complexity_df):
-    """Display the best equations per complexity as a formatted table."""
-    df = best_complexity_df.sort_values("complexity")
-    equations_md = "## Best Equations per Complexity\n\n| C | Steps | Equation |\n|---|---|---|\n"
+def display_all_equations(all_equations_df):
+    """Display all equations as a formatted table."""
+    df = all_equations_df.sort_values(["complexity", "eq_id"])
+    equations_md = "## All Equations\n\n| Label | Steps | Equation |\n|---|---|---|\n"
     for _, row in df.iterrows():
         latex_eq = sp.latex(row['sympy_format'])
-        equations_md += f"| {row['complexity']} | {row['steps']:.1f} | ${latex_eq}$ |\n"
+        equations_md += f"| {row['label']} | {row['steps']:.1f} | ${latex_eq}$ |\n"
     display(Markdown(equations_md))

@@ -115,10 +115,28 @@ def run_pysr_optimization(min_step: int, n_targets: int):
         max_datapoints_per_target=30
     )
     print(f'Number of datapoints: {len(df)}')
-    model = fit_pysr_model_on_df(df[variable_names], df[['target_loss']], timeout_in_seconds=600)
+    model = fit_pysr_model_on_df(df[variable_names], df[['target_loss']], timeout_in_seconds=60*10)
     return model
 
 
 if __name__ == "__main__":
+    import itertools
+    import os
+    random.seed(42)
     #run_pysr_optimization(min_step=1800, n_targets=5)
-    run_pysr_optimization(min_step=2000, n_targets=5)
+    min_steps = [1200, 1400, 1600, 1800, 2000, 2400, 3000]
+    n_targets = [2, 4, 8]
+    # create the combinations, shuffle and select the first N
+    combinations = list(itertools.product(min_steps, n_targets))
+    random.shuffle(combinations)
+    for i, (min_step, n_target) in enumerate(combinations):
+        print(f"Running optimization ({i+1}/{len(combinations)})")
+        try:
+            model = run_pysr_optimization(min_step=min_step, n_targets=n_target)
+            model_folder = f"outputs/{model.run_id_}"
+            os.makedirs(model_folder, exist_ok=True)
+            with open(os.path.join(model_folder, "parameters.json"), "w") as f:
+                json.dump({"min_step": min_step, "n_targets": n_target}, f)
+        except Exception as e:
+            print(f"Error running optimization ({i+1}/{len(combinations)}): {e}")
+            continue
