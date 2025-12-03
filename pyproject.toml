@@ -19,3 +19,6 @@ dependencies = [
 
 [tool.marimo.runtime]
 watcher_on_save = "autorun"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

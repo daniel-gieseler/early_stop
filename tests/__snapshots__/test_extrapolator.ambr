@@ -1,0 +1,10009 @@
+# serializer version: 1
+# name: test_update_batch_sequence[extrapolator_sequence]
+  list([
+    dict({
+      'loss': 1.0,
+      'prediction': 0.99514,
+      'step': 1,
+    }),
+    dict({
+      'loss': 0.9995,
+      'prediction': 0.64118,
+      'step': 2,
+    }),
+    dict({
+      'loss': 0.999,
+      'prediction': 0.64128,
+      'step': 3,
+    }),
+    dict({
+      'loss': 0.9985,
+      'prediction': 0.64138,
+      'step': 4,
+    }),
+    dict({
+      'loss': 0.998,
+      'prediction': 0.64148,
+      'step': 5,
+    }),
+    dict({
+      'loss': 0.9975,
+      'prediction': 0.64157,
+      'step': 6,
+    }),
+    dict({
+      'loss': 0.997,
+      'prediction': 0.64167,
+      'step': 7,
+    }),
+    dict({
+      'loss': 0.9965,
+      'prediction': 0.64177,
+      'step': 8,
+    }),
+    dict({
+      'loss': 0.996,
+      'prediction': 0.64186,
+      'step': 9,
+    }),
+    dict({
+      'loss': 0.9955,
+      'prediction': 0.64196,
+      'step': 10,
+    }),
+    dict({
+      'loss': 0.99499,
+      'prediction': 0.64205,
+      'step': 11,
+    }),
+    dict({
+      'loss': 0.99449,
+      'prediction': 0.64215,
+      'step': 12,
+    }),
+    dict({
+      'loss': 0.99399,
+      'prediction': 0.64224,
+      'step': 13,
+    }),
+    dict({
+      'loss': 0.99349,
+      'prediction': 0.64233,
+      'step': 14,
+    }),
+    dict({
+      'loss': 0.99299,
+      'prediction': 0.64242,
+      'step': 15,
+    }),
+    dict({
+      'loss': 0.99249,
+      'prediction': 0.64252,
+      'step': 16,
+    }),
+    dict({
+      'loss': 0.99199,
+      'prediction': 0.64261,
+      'step': 17,
+    }),
+    dict({
+      'loss': 0.99149,
+      'prediction': 0.6427,
+      'step': 18,
+    }),
+    dict({
+      'loss': 0.99099,
+      'prediction': 0.64279,
+      'step': 19,
+    }),
+    dict({
+      'loss': 0.99049,
+      'prediction': 0.64288,
+      'step': 20,
+    }),
+    dict({
+      'loss': 0.98999,
+      'prediction': 0.64297,
+      'step': 21,
+    }),
+    dict({
+      'loss': 0.98949,
+      'prediction': 0.64306,
+      'step': 22,
+    }),
+    dict({
+      'loss': 0.98899,
+      'prediction': 0.64315,
+      'step': 23,
+    }),
+    dict({
+      'loss': 0.98849,
+      'prediction': 0.64323,
+      'step': 24,
+    }),
+    dict({
+      'loss': 0.98799,
+      'prediction': 0.64332,
+      'step': 25,
+    }),
+    dict({
+      'loss': 0.98749,
+      'prediction': 0.64341,
+      'step': 26,
+    }),
+    dict({
+      'loss': 0.98699,
+      'prediction': 0.64349,
+      'step': 27,
+    }),
+    dict({
+      'loss': 0.98649,
+      'prediction': 0.64358,
+      'step': 28,
+    }),
+    dict({
+      'loss': 0.98599,
+      'prediction': 0.64367,
+      'step': 29,
+    }),
+    dict({
+      'loss': 0.98549,
+      'prediction': 0.64375,
+      'step': 30,
+    }),
+    dict({
+      'loss': 0.98498,
+      'prediction': 0.64384,
+      'step': 31,
+    }),
+    dict({
+      'loss': 0.98448,
+      'prediction': 0.64392,
+      'step': 32,
+    }),
+    dict({
+      'loss': 0.98398,
+      'prediction': 0.644,
+      'step': 33,
+    }),
+    dict({
+      'loss': 0.98348,
+      'prediction': 0.64409,
+      'step': 34,
+    }),
+    dict({
+      'loss': 0.98298,
+      'prediction': 0.64417,
+      'step': 35,
+    }),
+    dict({
+      'loss': 0.98248,
+      'prediction': 0.64425,
+      'step': 36,
+    }),
+    dict({
+      'loss': 0.98198,
+      'prediction': 0.64433,
+      'step': 37,
+    }),
+    dict({
+      'loss': 0.98148,
+      'prediction': 0.64441,
+      'step': 38,
+    }),
+    dict({
+      'loss': 0.98098,
+      'prediction': 0.64449,
+      'step': 39,
+    }),
+    dict({
+      'loss': 0.98048,
+      'prediction': 0.64457,
+      'step': 40,
+    }),
+    dict({
+      'loss': 0.97998,
+      'prediction': 0.64465,
+      'step': 41,
+    }),
+    dict({
+      'loss': 0.97948,
+      'prediction': 0.64473,
+      'step': 42,
+    }),
+    dict({
+      'loss': 0.97898,
+      'prediction': 0.64481,
+      'step': 43,
+    }),
+    dict({
+      'loss': 0.97848,
+      'prediction': 0.64489,
+      'step': 44,
+    }),
+    dict({
+      'loss': 0.97798,
+      'prediction': 0.64496,
+      'step': 45,
+    }),
+    dict({
+      'loss': 0.97748,
+      'prediction': 0.64504,
+      'step': 46,
+    }),
+    dict({
+      'loss': 0.97698,
+      'prediction': 0.64512,
+      'step': 47,
+    }),
+    dict({
+      'loss': 0.97648,
+      'prediction': 0.64519,
+      'step': 48,
+    }),
+    dict({
+      'loss': 0.97598,
+      'prediction': 0.64527,
+      'step': 49,
+    }),
+    dict({
+      'loss': 0.97548,
+      'prediction': 0.64534,
+      'step': 50,
+    }),
+    dict({
+      'loss': 0.97497,
+      'prediction': 0.64542,
+      'step': 51,
+    }),
+    dict({
+      'loss': 0.97447,
+      'prediction': 0.64549,
+      'step': 52,
+    }),
+    dict({
+      'loss': 0.97397,
+      'prediction': 0.64557,
+      'step': 53,
+    }),
+    dict({
+      'loss': 0.97347,
+      'prediction': 0.64564,
+      'step': 54,
+    }),
+    dict({
+      'loss': 0.97297,
+      'prediction': 0.64571,
+      'step': 55,
+    }),
+    dict({
+      'loss': 0.97247,
+      'prediction': 0.64578,
+      'step': 56,
+    }),
+    dict({
+      'loss': 0.97197,
+      'prediction': 0.64585,
+      'step': 57,
+    }),
+    dict({
+      'loss': 0.97147,
+      'prediction': 0.64593,
+      'step': 58,
+    }),
+    dict({
+      'loss': 0.97097,
+      'prediction': 0.646,
+      'step': 59,
+    }),
+    dict({
+      'loss': 0.97047,
+      'prediction': 0.64607,
+      'step': 60,
+    }),
+    dict({
+      'loss': 0.96997,
+      'prediction': 0.64613,
+      'step': 61,
+    }),
+    dict({
+      'loss': 0.96947,
+      'prediction': 0.6462,
+      'step': 62,
+    }),
+    dict({
+      'loss': 0.96897,
+      'prediction': 0.64627,
+      'step': 63,
+    }),
+    dict({
+      'loss': 0.96847,
+      'prediction': 0.64634,
+      'step': 64,
+    }),
+    dict({
+      'loss': 0.96797,
+      'prediction': 0.64641,
+      'step': 65,
+    }),
+    dict({
+      'loss': 0.96747,
+      'prediction': 0.64647,
+      'step': 66,
+    }),
+    dict({
+      'loss': 0.96697,
+      'prediction': 0.64654,
+      'step': 67,
+    }),
+    dict({
+      'loss': 0.96647,
+      'prediction': 0.64661,
+      'step': 68,
+    }),
+    dict({
+      'loss': 0.96597,
+      'prediction': 0.64667,
+      'step': 69,
+    }),
+    dict({
+      'loss': 0.96547,
+      'prediction': 0.64674,
+      'step': 70,
+    }),
+    dict({
+      'loss': 0.96496,
+      'prediction': 0.6468,
+      'step': 71,
+    }),
+    dict({
+      'loss': 0.96446,
+      'prediction': 0.64687,
+      'step': 72,
+    }),
+    dict({
+      'loss': 0.96396,
+      'prediction': 0.64693,
+      'step': 73,
+    }),
+    dict({
+      'loss': 0.96346,
+      'prediction': 0.64699,
+      'step': 74,
+    }),
+    dict({
+      'loss': 0.96296,
+      'prediction': 0.64705,
+      'step': 75,
+    }),
+    dict({
+      'loss': 0.96246,
+      'prediction': 0.64712,
+      'step': 76,
+    }),
+    dict({
+      'loss': 0.96196,
+      'prediction': 0.64718,
+      'step': 77,
+    }),
+    dict({
+      'loss': 0.96146,
+      'prediction': 0.64724,
+      'step': 78,
+    }),
+    dict({
+      'loss': 0.96096,
+      'prediction': 0.6473,
+      'step': 79,
+    }),
+    dict({
+      'loss': 0.96046,
+      'prediction': 0.64736,
+      'step': 80,
+    }),
+    dict({
+      'loss': 0.95996,
+      'prediction': 0.64742,
+      'step': 81,
+    }),
+    dict({
+      'loss': 0.95946,
+      'prediction': 0.64748,
+      'step': 82,
+    }),
+    dict({
+      'loss': 0.95896,
+      'prediction': 0.64753,
+      'step': 83,
+    }),
+    dict({
+      'loss': 0.95846,
+      'prediction': 0.64759,
+      'step': 84,
+    }),
+    dict({
+      'loss': 0.95796,
+      'prediction': 0.64765,
+      'step': 85,
+    }),
+    dict({
+      'loss': 0.95746,
+      'prediction': 0.64771,
+      'step': 86,
+    }),
+    dict({
+      'loss': 0.95696,
+      'prediction': 0.64776,
+      'step': 87,
+    }),
+    dict({
+      'loss': 0.95646,
+      'prediction': 0.64782,
+      'step': 88,
+    }),
+    dict({
+      'loss': 0.95596,
+      'prediction': 0.64787,
+      'step': 89,
+    }),
+    dict({
+      'loss': 0.95546,
+      'prediction': 0.64793,
+      'step': 90,
+    }),
+    dict({
+      'loss': 0.95495,
+      'prediction': 0.64798,
+      'step': 91,
+    }),
+    dict({
+      'loss': 0.95445,
+      'prediction': 0.64804,
+      'step': 92,
+    }),
+    dict({
+      'loss': 0.95395,
+      'prediction': 0.64809,
+      'step': 93,
+    }),
+    dict({
+      'loss': 0.95345,
+      'prediction': 0.64814,
+      'step': 94,
+    }),
+    dict({
+      'loss': 0.95295,
+      'prediction': 0.6482,
+      'step': 95,
+    }),
+    dict({
+      'loss': 0.95245,
+      'prediction': 0.64825,
+      'step': 96,
+    }),
+    dict({
+      'loss': 0.95195,
+      'prediction': 0.6483,
+      'step': 97,
+    }),
+    dict({
+      'loss': 0.95145,
+      'prediction': 0.64835,
+      'step': 98,
+    }),
+    dict({
+      'loss': 0.95095,
+      'prediction': 0.6484,
+      'step': 99,
+    }),
+    dict({
+      'loss': 0.95045,
+      'prediction': 0.64845,
+      'step': 100,
+    }),
+    dict({
+      'loss': 0.94995,
+      'prediction': 0.6485,
+      'step': 101,
+    }),
+    dict({
+      'loss': 0.94945,
+      'prediction': 0.64855,
+      'step': 102,
+    }),
+    dict({
+      'loss': 0.94895,
+      'prediction': 0.6486,
+      'step': 103,
+    }),
+    dict({
+      'loss': 0.94845,
+      'prediction': 0.64864,
+      'step': 104,
+    }),
+    dict({
+      'loss': 0.94795,
+      'prediction': 0.64869,
+      'step': 105,
+    }),
+    dict({
+      'loss': 0.94745,
+      'prediction': 0.64874,
+      'step': 106,
+    }),
+    dict({
+      'loss': 0.94695,
+      'prediction': 0.64879,
+      'step': 107,
+    }),
+    dict({
+      'loss': 0.94645,
+      'prediction': 0.64883,
+      'step': 108,
+    }),
+    dict({
+      'loss': 0.94595,
+      'prediction': 0.64888,
+      'step': 109,
+    }),
+    dict({
+      'loss': 0.94545,
+      'prediction': 0.64892,
+      'step': 110,
+    }),
+    dict({
+      'loss': 0.94494,
+      'prediction': 0.64897,
+      'step': 111,
+    }),
+    dict({
+      'loss': 0.94444,
+      'prediction': 0.64901,
+      'step': 112,
+    }),
+    dict({
+      'loss': 0.94394,
+      'prediction': 0.64905,
+      'step': 113,
+    }),
+    dict({
+      'loss': 0.94344,
+      'prediction': 0.6491,
+      'step': 114,
+    }),
+    dict({
+      'loss': 0.94294,
+      'prediction': 0.64914,
+      'step': 115,
+    }),
+    dict({
+      'loss': 0.94244,
+      'prediction': 0.64918,
+      'step': 116,
+    }),
+    dict({
+      'loss': 0.94194,
+      'prediction': 0.64922,
+      'step': 117,
+    }),
+    dict({
+      'loss': 0.94144,
+      'prediction': 0.64926,
+      'step': 118,
+    }),
+    dict({
+      'loss': 0.94094,
+      'prediction': 0.6493,
+      'step': 119,
+    }),
+    dict({
+      'loss': 0.94044,
+      'prediction': 0.64934,
+      'step': 120,
+    }),
+    dict({
+      'loss': 0.93994,
+      'prediction': 0.64938,
+      'step': 121,
+    }),
+    dict({
+      'loss': 0.93944,
+      'prediction': 0.64942,
+      'step': 122,
+    }),
+    dict({
+      'loss': 0.93894,
+      'prediction': 0.64946,
+      'step': 123,
+    }),
+    dict({
+      'loss': 0.93844,
+      'prediction': 0.6495,
+      'step': 124,
+    }),
+    dict({
+      'loss': 0.93794,
+      'prediction': 0.64953,
+      'step': 125,
+    }),
+    dict({
+      'loss': 0.93744,
+      'prediction': 0.64957,
+      'step': 126,
+    }),
+    dict({
+      'loss': 0.93694,
+      'prediction': 0.64961,
+      'step': 127,
+    }),
+    dict({
+      'loss': 0.93644,
+      'prediction': 0.64964,
+      'step': 128,
+    }),
+    dict({
+      'loss': 0.93594,
+      'prediction': 0.64968,
+      'step': 129,
+    }),
+    dict({
+      'loss': 0.93544,
+      'prediction': 0.64971,
+      'step': 130,
+    }),
+    dict({
+      'loss': 0.93493,
+      'prediction': 0.64975,
+      'step': 131,
+    }),
+    dict({
+      'loss': 0.93443,
+      'prediction': 0.64978,
+      'step': 132,
+    }),
+    dict({
+      'loss': 0.93393,
+      'prediction': 0.64981,
+      'step': 133,
+    }),
+    dict({
+      'loss': 0.93343,
+      'prediction': 0.64985,
+      'step': 134,
+    }),
+    dict({
+      'loss': 0.93293,
+      'prediction': 0.64988,
+      'step': 135,
+    }),
+    dict({
+      'loss': 0.93243,
+      'prediction': 0.64991,
+      'step': 136,
+    }),
+    dict({
+      'loss': 0.93193,
+      'prediction': 0.64994,
+      'step': 137,
+    }),
+    dict({
+      'loss': 0.93143,
+      'prediction': 0.64997,
+      'step': 138,
+    }),
+    dict({
+      'loss': 0.93093,
+      'prediction': 0.65,
+      'step': 139,
+    }),
+    dict({
+      'loss': 0.93043,
+      'prediction': 0.65003,
+      'step': 140,
+    }),
+    dict({
+      'loss': 0.92993,
+      'prediction': 0.65006,
+      'step': 141,
+    }),
+    dict({
+      'loss': 0.92943,
+      'prediction': 0.65009,
+      'step': 142,
+    }),
+    dict({
+      'loss': 0.92893,
+      'prediction': 0.65012,
+      'step': 143,
+    }),
+    dict({
+      'loss': 0.92843,
+      'prediction': 0.65015,
+      'step': 144,
+    }),
+    dict({
+      'loss': 0.92793,
+      'prediction': 0.65017,
+      'step': 145,
+    }),
+    dict({
+      'loss': 0.92743,
+      'prediction': 0.6502,
+      'step': 146,
+    }),
+    dict({
+      'loss': 0.92693,
+      'prediction': 0.65023,
+      'step': 147,
+    }),
+    dict({
+      'loss': 0.92643,
+      'prediction': 0.65025,
+      'step': 148,
+    }),
+    dict({
+      'loss': 0.92593,
+      'prediction': 0.65028,
+      'step': 149,
+    }),
+    dict({
+      'loss': 0.92543,
+      'prediction': 0.6503,
+      'step': 150,
+    }),
+    dict({
+      'loss': 0.92492,
+      'prediction': 0.65033,
+      'step': 151,
+    }),
+    dict({
+      'loss': 0.92442,
+      'prediction': 0.65035,
+      'step': 152,
+    }),
+    dict({
+      'loss': 0.92392,
+      'prediction': 0.65038,
+      'step': 153,
+    }),
+    dict({
+      'loss': 0.92342,
+      'prediction': 0.6504,
+      'step': 154,
+    }),
+    dict({
+      'loss': 0.92292,
+      'prediction': 0.65042,
+      'step': 155,
+    }),
+    dict({
+      'loss': 0.92242,
+      'prediction': 0.65044,
+      'step': 156,
+    }),
+    dict({
+      'loss': 0.92192,
+      'prediction': 0.65046,
+      'step': 157,
+    }),
+    dict({
+      'loss': 0.92142,
+      'prediction': 0.65048,
+      'step': 158,
+    }),
+    dict({
+      'loss': 0.92092,
+      'prediction': 0.6505,
+      'step': 159,
+    }),
+    dict({
+      'loss': 0.92042,
+      'prediction': 0.65052,
+      'step': 160,
+    }),
+    dict({
+      'loss': 0.91992,
+      'prediction': 0.65054,
+      'step': 161,
+    }),
+    dict({
+      'loss': 0.91942,
+      'prediction': 0.65056,
+      'step': 162,
+    }),
+    dict({
+      'loss': 0.91892,
+      'prediction': 0.65058,
+      'step': 163,
+    }),
+    dict({
+      'loss': 0.91842,
+      'prediction': 0.6506,
+      'step': 164,
+    }),
+    dict({
+      'loss': 0.91792,
+      'prediction': 0.65062,
+      'step': 165,
+    }),
+    dict({
+      'loss': 0.91742,
+      'prediction': 0.65063,
+      'step': 166,
+    }),
+    dict({
+      'loss': 0.91692,
+      'prediction': 0.65065,
+      'step': 167,
+    }),
+    dict({
+      'loss': 0.91642,
+      'prediction': 0.65066,
+      'step': 168,
+    }),
+    dict({
+      'loss': 0.91592,
+      'prediction': 0.65068,
+      'step': 169,
+    }),
+    dict({
+      'loss': 0.91542,
+      'prediction': 0.65069,
+      'step': 170,
+    }),
+    dict({
+      'loss': 0.91491,
+      'prediction': 0.65071,
+      'step': 171,
+    }),
+    dict({
+      'loss': 0.91441,
+      'prediction': 0.65072,
+      'step': 172,
+    }),
+    dict({
+      'loss': 0.91391,
+      'prediction': 0.65074,
+      'step': 173,
+    }),
+    dict({
+      'loss': 0.91341,
+      'prediction': 0.65075,
+      'step': 174,
+    }),
+    dict({
+      'loss': 0.91291,
+      'prediction': 0.65076,
+      'step': 175,
+    }),
+    dict({
+      'loss': 0.91241,
+      'prediction': 0.65077,
+      'step': 176,
+    }),
+    dict({
+      'loss': 0.91191,
+      'prediction': 0.65078,
+      'step': 177,
+    }),
+    dict({
+      'loss': 0.91141,
+      'prediction': 0.65079,
+      'step': 178,
+    }),
+    dict({
+      'loss': 0.91091,
+      'prediction': 0.6508,
+      'step': 179,
+    }),
+    dict({
+      'loss': 0.91041,
+      'prediction': 0.65081,
+      'step': 180,
+    }),
+    dict({
+      'loss': 0.90991,
+      'prediction': 0.65082,
+      'step': 181,
+    }),
+    dict({
+      'loss': 0.90941,
+      'prediction': 0.65083,
+      'step': 182,
+    }),
+    dict({
+      'loss': 0.90891,
+      'prediction': 0.65084,
+      'step': 183,
+    }),
+    dict({
+      'loss': 0.90841,
+      'prediction': 0.65085,
+      'step': 184,
+    }),
+    dict({
+      'loss': 0.90791,
+      'prediction': 0.65086,
+      'step': 185,
+    }),
+    dict({
+      'loss': 0.90741,
+      'prediction': 0.65086,
+      'step': 186,
+    }),
+    dict({
+      'loss': 0.90691,
+      'prediction': 0.65087,
+      'step': 187,
+    }),
+    dict({
+      'loss': 0.90641,
+      'prediction': 0.65087,
+      'step': 188,
+    }),
+    dict({
+      'loss': 0.90591,
+      'prediction': 0.65088,
+      'step': 189,
+    }),
+    dict({
+      'loss': 0.90541,
+      'prediction': 0.65088,
+      'step': 190,
+    }),
+    dict({
+      'loss': 0.9049,
+      'prediction': 0.65089,
+      'step': 191,
+    }),
+    dict({
+      'loss': 0.9044,
+      'prediction': 0.65089,
+      'step': 192,
+    }),
+    dict({
+      'loss': 0.9039,
+      'prediction': 0.6509,
+      'step': 193,
+    }),
+    dict({
+      'loss': 0.9034,
+      'prediction': 0.6509,
+      'step': 194,
+    }),
+    dict({
+      'loss': 0.9029,
+      'prediction': 0.6509,
+      'step': 195,
+    }),
+    dict({
+      'loss': 0.9024,
+      'prediction': 0.6509,
+      'step': 196,
+    }),
+    dict({
+      'loss': 0.9019,
+      'prediction': 0.6509,
+      'step': 197,
+    }),
+    dict({
+      'loss': 0.9014,
+      'prediction': 0.6509,
+      'step': 198,
+    }),
+    dict({
+      'loss': 0.9009,
+      'prediction': 0.65091,
+      'step': 199,
+    }),
+    dict({
+      'loss': 0.9004,
+      'prediction': 0.6509,
+      'step': 200,
+    }),
+    dict({
+      'loss': 0.8999,
+      'prediction': 0.6509,
+      'step': 201,
+    }),
+    dict({
+      'loss': 0.8994,
+      'prediction': 0.6509,
+      'step': 202,
+    }),
+    dict({
+      'loss': 0.8989,
+      'prediction': 0.6509,
+      'step': 203,
+    }),
+    dict({
+      'loss': 0.8984,
+      'prediction': 0.6509,
+      'step': 204,
+    }),
+    dict({
+      'loss': 0.8979,
+      'prediction': 0.6509,
+      'step': 205,
+    }),
+    dict({
+      'loss': 0.8974,
+      'prediction': 0.65089,
+      'step': 206,
+    }),
+    dict({
+      'loss': 0.8969,
+      'prediction': 0.65089,
+      'step': 207,
+    }),
+    dict({
+      'loss': 0.8964,
+      'prediction': 0.65088,
+      'step': 208,
+    }),
+    dict({
+      'loss': 0.8959,
+      'prediction': 0.65088,
+      'step': 209,
+    }),
+    dict({
+      'loss': 0.8954,
+      'prediction': 0.65087,
+      'step': 210,
+    }),
+    dict({
+      'loss': 0.89489,
+      'prediction': 0.65087,
+      'step': 211,
+    }),
+    dict({
+      'loss': 0.89439,
+      'prediction': 0.65086,
+      'step': 212,
+    }),
+    dict({
+      'loss': 0.89389,
+      'prediction': 0.65086,
+      'step': 213,
+    }),
+    dict({
+      'loss': 0.89339,
+      'prediction': 0.65085,
+      'step': 214,
+    }),
+    dict({
+      'loss': 0.89289,
+      'prediction': 0.65084,
+      'step': 215,
+    }),
+    dict({
+      'loss': 0.89239,
+      'prediction': 0.65083,
+      'step': 216,
+    }),
+    dict({
+      'loss': 0.89189,
+      'prediction': 0.65082,
+      'step': 217,
+    }),
+    dict({
+      'loss': 0.89139,
+      'prediction': 0.65081,
+      'step': 218,
+    }),
+    dict({
+      'loss': 0.89089,
+      'prediction': 0.6508,
+      'step': 219,
+    }),
+    dict({
+      'loss': 0.89039,
+      'prediction': 0.65079,
+      'step': 220,
+    }),
+    dict({
+      'loss': 0.88989,
+      'prediction': 0.65078,
+      'step': 221,
+    }),
+    dict({
+      'loss': 0.88939,
+      'prediction': 0.65077,
+      'step': 222,
+    }),
+    dict({
+      'loss': 0.88889,
+      'prediction': 0.65076,
+      'step': 223,
+    }),
+    dict({
+      'loss': 0.88839,
+      'prediction': 0.65075,
+      'step': 224,
+    }),
+    dict({
+      'loss': 0.88789,
+      'prediction': 0.65074,
+      'step': 225,
+    }),
+    dict({
+      'loss': 0.88739,
+      'prediction': 0.65072,
+      'step': 226,
+    }),
+    dict({
+      'loss': 0.88689,
+      'prediction': 0.65071,
+      'step': 227,
+    }),
+    dict({
+      'loss': 0.88639,
+      'prediction': 0.65069,
+      'step': 228,
+    }),
+    dict({
+      'loss': 0.88589,
+      'prediction': 0.65068,
+      'step': 229,
+    }),
+    dict({
+      'loss': 0.88539,
+      'prediction': 0.65066,
+      'step': 230,
+    }),
+    dict({
+      'loss': 0.88488,
+      'prediction': 0.65065,
+      'step': 231,
+    }),
+    dict({
+      'loss': 0.88438,
+      'prediction': 0.65063,
+      'step': 232,
+    }),
+    dict({
+      'loss': 0.88388,
+      'prediction': 0.65062,
+      'step': 233,
+    }),
+    dict({
+      'loss': 0.88338,
+      'prediction': 0.6506,
+      'step': 234,
+    }),
+    dict({
+      'loss': 0.88288,
+      'prediction': 0.65058,
+      'step': 235,
+    }),
+    dict({
+      'loss': 0.88238,
+      'prediction': 0.65056,
+      'step': 236,
+    }),
+    dict({
+      'loss': 0.88188,
+      'prediction': 0.65054,
+      'step': 237,
+    }),
+    dict({
+      'loss': 0.88138,
+      'prediction': 0.65052,
+      'step': 238,
+    }),
+    dict({
+      'loss': 0.88088,
+      'prediction': 0.6505,
+      'step': 239,
+    }),
+    dict({
+      'loss': 0.88038,
+      'prediction': 0.65048,
+      'step': 240,
+    }),
+    dict({
+      'loss': 0.87988,
+      'prediction': 0.65046,
+      'step': 241,
+    }),
+    dict({
+      'loss': 0.87938,
+      'prediction': 0.65044,
+      'step': 242,
+    }),
+    dict({
+      'loss': 0.87888,
+      'prediction': 0.65042,
+      'step': 243,
+    }),
+    dict({
+      'loss': 0.87838,
+      'prediction': 0.6504,
+      'step': 244,
+    }),
+    dict({
+      'loss': 0.87788,
+      'prediction': 0.65037,
+      'step': 245,
+    }),
+    dict({
+      'loss': 0.87738,
+      'prediction': 0.65035,
+      'step': 246,
+    }),
+    dict({
+      'loss': 0.87688,
+      'prediction': 0.65033,
+      'step': 247,
+    }),
+    dict({
+      'loss': 0.87638,
+      'prediction': 0.6503,
+      'step': 248,
+    }),
+    dict({
+      'loss': 0.87588,
+      'prediction': 0.65028,
+      'step': 249,
+    }),
+    dict({
+      'loss': 0.87538,
+      'prediction': 0.65025,
+      'step': 250,
+    }),
+    dict({
+      'loss': 0.87487,
+      'prediction': 0.65023,
+      'step': 251,
+    }),
+    dict({
+      'loss': 0.87437,
+      'prediction': 0.6502,
+      'step': 252,
+    }),
+    dict({
+      'loss': 0.87387,
+      'prediction': 0.65017,
+      'step': 253,
+    }),
+    dict({
+      'loss': 0.87337,
+      'prediction': 0.65015,
+      'step': 254,
+    }),
+    dict({
+      'loss': 0.87287,
+      'prediction': 0.65012,
+      'step': 255,
+    }),
+    dict({
+      'loss': 0.87237,
+      'prediction': 0.65009,
+      'step': 256,
+    }),
+    dict({
+      'loss': 0.87187,
+      'prediction': 0.65006,
+      'step': 257,
+    }),
+    dict({
+      'loss': 0.87137,
+      'prediction': 0.65003,
+      'step': 258,
+    }),
+    dict({
+      'loss': 0.87087,
+      'prediction': 0.65,
+      'step': 259,
+    }),
+    dict({
+      'loss': 0.87037,
+      'prediction': 0.64997,
+      'step': 260,
+    }),
+    dict({
+      'loss': 0.86987,
+      'prediction': 0.64994,
+      'step': 261,
+    }),
+    dict({
+      'loss': 0.86937,
+      'prediction': 0.64991,
+      'step': 262,
+    }),
+    dict({
+      'loss': 0.86887,
+      'prediction': 0.64988,
+      'step': 263,
+    }),
+    dict({
+      'loss': 0.86837,
+      'prediction': 0.64985,
+      'step': 264,
+    }),
+    dict({
+      'loss': 0.86787,
+      'prediction': 0.64981,
+      'step': 265,
+    }),
+    dict({
+      'loss': 0.86737,
+      'prediction': 0.64978,
+      'step': 266,
+    }),
+    dict({
+      'loss': 0.86687,
+      'prediction': 0.64975,
+      'step': 267,
+    }),
+    dict({
+      'loss': 0.86637,
+      'prediction': 0.64971,
+      'step': 268,
+    }),
+    dict({
+      'loss': 0.86587,
+      'prediction': 0.64968,
+      'step': 269,
+    }),
+    dict({
+      'loss': 0.86537,
+      'prediction': 0.64964,
+      'step': 270,
+    }),
+    dict({
+      'loss': 0.86486,
+      'prediction': 0.64961,
+      'step': 271,
+    }),
+    dict({
+      'loss': 0.86436,
+      'prediction': 0.64957,
+      'step': 272,
+    }),
+    dict({
+      'loss': 0.86386,
+      'prediction': 0.64953,
+      'step': 273,
+    }),
+    dict({
+      'loss': 0.86336,
+      'prediction': 0.6495,
+      'step': 274,
+    }),
+    dict({
+      'loss': 0.86286,
+      'prediction': 0.64946,
+      'step': 275,
+    }),
+    dict({
+      'loss': 0.86236,
+      'prediction': 0.64942,
+      'step': 276,
+    }),
+    dict({
+      'loss': 0.86186,
+      'prediction': 0.64938,
+      'step': 277,
+    }),
+    dict({
+      'loss': 0.86136,
+      'prediction': 0.64934,
+      'step': 278,
+    }),
+    dict({
+      'loss': 0.86086,
+      'prediction': 0.6493,
+      'step': 279,
+    }),
+    dict({
+      'loss': 0.86036,
+      'prediction': 0.64926,
+      'step': 280,
+    }),
+    dict({
+      'loss': 0.85986,
+      'prediction': 0.64922,
+      'step': 281,
+    }),
+    dict({
+      'loss': 0.85936,
+      'prediction': 0.64918,
+      'step': 282,
+    }),
+    dict({
+      'loss': 0.85886,
+      'prediction': 0.64914,
+      'step': 283,
+    }),
+    dict({
+      'loss': 0.85836,
+      'prediction': 0.64909,
+      'step': 284,
+    }),
+    dict({
+      'loss': 0.85786,
+      'prediction': 0.64905,
+      'step': 285,
+    }),
+    dict({
+      'loss': 0.85736,
+      'prediction': 0.64901,
+      'step': 286,
+    }),
+    dict({
+      'loss': 0.85686,
+      'prediction': 0.64896,
+      'step': 287,
+    }),
+    dict({
+      'loss': 0.85636,
+      'prediction': 0.64892,
+      'step': 288,
+    }),
+    dict({
+      'loss': 0.85586,
+      'prediction': 0.64888,
+      'step': 289,
+    }),
+    dict({
+      'loss': 0.85536,
+      'prediction': 0.64883,
+      'step': 290,
+    }),
+    dict({
+      'loss': 0.85485,
+      'prediction': 0.64878,
+      'step': 291,
+    }),
+    dict({
+      'loss': 0.85435,
+      'prediction': 0.64874,
+      'step': 292,
+    }),
+    dict({
+      'loss': 0.85385,
+      'prediction': 0.64869,
+      'step': 293,
+    }),
+    dict({
+      'loss': 0.85335,
+      'prediction': 0.64864,
+      'step': 294,
+    }),
+    dict({
+      'loss': 0.85285,
+      'prediction': 0.6486,
+      'step': 295,
+    }),
+    dict({
+      'loss': 0.85235,
+      'prediction': 0.64855,
+      'step': 296,
+    }),
+    dict({
+      'loss': 0.85185,
+      'prediction': 0.6485,
+      'step': 297,
+    }),
+    dict({
+      'loss': 0.85135,
+      'prediction': 0.64845,
+      'step': 298,
+    }),
+    dict({
+      'loss': 0.85085,
+      'prediction': 0.6484,
+      'step': 299,
+    }),
+    dict({
+      'loss': 0.85035,
+      'prediction': 0.64835,
+      'step': 300,
+    }),
+    dict({
+      'loss': 0.84985,
+      'prediction': 0.6483,
+      'step': 301,
+    }),
+    dict({
+      'loss': 0.84935,
+      'prediction': 0.64825,
+      'step': 302,
+    }),
+    dict({
+      'loss': 0.84885,
+      'prediction': 0.6482,
+      'step': 303,
+    }),
+    dict({
+      'loss': 0.84835,
+      'prediction': 0.64814,
+      'step': 304,
+    }),
+    dict({
+      'loss': 0.84785,
+      'prediction': 0.64809,
+      'step': 305,
+    }),
+    dict({
+      'loss': 0.84735,
+      'prediction': 0.64804,
+      'step': 306,
+    }),
+    dict({
+      'loss': 0.84685,
+      'prediction': 0.64798,
+      'step': 307,
+    }),
+    dict({
+      'loss': 0.84635,
+      'prediction': 0.64793,
+      'step': 308,
+    }),
+    dict({
+      'loss': 0.84585,
+      'prediction': 0.64787,
+      'step': 309,
+    }),
+    dict({
+      'loss': 0.84535,
+      'prediction': 0.64782,
+      'step': 310,
+    }),
+    dict({
+      'loss': 0.84484,
+      'prediction': 0.64776,
+      'step': 311,
+    }),
+    dict({
+      'loss': 0.84434,
+      'prediction': 0.64771,
+      'step': 312,
+    }),
+    dict({
+      'loss': 0.84384,
+      'prediction': 0.64765,
+      'step': 313,
+    }),
+    dict({
+      'loss': 0.84334,
+      'prediction': 0.64759,
+      'step': 314,
+    }),
+    dict({
+      'loss': 0.84284,
+      'prediction': 0.64753,
+      'step': 315,
+    }),
+    dict({
+      'loss': 0.84234,
+      'prediction': 0.64748,
+      'step': 316,
+    }),
+    dict({
+      'loss': 0.84184,
+      'prediction': 0.64742,
+      'step': 317,
+    }),
+    dict({
+      'loss': 0.84134,
+      'prediction': 0.64736,
+      'step': 318,
+    }),
+    dict({
+      'loss': 0.84084,
+      'prediction': 0.6473,
+      'step': 319,
+    }),
+    dict({
+      'loss': 0.84034,
+      'prediction': 0.64724,
+      'step': 320,
+    }),
+    dict({
+      'loss': 0.83984,
+      'prediction': 0.64718,
+      'step': 321,
+    }),
+    dict({
+      'loss': 0.83934,
+      'prediction': 0.64711,
+      'step': 322,
+    }),
+    dict({
+      'loss': 0.83884,
+      'prediction': 0.64705,
+      'step': 323,
+    }),
+    dict({
+      'loss': 0.83834,
+      'prediction': 0.64699,
+      'step': 324,
+    }),
+    dict({
+      'loss': 0.83784,
+      'prediction': 0.64693,
+      'step': 325,
+    }),
+    dict({
+      'loss': 0.83734,
+      'prediction': 0.64686,
+      'step': 326,
+    }),
+    dict({
+      'loss': 0.83684,
+      'prediction': 0.6468,
+      'step': 327,
+    }),
+    dict({
+      'loss': 0.83634,
+      'prediction': 0.64674,
+      'step': 328,
+    }),
+    dict({
+      'loss': 0.83584,
+      'prediction': 0.64667,
+      'step': 329,
+    }),
+    dict({
+      'loss': 0.83534,
+      'prediction': 0.64661,
+      'step': 330,
+    }),
+    dict({
+      'loss': 0.83483,
+      'prediction': 0.64654,
+      'step': 331,
+    }),
+    dict({
+      'loss': 0.83433,
+      'prediction': 0.64647,
+      'step': 332,
+    }),
+    dict({
+      'loss': 0.83383,
+      'prediction': 0.64641,
+      'step': 333,
+    }),
+    dict({
+      'loss': 0.83333,
+      'prediction': 0.64634,
+      'step': 334,
+    }),
+    dict({
+      'loss': 0.83283,
+      'prediction': 0.64627,
+      'step': 335,
+    }),
+    dict({
+      'loss': 0.83233,
+      'prediction': 0.6462,
+      'step': 336,
+    }),
+    dict({
+      'loss': 0.83183,
+      'prediction': 0.64613,
+      'step': 337,
+    }),
+    dict({
+      'loss': 0.83133,
+      'prediction': 0.64606,
+      'step': 338,
+    }),
+    dict({
+      'loss': 0.83083,
+      'prediction': 0.64599,
+      'step': 339,
+    }),
+    dict({
+      'loss': 0.83033,
+      'prediction': 0.64592,
+      'step': 340,
+    }),
+    dict({
+      'loss': 0.82983,
+      'prediction': 0.64585,
+      'step': 341,
+    }),
+    dict({
+      'loss': 0.82933,
+      'prediction': 0.64578,
+      'step': 342,
+    }),
+    dict({
+      'loss': 0.82883,
+      'prediction': 0.64571,
+      'step': 343,
+    }),
+    dict({
+      'loss': 0.82833,
+      'prediction': 0.64564,
+      'step': 344,
+    }),
+    dict({
+      'loss': 0.82783,
+      'prediction': 0.64556,
+      'step': 345,
+    }),
+    dict({
+      'loss': 0.82733,
+      'prediction': 0.64549,
+      'step': 346,
+    }),
+    dict({
+      'loss': 0.82683,
+      'prediction': 0.64542,
+      'step': 347,
+    }),
+    dict({
+      'loss': 0.82633,
+      'prediction': 0.64534,
+      'step': 348,
+    }),
+    dict({
+      'loss': 0.82583,
+      'prediction': 0.64527,
+      'step': 349,
+    }),
+    dict({
+      'loss': 0.82533,
+      'prediction': 0.64519,
+      'step': 350,
+    }),
+    dict({
+      'loss': 0.82482,
+      'prediction': 0.64512,
+      'step': 351,
+    }),
+    dict({
+      'loss': 0.82432,
+      'prediction': 0.64504,
+      'step': 352,
+    }),
+    dict({
+      'loss': 0.82382,
+      'prediction': 0.64496,
+      'step': 353,
+    }),
+    dict({
+      'loss': 0.82332,
+      'prediction': 0.64489,
+      'step': 354,
+    }),
+    dict({
+      'loss': 0.82282,
+      'prediction': 0.64481,
+      'step': 355,
+    }),
+    dict({
+      'loss': 0.82232,
+      'prediction': 0.64473,
+      'step': 356,
+    }),
+    dict({
+      'loss': 0.82182,
+      'prediction': 0.64465,
+      'step': 357,
+    }),
+    dict({
+      'loss': 0.82132,
+      'prediction': 0.64457,
+      'step': 358,
+    }),
+    dict({
+      'loss': 0.82082,
+      'prediction': 0.64449,
+      'step': 359,
+    }),
+    dict({
+      'loss': 0.82032,
+      'prediction': 0.64441,
+      'step': 360,
+    }),
+    dict({
+      'loss': 0.81982,
+      'prediction': 0.64433,
+      'step': 361,
+    }),
+    dict({
+      'loss': 0.81932,
+      'prediction': 0.64425,
+      'step': 362,
+    }),
+    dict({
+      'loss': 0.81882,
+      'prediction': 0.64417,
+      'step': 363,
+    }),
+    dict({
+      'loss': 0.81832,
+      'prediction': 0.64408,
+      'step': 364,
+    }),
+    dict({
+      'loss': 0.81782,
+      'prediction': 0.644,
+      'step': 365,
+    }),
+    dict({
+      'loss': 0.81732,
+      'prediction': 0.64392,
+      'step': 366,
+    }),
+    dict({
+      'loss': 0.81682,
+      'prediction': 0.64383,
+      'step': 367,
+    }),
+    dict({
+      'loss': 0.81632,
+      'prediction': 0.64375,
+      'step': 368,
+    }),
+    dict({
+      'loss': 0.81582,
+      'prediction': 0.64367,
+      'step': 369,
+    }),
+    dict({
+      'loss': 0.81532,
+      'prediction': 0.64358,
+      'step': 370,
+    }),
+    dict({
+      'loss': 0.81481,
+      'prediction': 0.64349,
+      'step': 371,
+    }),
+    dict({
+      'loss': 0.81431,
+      'prediction': 0.64341,
+      'step': 372,
+    }),
+    dict({
+      'loss': 0.81381,
+      'prediction': 0.64332,
+      'step': 373,
+    }),
+    dict({
+      'loss': 0.81331,
+      'prediction': 0.64323,
+      'step': 374,
+    }),
+    dict({
+      'loss': 0.81281,
+      'prediction': 0.64314,
+      'step': 375,
+    }),
+    dict({
+      'loss': 0.81231,
+      'prediction': 0.64306,
+      'step': 376,
+    }),
+    dict({
+      'loss': 0.81181,
+      'prediction': 0.64297,
+      'step': 377,
+    }),
+    dict({
+      'loss': 0.81131,
+      'prediction': 0.64288,
+      'step': 378,
+    }),
+    dict({
+      'loss': 0.81081,
+      'prediction': 0.64279,
+      'step': 379,
+    }),
+    dict({
+      'loss': 0.81031,
+      'prediction': 0.6427,
+      'step': 380,
+    }),
+    dict({
+      'loss': 0.80981,
+      'prediction': 0.64261,
+      'step': 381,
+    }),
+    dict({
+      'loss': 0.80931,
+      'prediction': 0.64252,
+      'step': 382,
+    }),
+    dict({
+      'loss': 0.80881,
+      'prediction': 0.64242,
+      'step': 383,
+    }),
+    dict({
+      'loss': 0.80831,
+      'prediction': 0.64233,
+      'step': 384,
+    }),
+    dict({
+      'loss': 0.80781,
+      'prediction': 0.64224,
+      'step': 385,
+    }),
+    dict({
+      'loss': 0.80731,
+      'prediction': 0.64214,
+      'step': 386,
+    }),
+    dict({
+      'loss': 0.80681,
+      'prediction': 0.64205,
+      'step': 387,
+    }),
+    dict({
+      'loss': 0.80631,
+      'prediction': 0.64196,
+      'step': 388,
+    }),
+    dict({
+      'loss': 0.80581,
+      'prediction': 0.64186,
+      'step': 389,
+    }),
+    dict({
+      'loss': 0.80531,
+      'prediction': 0.64177,
+      'step': 390,
+    }),
+    dict({
+      'loss': 0.8048,
+      'prediction': 0.64167,
+      'step': 391,
+    }),
+    dict({
+      'loss': 0.8043,
+      'prediction': 0.64157,
+      'step': 392,
+    }),
+    dict({
+      'loss': 0.8038,
+      'prediction': 0.64148,
+      'step': 393,
+    }),
+    dict({
+      'loss': 0.8033,
+      'prediction': 0.64138,
+      'step': 394,
+    }),
+    dict({
+      'loss': 0.8028,
+      'prediction': 0.64128,
+      'step': 395,
+    }),
+    dict({
+      'loss': 0.8023,
+      'prediction': 0.64118,
+      'step': 396,
+    }),
+    dict({
+      'loss': 0.8018,
+      'prediction': 0.64108,
+      'step': 397,
+    }),
+    dict({
+      'loss': 0.8013,
+      'prediction': 0.64098,
+      'step': 398,
+    }),
+    dict({
+      'loss': 0.8008,
+      'prediction': 0.64088,
+      'step': 399,
+    }),
+    dict({
+      'loss': 0.8003,
+      'prediction': 0.64078,
+      'step': 400,
+    }),
+    dict({
+      'loss': 0.7998,
+      'prediction': 0.64068,
+      'step': 401,
+    }),
+    dict({
+      'loss': 0.7993,
+      'prediction': 0.64058,
+      'step': 402,
+    }),
+    dict({
+      'loss': 0.7988,
+      'prediction': 0.64048,
+      'step': 403,
+    }),
+    dict({
+      'loss': 0.7983,
+      'prediction': 0.64038,
+      'step': 404,
+    }),
+    dict({
+      'loss': 0.7978,
+      'prediction': 0.64027,
+      'step': 405,
+    }),
+    dict({
+      'loss': 0.7973,
+      'prediction': 0.64017,
+      'step': 406,
+    }),
+    dict({
+      'loss': 0.7968,
+      'prediction': 0.64007,
+      'step': 407,
+    }),
+    dict({
+      'loss': 0.7963,
+      'prediction': 0.63996,
+      'step': 408,
+    }),
+    dict({
+      'loss': 0.7958,
+      'prediction': 0.63986,
+      'step': 409,
+    }),
+    dict({
+      'loss': 0.7953,
+      'prediction': 0.63975,
+      'step': 410,
+    }),
+    dict({
+      'loss': 0.79479,
+      'prediction': 0.63965,
+      'step': 411,
+    }),
+    dict({
+      'loss': 0.79429,
+      'prediction': 0.63954,
+      'step': 412,
+    }),
+    dict({
+      'loss': 0.79379,
+      'prediction': 0.63943,
+      'step': 413,
+    }),
+    dict({
+      'loss': 0.79329,
+      'prediction': 0.63932,
+      'step': 414,
+    }),
+    dict({
+      'loss': 0.79279,
+      'prediction': 0.63922,
+      'step': 415,
+    }),
+    dict({
+      'loss': 0.79229,
+      'prediction': 0.63911,
+      'step': 416,
+    }),
+    dict({
+      'loss': 0.79179,
+      'prediction': 0.639,
+      'step': 417,
+    }),
+    dict({
+      'loss': 0.79129,
+      'prediction': 0.63889,
+      'step': 418,
+    }),
+    dict({
+      'loss': 0.79079,
+      'prediction': 0.63878,
+      'step': 419,
+    }),
+    dict({
+      'loss': 0.79029,
+      'prediction': 0.63867,
+      'step': 420,
+    }),
+    dict({
+      'loss': 0.78979,
+      'prediction': 0.63856,
+      'step': 421,
+    }),
+    dict({
+      'loss': 0.78929,
+      'prediction': 0.63845,
+      'step': 422,
+    }),
+    dict({
+      'loss': 0.78879,
+      'prediction': 0.63834,
+      'step': 423,
+    }),
+    dict({
+      'loss': 0.78829,
+      'prediction': 0.63822,
+      'step': 424,
+    }),
+    dict({
+      'loss': 0.78779,
+      'prediction': 0.63811,
+      'step': 425,
+    }),
+    dict({
+      'loss': 0.78729,
+      'prediction': 0.638,
+      'step': 426,
+    }),
+    dict({
+      'loss': 0.78679,
+      'prediction': 0.63788,
+      'step': 427,
+    }),
+    dict({
+      'loss': 0.78629,
+      'prediction': 0.63777,
+      'step': 428,
+    }),
+    dict({
+      'loss': 0.78579,
+      'prediction': 0.63765,
+      'step': 429,
+    }),
+    dict({
+      'loss': 0.78529,
+      'prediction': 0.63754,
+      'step': 430,
+    }),
+    dict({
+      'loss': 0.78478,
+      'prediction': 0.63742,
+      'step': 431,
+    }),
+    dict({
+      'loss': 0.78428,
+      'prediction': 0.6373,
+      'step': 432,
+    }),
+    dict({
+      'loss': 0.78378,
+      'prediction': 0.63719,
+      'step': 433,
+    }),
+    dict({
+      'loss': 0.78328,
+      'prediction': 0.63707,
+      'step': 434,
+    }),
+    dict({
+      'loss': 0.78278,
+      'prediction': 0.63695,
+      'step': 435,
+    }),
+    dict({
+      'loss': 0.78228,
+      'prediction': 0.63683,
+      'step': 436,
+    }),
+    dict({
+      'loss': 0.78178,
+      'prediction': 0.63671,
+      'step': 437,
+    }),
+    dict({
+      'loss': 0.78128,
+      'prediction': 0.6366,
+      'step': 438,
+    }),
+    dict({
+      'loss': 0.78078,
+      'prediction': 0.63648,
+      'step': 439,
+    }),
+    dict({
+      'loss': 0.78028,
+      'prediction': 0.63635,
+      'step': 440,
+    }),
+    dict({
+      'loss': 0.77978,
+      'prediction': 0.63623,
+      'step': 441,
+    }),
+    dict({
+      'loss': 0.77928,
+      'prediction': 0.63611,
+      'step': 442,
+    }),
+    dict({
+      'loss': 0.77878,
+      'prediction': 0.63599,
+      'step': 443,
+    }),
+    dict({
+      'loss': 0.77828,
+      'prediction': 0.63587,
+      'step': 444,
+    }),
+    dict({
+      'loss': 0.77778,
+      'prediction': 0.63574,
+      'step': 445,
+    }),
+    dict({
+      'loss': 0.77728,
+      'prediction': 0.63562,
+      'step': 446,
+    }),
+    dict({
+      'loss': 0.77678,
+      'prediction': 0.6355,
+      'step': 447,
+    }),
+    dict({
+      'loss': 0.77628,
+      'prediction': 0.63537,
+      'step': 448,
+    }),
+    dict({
+      'loss': 0.77578,
+      'prediction': 0.63525,
+      'step': 449,
+    }),
+    dict({
+      'loss': 0.77528,
+      'prediction': 0.63512,
+      'step': 450,
+    }),
+    dict({
+      'loss': 0.77477,
+      'prediction': 0.635,
+      'step': 451,
+    }),
+    dict({
+      'loss': 0.77427,
+      'prediction': 0.63487,
+      'step': 452,
+    }),
+    dict({
+      'loss': 0.77377,
+      'prediction': 0.63474,
+      'step': 453,
+    }),
+    dict({
+      'loss': 0.77327,
+      'prediction': 0.63462,
+      'step': 454,
+    }),
+    dict({
+      'loss': 0.77277,
+      'prediction': 0.63449,
+      'step': 455,
+    }),
+    dict({
+      'loss': 0.77227,
+      'prediction': 0.63436,
+      'step': 456,
+    }),
+    dict({
+      'loss': 0.77177,
+      'prediction': 0.63423,
+      'step': 457,
+    }),
+    dict({
+      'loss': 0.77127,
+      'prediction': 0.6341,
+      'step': 458,
+    }),
+    dict({
+      'loss': 0.77077,
+      'prediction': 0.63397,
+      'step': 459,
+    }),
+    dict({
+      'loss': 0.77027,
+      'prediction': 0.63384,
+      'step': 460,
+    }),
+    dict({
+      'loss': 0.76977,
+      'prediction': 0.63371,
+      'step': 461,
+    }),
+    dict({
+      'loss': 0.76927,
+      'prediction': 0.63358,
+      'step': 462,
+    }),
+    dict({
+      'loss': 0.76877,
+      'prediction': 0.63345,
+      'step': 463,
+    }),
+    dict({
+      'loss': 0.76827,
+      'prediction': 0.63331,
+      'step': 464,
+    }),
+    dict({
+      'loss': 0.76777,
+      'prediction': 0.63318,
+      'step': 465,
+    }),
+    dict({
+      'loss': 0.76727,
+      'prediction': 0.63305,
+      'step': 466,
+    }),
+    dict({
+      'loss': 0.76677,
+      'prediction': 0.63291,
+      'step': 467,
+    }),
+    dict({
+      'loss': 0.76627,
+      'prediction': 0.63278,
+      'step': 468,
+    }),
+    dict({
+      'loss': 0.76577,
+      'prediction': 0.63264,
+      'step': 469,
+    }),
+    dict({
+      'loss': 0.76527,
+      'prediction': 0.63251,
+      'step': 470,
+    }),
+    dict({
+      'loss': 0.76476,
+      'prediction': 0.63237,
+      'step': 471,
+    }),
+    dict({
+      'loss': 0.76426,
+      'prediction': 0.63223,
+      'step': 472,
+    }),
+    dict({
+      'loss': 0.76376,
+      'prediction': 0.6321,
+      'step': 473,
+    }),
+    dict({
+      'loss': 0.76326,
+      'prediction': 0.63196,
+      'step': 474,
+    }),
+    dict({
+      'loss': 0.76276,
+      'prediction': 0.63182,
+      'step': 475,
+    }),
+    dict({
+      'loss': 0.76226,
+      'prediction': 0.63168,
+      'step': 476,
+    }),
+    dict({
+      'loss': 0.76176,
+      'prediction': 0.63154,
+      'step': 477,
+    }),
+    dict({
+      'loss': 0.76126,
+      'prediction': 0.6314,
+      'step': 478,
+    }),
+    dict({
+      'loss': 0.76076,
+      'prediction': 0.63126,
+      'step': 479,
+    }),
+    dict({
+      'loss': 0.76026,
+      'prediction': 0.63112,
+      'step': 480,
+    }),
+    dict({
+      'loss': 0.75976,
+      'prediction': 0.63098,
+      'step': 481,
+    }),
+    dict({
+      'loss': 0.75926,
+      'prediction': 0.63084,
+      'step': 482,
+    }),
+    dict({
+      'loss': 0.75876,
+      'prediction': 0.6307,
+      'step': 483,
+    }),
+    dict({
+      'loss': 0.75826,
+      'prediction': 0.63056,
+      'step': 484,
+    }),
+    dict({
+      'loss': 0.75776,
+      'prediction': 0.63041,
+      'step': 485,
+    }),
+    dict({
+      'loss': 0.75726,
+      'prediction': 0.63027,
+      'step': 486,
+    }),
+    dict({
+      'loss': 0.75676,
+      'prediction': 0.63013,
+      'step': 487,
+    }),
+    dict({
+      'loss': 0.75626,
+      'prediction': 0.62998,
+      'step': 488,
+    }),
+    dict({
+      'loss': 0.75576,
+      'prediction': 0.62984,
+      'step': 489,
+    }),
+    dict({
+      'loss': 0.75526,
+      'prediction': 0.62969,
+      'step': 490,
+    }),
+    dict({
+      'loss': 0.75475,
+      'prediction': 0.62955,
+      'step': 491,
+    }),
+    dict({
+      'loss': 0.75425,
+      'prediction': 0.6294,
+      'step': 492,
+    }),
+    dict({
+      'loss': 0.75375,
+      'prediction': 0.62925,
+      'step': 493,
+    }),
+    dict({
+      'loss': 0.75325,
+      'prediction': 0.6291,
+      'step': 494,
+    }),
+    dict({
+      'loss': 0.75275,
+      'prediction': 0.62896,
+      'step': 495,
+    }),
+    dict({
+      'loss': 0.75225,
+      'prediction': 0.62881,
+      'step': 496,
+    }),
+    dict({
+      'loss': 0.75175,
+      'prediction': 0.62866,
+      'step': 497,
+    }),
+    dict({
+      'loss': 0.75125,
+      'prediction': 0.62851,
+      'step': 498,
+    }),
+    dict({
+      'loss': 0.75075,
+      'prediction': 0.62836,
+      'step': 499,
+    }),
+    dict({
+      'loss': 0.75025,
+      'prediction': 0.62821,
+      'step': 500,
+    }),
+    dict({
+      'loss': 0.74975,
+      'prediction': 0.62806,
+      'step': 501,
+    }),
+    dict({
+      'loss': 0.74925,
+      'prediction': 0.62791,
+      'step': 502,
+    }),
+    dict({
+      'loss': 0.74875,
+      'prediction': 0.62775,
+      'step': 503,
+    }),
+    dict({
+      'loss': 0.74825,
+      'prediction': 0.6276,
+      'step': 504,
+    }),
+    dict({
+      'loss': 0.74775,
+      'prediction': 0.62745,
+      'step': 505,
+    }),
+    dict({
+      'loss': 0.74725,
+      'prediction': 0.62729,
+      'step': 506,
+    }),
+    dict({
+      'loss': 0.74675,
+      'prediction': 0.62714,
+      'step': 507,
+    }),
+    dict({
+      'loss': 0.74625,
+      'prediction': 0.62699,
+      'step': 508,
+    }),
+    dict({
+      'loss': 0.74575,
+      'prediction': 0.62683,
+      'step': 509,
+    }),
+    dict({
+      'loss': 0.74525,
+      'prediction': 0.62668,
+      'step': 510,
+    }),
+    dict({
+      'loss': 0.74474,
+      'prediction': 0.62652,
+      'step': 511,
+    }),
+    dict({
+      'loss': 0.74424,
+      'prediction': 0.62636,
+      'step': 512,
+    }),
+    dict({
+      'loss': 0.74374,
+      'prediction': 0.62621,
+      'step': 513,
+    }),
+    dict({
+      'loss': 0.74324,
+      'prediction': 0.62605,
+      'step': 514,
+    }),
+    dict({
+      'loss': 0.74274,
+      'prediction': 0.62589,
+      'step': 515,
+    }),
+    dict({
+      'loss': 0.74224,
+      'prediction': 0.62573,
+      'step': 516,
+    }),
+    dict({
+      'loss': 0.74174,
+      'prediction': 0.62557,
+      'step': 517,
+    }),
+    dict({
+      'loss': 0.74124,
+      'prediction': 0.62541,
+      'step': 518,
+    }),
+    dict({
+      'loss': 0.74074,
+      'prediction': 0.62525,
+      'step': 519,
+    }),
+    dict({
+      'loss': 0.74024,
+      'prediction': 0.62509,
+      'step': 520,
+    }),
+    dict({
+      'loss': 0.73974,
+      'prediction': 0.62493,
+      'step': 521,
+    }),
+    dict({
+      'loss': 0.73924,
+      'prediction': 0.62477,
+      'step': 522,
+    }),
+    dict({
+      'loss': 0.73874,
+      'prediction': 0.62461,
+      'step': 523,
+    }),
+    dict({
+      'loss': 0.73824,
+      'prediction': 0.62444,
+      'step': 524,
+    }),
+    dict({
+      'loss': 0.73774,
+      'prediction': 0.62428,
+      'step': 525,
+    }),
+    dict({
+      'loss': 0.73724,
+      'prediction': 0.62412,
+      'step': 526,
+    }),
+    dict({
+      'loss': 0.73674,
+      'prediction': 0.62395,
+      'step': 527,
+    }),
+    dict({
+      'loss': 0.73624,
+      'prediction': 0.62379,
+      'step': 528,
+    }),
+    dict({
+      'loss': 0.73574,
+      'prediction': 0.62362,
+      'step': 529,
+    }),
+    dict({
+      'loss': 0.73524,
+      'prediction': 0.62346,
+      'step': 530,
+    }),
+    dict({
+      'loss': 0.73473,
+      'prediction': 0.62329,
+      'step': 531,
+    }),
+    dict({
+      'loss': 0.73423,
+      'prediction': 0.62313,
+      'step': 532,
+    }),
+    dict({
+      'loss': 0.73373,
+      'prediction': 0.62296,
+      'step': 533,
+    }),
+    dict({
+      'loss': 0.73323,
+      'prediction': 0.62279,
+      'step': 534,
+    }),
+    dict({
+      'loss': 0.73273,
+      'prediction': 0.62262,
+      'step': 535,
+    }),
+    dict({
+      'loss': 0.73223,
+      'prediction': 0.62245,
+      'step': 536,
+    }),
+    dict({
+      'loss': 0.73173,
+      'prediction': 0.62229,
+      'step': 537,
+    }),
+    dict({
+      'loss': 0.73123,
+      'prediction': 0.62212,
+      'step': 538,
+    }),
+    dict({
+      'loss': 0.73073,
+      'prediction': 0.62195,
+      'step': 539,
+    }),
+    dict({
+      'loss': 0.73023,
+      'prediction': 0.62178,
+      'step': 540,
+    }),
+    dict({
+      'loss': 0.72973,
+      'prediction': 0.6216,
+      'step': 541,
+    }),
+    dict({
+      'loss': 0.72923,
+      'prediction': 0.62143,
+      'step': 542,
+    }),
+    dict({
+      'loss': 0.72873,
+      'prediction': 0.62126,
+      'step': 543,
+    }),
+    dict({
+      'loss': 0.72823,
+      'prediction': 0.62109,
+      'step': 544,
+    }),
+    dict({
+      'loss': 0.72773,
+      'prediction': 0.62091,
+      'step': 545,
+    }),
+    dict({
+      'loss': 0.72723,
+      'prediction': 0.62074,
+      'step': 546,
+    }),
+    dict({
+      'loss': 0.72673,
+      'prediction': 0.62057,
+      'step': 547,
+    }),
+    dict({
+      'loss': 0.72623,
+      'prediction': 0.62039,
+      'step': 548,
+    }),
+    dict({
+      'loss': 0.72573,
+      'prediction': 0.62022,
+      'step': 549,
+    }),
+    dict({
+      'loss': 0.72523,
+      'prediction': 0.62004,
+      'step': 550,
+    }),
+    dict({
+      'loss': 0.72472,
+      'prediction': 0.61987,
+      'step': 551,
+    }),
+    dict({
+      'loss': 0.72422,
+      'prediction': 0.61969,
+      'step': 552,
+    }),
+    dict({
+      'loss': 0.72372,
+      'prediction': 0.61951,
+      'step': 553,
+    }),
+    dict({
+      'loss': 0.72322,
+      'prediction': 0.61933,
+      'step': 554,
+    }),
+    dict({
+      'loss': 0.72272,
+      'prediction': 0.61916,
+      'step': 555,
+    }),
+    dict({
+      'loss': 0.72222,
+      'prediction': 0.61898,
+      'step': 556,
+    }),
+    dict({
+      'loss': 0.72172,
+      'prediction': 0.6188,
+      'step': 557,
+    }),
+    dict({
+      'loss': 0.72122,
+      'prediction': 0.61862,
+      'step': 558,
+    }),
+    dict({
+      'loss': 0.72072,
+      'prediction': 0.61844,
+      'step': 559,
+    }),
+    dict({
+      'loss': 0.72022,
+      'prediction': 0.61826,
+      'step': 560,
+    }),
+    dict({
+      'loss': 0.71972,
+      'prediction': 0.61808,
+      'step': 561,
+    }),
+    dict({
+      'loss': 0.71922,
+      'prediction': 0.6179,
+      'step': 562,
+    }),
+    dict({
+      'loss': 0.71872,
+      'prediction': 0.61771,
+      'step': 563,
+    }),
+    dict({
+      'loss': 0.71822,
+      'prediction': 0.61753,
+      'step': 564,
+    }),
+    dict({
+      'loss': 0.71772,
+      'prediction': 0.61735,
+      'step': 565,
+    }),
+    dict({
+      'loss': 0.71722,
+      'prediction': 0.61716,
+      'step': 566,
+    }),
+    dict({
+      'loss': 0.71672,
+      'prediction': 0.61698,
+      'step': 567,
+    }),
+    dict({
+      'loss': 0.71622,
+      'prediction': 0.6168,
+      'step': 568,
+    }),
+    dict({
+      'loss': 0.71572,
+      'prediction': 0.61661,
+      'step': 569,
+    }),
+    dict({
+      'loss': 0.71522,
+      'prediction': 0.61642,
+      'step': 570,
+    }),
+    dict({
+      'loss': 0.71471,
+      'prediction': 0.61624,
+      'step': 571,
+    }),
+    dict({
+      'loss': 0.71421,
+      'prediction': 0.61605,
+      'step': 572,
+    }),
+    dict({
+      'loss': 0.71371,
+      'prediction': 0.61586,
+      'step': 573,
+    }),
+    dict({
+      'loss': 0.71321,
+      'prediction': 0.61568,
+      'step': 574,
+    }),
+    dict({
+      'loss': 0.71271,
+      'prediction': 0.61549,
+      'step': 575,
+    }),
+    dict({
+      'loss': 0.71221,
+      'prediction': 0.6153,
+      'step': 576,
+    }),
+    dict({
+      'loss': 0.71171,
+      'prediction': 0.61511,
+      'step': 577,
+    }),
+    dict({
+      'loss': 0.71121,
+      'prediction': 0.61492,
+      'step': 578,
+    }),
+    dict({
+      'loss': 0.71071,
+      'prediction': 0.61473,
+      'step': 579,
+    }),
+    dict({
+      'loss': 0.71021,
+      'prediction': 0.61454,
+      'step': 580,
+    }),
+    dict({
+      'loss': 0.70971,
+      'prediction': 0.61435,
+      'step': 581,
+    }),
+    dict({
+      'loss': 0.70921,
+      'prediction': 0.61416,
+      'step': 582,
+    }),
+    dict({
+      'loss': 0.70871,
+      'prediction': 0.61397,
+      'step': 583,
+    }),
+    dict({
+      'loss': 0.70821,
+      'prediction': 0.61377,
+      'step': 584,
+    }),
+    dict({
+      'loss': 0.70771,
+      'prediction': 0.61358,
+      'step': 585,
+    }),
+    dict({
+      'loss': 0.70721,
+      'prediction': 0.61339,
+      'step': 586,
+    }),
+    dict({
+      'loss': 0.70671,
+      'prediction': 0.61319,
+      'step': 587,
+    }),
+    dict({
+      'loss': 0.70621,
+      'prediction': 0.613,
+      'step': 588,
+    }),
+    dict({
+      'loss': 0.70571,
+      'prediction': 0.6128,
+      'step': 589,
+    }),
+    dict({
+      'loss': 0.70521,
+      'prediction': 0.61261,
+      'step': 590,
+    }),
+    dict({
+      'loss': 0.7047,
+      'prediction': 0.61241,
+      'step': 591,
+    }),
+    dict({
+      'loss': 0.7042,
+      'prediction': 0.61221,
+      'step': 592,
+    }),
+    dict({
+      'loss': 0.7037,
+      'prediction': 0.61202,
+      'step': 593,
+    }),
+    dict({
+      'loss': 0.7032,
+      'prediction': 0.61182,
+      'step': 594,
+    }),
+    dict({
+      'loss': 0.7027,
+      'prediction': 0.61162,
+      'step': 595,
+    }),
+    dict({
+      'loss': 0.7022,
+      'prediction': 0.61142,
+      'step': 596,
+    }),
+    dict({
+      'loss': 0.7017,
+      'prediction': 0.61122,
+      'step': 597,
+    }),
+    dict({
+      'loss': 0.7012,
+      'prediction': 0.61102,
+      'step': 598,
+    }),
+    dict({
+      'loss': 0.7007,
+      'prediction': 0.61082,
+      'step': 599,
+    }),
+    dict({
+      'loss': 0.7002,
+      'prediction': 0.61062,
+      'step': 600,
+    }),
+    dict({
+      'loss': 0.6997,
+      'prediction': 0.61042,
+      'step': 601,
+    }),
+    dict({
+      'loss': 0.6992,
+      'prediction': 0.61022,
+      'step': 602,
+    }),
+    dict({
+      'loss': 0.6987,
+      'prediction': 0.61002,
+      'step': 603,
+    }),
+    dict({
+      'loss': 0.6982,
+      'prediction': 0.60982,
+      'step': 604,
+    }),
+    dict({
+      'loss': 0.6977,
+      'prediction': 0.60961,
+      'step': 605,
+    }),
+    dict({
+      'loss': 0.6972,
+      'prediction': 0.60941,
+      'step': 606,
+    }),
+    dict({
+      'loss': 0.6967,
+      'prediction': 0.6092,
+      'step': 607,
+    }),
+    dict({
+      'loss': 0.6962,
+      'prediction': 0.609,
+      'step': 608,
+    }),
+    dict({
+      'loss': 0.6957,
+      'prediction': 0.60879,
+      'step': 609,
+    }),
+    dict({
+      'loss': 0.6952,
+      'prediction': 0.60859,
+      'step': 610,
+    }),
+    dict({
+      'loss': 0.69469,
+      'prediction': 0.60838,
+      'step': 611,
+    }),
+    dict({
+      'loss': 0.69419,
+      'prediction': 0.60818,
+      'step': 612,
+    }),
+    dict({
+      'loss': 0.69369,
+      'prediction': 0.60797,
+      'step': 613,
+    }),
+    dict({
+      'loss': 0.69319,
+      'prediction': 0.60776,
+      'step': 614,
+    }),
+    dict({
+      'loss': 0.69269,
+      'prediction': 0.60755,
+      'step': 615,
+    }),
+    dict({
+      'loss': 0.69219,
+      'prediction': 0.60734,
+      'step': 616,
+    }),
+    dict({
+      'loss': 0.69169,
+      'prediction': 0.60714,
+      'step': 617,
+    }),
+    dict({
+      'loss': 0.69119,
+      'prediction': 0.60693,
+      'step': 618,
+    }),
+    dict({
+      'loss': 0.69069,
+      'prediction': 0.60672,
+      'step': 619,
+    }),
+    dict({
+      'loss': 0.69019,
+      'prediction': 0.6065,
+      'step': 620,
+    }),
+    dict({
+      'loss': 0.68969,
+      'prediction': 0.60629,
+      'step': 621,
+    }),
+    dict({
+      'loss': 0.68919,
+      'prediction': 0.60608,
+      'step': 622,
+    }),
+    dict({
+      'loss': 0.68869,
+      'prediction': 0.60587,
+      'step': 623,
+    }),
+    dict({
+      'loss': 0.68819,
+      'prediction': 0.60566,
+      'step': 624,
+    }),
+    dict({
+      'loss': 0.68769,
+      'prediction': 0.60544,
+      'step': 625,
+    }),
+    dict({
+      'loss': 0.68719,
+      'prediction': 0.60523,
+      'step': 626,
+    }),
+    dict({
+      'loss': 0.68669,
+      'prediction': 0.60502,
+      'step': 627,
+    }),
+    dict({
+      'loss': 0.68619,
+      'prediction': 0.6048,
+      'step': 628,
+    }),
+    dict({
+      'loss': 0.68569,
+      'prediction': 0.60459,
+      'step': 629,
+    }),
+    dict({
+      'loss': 0.68519,
+      'prediction': 0.60437,
+      'step': 630,
+    }),
+    dict({
+      'loss': 0.68468,
+      'prediction': 0.60415,
+      'step': 631,
+    }),
+    dict({
+      'loss': 0.68418,
+      'prediction': 0.60394,
+      'step': 632,
+    }),
+    dict({
+      'loss': 0.68368,
+      'prediction': 0.60372,
+      'step': 633,
+    }),
+    dict({
+      'loss': 0.68318,
+      'prediction': 0.6035,
+      'step': 634,
+    }),
+    dict({
+      'loss': 0.68268,
+      'prediction': 0.60328,
+      'step': 635,
+    }),
+    dict({
+      'loss': 0.68218,
+      'prediction': 0.60307,
+      'step': 636,
+    }),
+    dict({
+      'loss': 0.68168,
+      'prediction': 0.60285,
+      'step': 637,
+    }),
+    dict({
+      'loss': 0.68118,
+      'prediction': 0.60263,
+      'step': 638,
+    }),
+    dict({
+      'loss': 0.68068,
+      'prediction': 0.60241,
+      'step': 639,
+    }),
+    dict({
+      'loss': 0.68018,
+      'prediction': 0.60219,
+      'step': 640,
+    }),
+    dict({
+      'loss': 0.67968,
+      'prediction': 0.60196,
+      'step': 641,
+    }),
+    dict({
+      'loss': 0.67918,
+      'prediction': 0.60174,
+      'step': 642,
+    }),
+    dict({
+      'loss': 0.67868,
+      'prediction': 0.60152,
+      'step': 643,
+    }),
+    dict({
+      'loss': 0.67818,
+      'prediction': 0.6013,
+      'step': 644,
+    }),
+    dict({
+      'loss': 0.67768,
+      'prediction': 0.60108,
+      'step': 645,
+    }),
+    dict({
+      'loss': 0.67718,
+      'prediction': 0.60085,
+      'step': 646,
+    }),
+    dict({
+      'loss': 0.67668,
+      'prediction': 0.60063,
+      'step': 647,
+    }),
+    dict({
+      'loss': 0.67618,
+      'prediction': 0.6004,
+      'step': 648,
+    }),
+    dict({
+      'loss': 0.67568,
+      'prediction': 0.60018,
+      'step': 649,
+    }),
+    dict({
+      'loss': 0.67518,
+      'prediction': 0.59995,
+      'step': 650,
+    }),
+    dict({
+      'loss': 0.67467,
+      'prediction': 0.59973,
+      'step': 651,
+    }),
+    dict({
+      'loss': 0.67417,
+      'prediction': 0.5995,
+      'step': 652,
+    }),
+    dict({
+      'loss': 0.67367,
+      'prediction': 0.59927,
+      'step': 653,
+    }),
+    dict({
+      'loss': 0.67317,
+      'prediction': 0.59904,
+      'step': 654,
+    }),
+    dict({
+      'loss': 0.67267,
+      'prediction': 0.59882,
+      'step': 655,
+    }),
+    dict({
+      'loss': 0.67217,
+      'prediction': 0.59859,
+      'step': 656,
+    }),
+    dict({
+      'loss': 0.67167,
+      'prediction': 0.59836,
+      'step': 657,
+    }),
+    dict({
+      'loss': 0.67117,
+      'prediction': 0.59813,
+      'step': 658,
+    }),
+    dict({
+      'loss': 0.67067,
+      'prediction': 0.5979,
+      'step': 659,
+    }),
+    dict({
+      'loss': 0.67017,
+      'prediction': 0.59767,
+      'step': 660,
+    }),
+    dict({
+      'loss': 0.66967,
+      'prediction': 0.59744,
+      'step': 661,
+    }),
+    dict({
+      'loss': 0.66917,
+      'prediction': 0.5972,
+      'step': 662,
+    }),
+    dict({
+      'loss': 0.66867,
+      'prediction': 0.59697,
+      'step': 663,
+    }),
+    dict({
+      'loss': 0.66817,
+      'prediction': 0.59674,
+      'step': 664,
+    }),
+    dict({
+      'loss': 0.66767,
+      'prediction': 0.59651,
+      'step': 665,
+    }),
+    dict({
+      'loss': 0.66717,
+      'prediction': 0.59627,
+      'step': 666,
+    }),
+    dict({
+      'loss': 0.66667,
+      'prediction': 0.59604,
+      'step': 667,
+    }),
+    dict({
+      'loss': 0.66617,
+      'prediction': 0.5958,
+      'step': 668,
+    }),
+    dict({
+      'loss': 0.66567,
+      'prediction': 0.59557,
+      'step': 669,
+    }),
+    dict({
+      'loss': 0.66517,
+      'prediction': 0.59533,
+      'step': 670,
+    }),
+    dict({
+      'loss': 0.66466,
+      'prediction': 0.5951,
+      'step': 671,
+    }),
+    dict({
+      'loss': 0.66416,
+      'prediction': 0.59486,
+      'step': 672,
+    }),
+    dict({
+      'loss': 0.66366,
+      'prediction': 0.59462,
+      'step': 673,
+    }),
+    dict({
+      'loss': 0.66316,
+      'prediction': 0.59438,
+      'step': 674,
+    }),
+    dict({
+      'loss': 0.66266,
+      'prediction': 0.59415,
+      'step': 675,
+    }),
+    dict({
+      'loss': 0.66216,
+      'prediction': 0.59391,
+      'step': 676,
+    }),
+    dict({
+      'loss': 0.66166,
+      'prediction': 0.59367,
+      'step': 677,
+    }),
+    dict({
+      'loss': 0.66116,
+      'prediction': 0.59343,
+      'step': 678,
+    }),
+    dict({
+      'loss': 0.66066,
+      'prediction': 0.59319,
+      'step': 679,
+    }),
+    dict({
+      'loss': 0.66016,
+      'prediction': 0.59295,
+      'step': 680,
+    }),
+    dict({
+      'loss': 0.65966,
+      'prediction': 0.59271,
+      'step': 681,
+    }),
+    dict({
+      'loss': 0.65916,
+      'prediction': 0.59246,
+      'step': 682,
+    }),
+    dict({
+      'loss': 0.65866,
+      'prediction': 0.59222,
+      'step': 683,
+    }),
+    dict({
+      'loss': 0.65816,
+      'prediction': 0.59198,
+      'step': 684,
+    }),
+    dict({
+      'loss': 0.65766,
+      'prediction': 0.59174,
+      'step': 685,
+    }),
+    dict({
+      'loss': 0.65716,
+      'prediction': 0.59149,
+      'step': 686,
+    }),
+    dict({
+      'loss': 0.65666,
+      'prediction': 0.59125,
+      'step': 687,
+    }),
+    dict({
+      'loss': 0.65616,
+      'prediction': 0.591,
+      'step': 688,
+    }),
+    dict({
+      'loss': 0.65566,
+      'prediction': 0.59076,
+      'step': 689,
+    }),
+    dict({
+      'loss': 0.65516,
+      'prediction': 0.59051,
+      'step': 690,
+    }),
+    dict({
+      'loss': 0.65465,
+      'prediction': 0.59027,
+      'step': 691,
+    }),
+    dict({
+      'loss': 0.65415,
+      'prediction': 0.59002,
+      'step': 692,
+    }),
+    dict({
+      'loss': 0.65365,
+      'prediction': 0.58977,
+      'step': 693,
+    }),
+    dict({
+      'loss': 0.65315,
+      'prediction': 0.58952,
+      'step': 694,
+    }),
+    dict({
+      'loss': 0.65265,
+      'prediction': 0.58928,
+      'step': 695,
+    }),
+    dict({
+      'loss': 0.65215,
+      'prediction': 0.58903,
+      'step': 696,
+    }),
+    dict({
+      'loss': 0.65165,
+      'prediction': 0.58878,
+      'step': 697,
+    }),
+    dict({
+      'loss': 0.65115,
+      'prediction': 0.58853,
+      'step': 698,
+    }),
+    dict({
+      'loss': 0.65065,
+      'prediction': 0.58828,
+      'step': 699,
+    }),
+    dict({
+      'loss': 0.65015,
+      'prediction': 0.58803,
+      'step': 700,
+    }),
+    dict({
+      'loss': 0.64965,
+      'prediction': 0.58778,
+      'step': 701,
+    }),
+    dict({
+      'loss': 0.64915,
+      'prediction': 0.58752,
+      'step': 702,
+    }),
+    dict({
+      'loss': 0.64865,
+      'prediction': 0.58727,
+      'step': 703,
+    }),
+    dict({
+      'loss': 0.64815,
+      'prediction': 0.58702,
+      'step': 704,
+    }),
+    dict({
+      'loss': 0.64765,
+      'prediction': 0.58677,
+      'step': 705,
+    }),
+    dict({
+      'loss': 0.64715,
+      'prediction': 0.58651,
+      'step': 706,
+    }),
+    dict({
+      'loss': 0.64665,
+      'prediction': 0.58626,
+      'step': 707,
+    }),
+    dict({
+      'loss': 0.64615,
+      'prediction': 0.586,
+      'step': 708,
+    }),
+    dict({
+      'loss': 0.64565,
+      'prediction': 0.58575,
+      'step': 709,
+    }),
+    dict({
+      'loss': 0.64515,
+      'prediction': 0.58549,
+      'step': 710,
+    }),
+    dict({
+      'loss': 0.64464,
+      'prediction': 0.58524,
+      'step': 711,
+    }),
+    dict({
+      'loss': 0.64414,
+      'prediction': 0.58498,
+      'step': 712,
+    }),
+    dict({
+      'loss': 0.64364,
+      'prediction': 0.58472,
+      'step': 713,
+    }),
+    dict({
+      'loss': 0.64314,
+      'prediction': 0.58446,
+      'step': 714,
+    }),
+    dict({
+      'loss': 0.64264,
+      'prediction': 0.58421,
+      'step': 715,
+    }),
+    dict({
+      'loss': 0.64214,
+      'prediction': 0.58395,
+      'step': 716,
+    }),
+    dict({
+      'loss': 0.64164,
+      'prediction': 0.58369,
+      'step': 717,
+    }),
+    dict({
+      'loss': 0.64114,
+      'prediction': 0.58343,
+      'step': 718,
+    }),
+    dict({
+      'loss': 0.64064,
+      'prediction': 0.58317,
+      'step': 719,
+    }),
+    dict({
+      'loss': 0.64014,
+      'prediction': 0.58291,
+      'step': 720,
+    }),
+    dict({
+      'loss': 0.63964,
+      'prediction': 0.58265,
+      'step': 721,
+    }),
+    dict({
+      'loss': 0.63914,
+      'prediction': 0.58238,
+      'step': 722,
+    }),
+    dict({
+      'loss': 0.63864,
+      'prediction': 0.58212,
+      'step': 723,
+    }),
+    dict({
+      'loss': 0.63814,
+      'prediction': 0.58186,
+      'step': 724,
+    }),
+    dict({
+      'loss': 0.63764,
+      'prediction': 0.5816,
+      'step': 725,
+    }),
+    dict({
+      'loss': 0.63714,
+      'prediction': 0.58133,
+      'step': 726,
+    }),
+    dict({
+      'loss': 0.63664,
+      'prediction': 0.58107,
+      'step': 727,
+    }),
+    dict({
+      'loss': 0.63614,
+      'prediction': 0.5808,
+      'step': 728,
+    }),
+    dict({
+      'loss': 0.63564,
+      'prediction': 0.58054,
+      'step': 729,
+    }),
+    dict({
+      'loss': 0.63514,
+      'prediction': 0.58027,
+      'step': 730,
+    }),
+    dict({
+      'loss': 0.63463,
+      'prediction': 0.58001,
+      'step': 731,
+    }),
+    dict({
+      'loss': 0.63413,
+      'prediction': 0.57974,
+      'step': 732,
+    }),
+    dict({
+      'loss': 0.63363,
+      'prediction': 0.57947,
+      'step': 733,
+    }),
+    dict({
+      'loss': 0.63313,
+      'prediction': 0.5792,
+      'step': 734,
+    }),
+    dict({
+      'loss': 0.63263,
+      'prediction': 0.57894,
+      'step': 735,
+    }),
+    dict({
+      'loss': 0.63213,
+      'prediction': 0.57867,
+      'step': 736,
+    }),
+    dict({
+      'loss': 0.63163,
+      'prediction': 0.5784,
+      'step': 737,
+    }),
+    dict({
+      'loss': 0.63113,
+      'prediction': 0.57813,
+      'step': 738,
+    }),
+    dict({
+      'loss': 0.63063,
+      'prediction': 0.57786,
+      'step': 739,
+    }),
+    dict({
+      'loss': 0.63013,
+      'prediction': 0.57759,
+      'step': 740,
+    }),
+    dict({
+      'loss': 0.62963,
+      'prediction': 0.57732,
+      'step': 741,
+    }),
+    dict({
+      'loss': 0.62913,
+      'prediction': 0.57704,
+      'step': 742,
+    }),
+    dict({
+      'loss': 0.62863,
+      'prediction': 0.57677,
+      'step': 743,
+    }),
+    dict({
+      'loss': 0.62813,
+      'prediction': 0.5765,
+      'step': 744,
+    }),
+    dict({
+      'loss': 0.62763,
+      'prediction': 0.57623,
+      'step': 745,
+    }),
+    dict({
+      'loss': 0.62713,
+      'prediction': 0.57595,
+      'step': 746,
+    }),
+    dict({
+      'loss': 0.62663,
+      'prediction': 0.57568,
+      'step': 747,
+    }),
+    dict({
+      'loss': 0.62613,
+      'prediction': 0.5754,
+      'step': 748,
+    }),
+    dict({
+      'loss': 0.62563,
+      'prediction': 0.57513,
+      'step': 749,
+    }),
+    dict({
+      'loss': 0.62513,
+      'prediction': 0.57485,
+      'step': 750,
+    }),
+    dict({
+      'loss': 0.62462,
+      'prediction': 0.57457,
+      'step': 751,
+    }),
+    dict({
+      'loss': 0.62412,
+      'prediction': 0.5743,
+      'step': 752,
+    }),
+    dict({
+      'loss': 0.62362,
+      'prediction': 0.57402,
+      'step': 753,
+    }),
+    dict({
+      'loss': 0.62312,
+      'prediction': 0.57374,
+      'step': 754,
+    }),
+    dict({
+      'loss': 0.62262,
+      'prediction': 0.57346,
+      'step': 755,
+    }),
+    dict({
+      'loss': 0.62212,
+      'prediction': 0.57319,
+      'step': 756,
+    }),
+    dict({
+      'loss': 0.62162,
+      'prediction': 0.57291,
+      'step': 757,
+    }),
+    dict({
+      'loss': 0.62112,
+      'prediction': 0.57263,
+      'step': 758,
+    }),
+    dict({
+      'loss': 0.62062,
+      'prediction': 0.57235,
+      'step': 759,
+    }),
+    dict({
+      'loss': 0.62012,
+      'prediction': 0.57207,
+      'step': 760,
+    }),
+    dict({
+      'loss': 0.61962,
+      'prediction': 0.57178,
+      'step': 761,
+    }),
+    dict({
+      'loss': 0.61912,
+      'prediction': 0.5715,
+      'step': 762,
+    }),
+    dict({
+      'loss': 0.61862,
+      'prediction': 0.57122,
+      'step': 763,
+    }),
+    dict({
+      'loss': 0.61812,
+      'prediction': 0.57094,
+      'step': 764,
+    }),
+    dict({
+      'loss': 0.61762,
+      'prediction': 0.57065,
+      'step': 765,
+    }),
+    dict({
+      'loss': 0.61712,
+      'prediction': 0.57037,
+      'step': 766,
+    }),
+    dict({
+      'loss': 0.61662,
+      'prediction': 0.57009,
+      'step': 767,
+    }),
+    dict({
+      'loss': 0.61612,
+      'prediction': 0.5698,
+      'step': 768,
+    }),
+    dict({
+      'loss': 0.61562,
+      'prediction': 0.56952,
+      'step': 769,
+    }),
+    dict({
+      'loss': 0.61512,
+      'prediction': 0.56923,
+      'step': 770,
+    }),
+    dict({
+      'loss': 0.61461,
+      'prediction': 0.56894,
+      'step': 771,
+    }),
+    dict({
+      'loss': 0.61411,
+      'prediction': 0.56866,
+      'step': 772,
+    }),
+    dict({
+      'loss': 0.61361,
+      'prediction': 0.56837,
+      'step': 773,
+    }),
+    dict({
+      'loss': 0.61311,
+      'prediction': 0.56808,
+      'step': 774,
+    }),
+    dict({
+      'loss': 0.61261,
+      'prediction': 0.56779,
+      'step': 775,
+    }),
+    dict({
+      'loss': 0.61211,
+      'prediction': 0.5675,
+      'step': 776,
+    }),
+    dict({
+      'loss': 0.61161,
+      'prediction': 0.56721,
+      'step': 777,
+    }),
+    dict({
+      'loss': 0.61111,
+      'prediction': 0.56693,
+      'step': 778,
+    }),
+    dict({
+      'loss': 0.61061,
+      'prediction': 0.56663,
+      'step': 779,
+    }),
+    dict({
+      'loss': 0.61011,
+      'prediction': 0.56634,
+      'step': 780,
+    }),
+    dict({
+      'loss': 0.60961,
+      'prediction': 0.56605,
+      'step': 781,
+    }),
+    dict({
+      'loss': 0.60911,
+      'prediction': 0.56576,
+      'step': 782,
+    }),
+    dict({
+      'loss': 0.60861,
+      'prediction': 0.56547,
+      'step': 783,
+    }),
+    dict({
+      'loss': 0.60811,
+      'prediction': 0.56518,
+      'step': 784,
+    }),
+    dict({
+      'loss': 0.60761,
+      'prediction': 0.56488,
+      'step': 785,
+    }),
+    dict({
+      'loss': 0.60711,
+      'prediction': 0.56459,
+      'step': 786,
+    }),
+    dict({
+      'loss': 0.60661,
+      'prediction': 0.56429,
+      'step': 787,
+    }),
+    dict({
+      'loss': 0.60611,
+      'prediction': 0.564,
+      'step': 788,
+    }),
+    dict({
+      'loss': 0.60561,
+      'prediction': 0.5637,
+      'step': 789,
+    }),
+    dict({
+      'loss': 0.60511,
+      'prediction': 0.56341,
+      'step': 790,
+    }),
+    dict({
+      'loss': 0.6046,
+      'prediction': 0.56311,
+      'step': 791,
+    }),
+    dict({
+      'loss': 0.6041,
+      'prediction': 0.56281,
+      'step': 792,
+    }),
+    dict({
+      'loss': 0.6036,
+      'prediction': 0.56252,
+      'step': 793,
+    }),
+    dict({
+      'loss': 0.6031,
+      'prediction': 0.56222,
+      'step': 794,
+    }),
+    dict({
+      'loss': 0.6026,
+      'prediction': 0.56192,
+      'step': 795,
+    }),
+    dict({
+      'loss': 0.6021,
+      'prediction': 0.56162,
+      'step': 796,
+    }),
+    dict({
+      'loss': 0.6016,
+      'prediction': 0.56132,
+      'step': 797,
+    }),
+    dict({
+      'loss': 0.6011,
+      'prediction': 0.56102,
+      'step': 798,
+    }),
+    dict({
+      'loss': 0.6006,
+      'prediction': 0.56072,
+      'step': 799,
+    }),
+    dict({
+      'loss': 0.6001,
+      'prediction': 0.56042,
+      'step': 800,
+    }),
+    dict({
+      'loss': 0.5996,
+      'prediction': 0.56012,
+      'step': 801,
+    }),
+    dict({
+      'loss': 0.5991,
+      'prediction': 0.55982,
+      'step': 802,
+    }),
+    dict({
+      'loss': 0.5986,
+      'prediction': 0.55952,
+      'step': 803,
+    }),
+    dict({
+      'loss': 0.5981,
+      'prediction': 0.55921,
+      'step': 804,
+    }),
+    dict({
+      'loss': 0.5976,
+      'prediction': 0.55891,
+      'step': 805,
+    }),
+    dict({
+      'loss': 0.5971,
+      'prediction': 0.55861,
+      'step': 806,
+    }),
+    dict({
+      'loss': 0.5966,
+      'prediction': 0.5583,
+      'step': 807,
+    }),
+    dict({
+      'loss': 0.5961,
+      'prediction': 0.558,
+      'step': 808,
+    }),
+    dict({
+      'loss': 0.5956,
+      'prediction': 0.55769,
+      'step': 809,
+    }),
+    dict({
+      'loss': 0.5951,
+      'prediction': 0.55739,
+      'step': 810,
+    }),
+    dict({
+      'loss': 0.59459,
+      'prediction': 0.55708,
+      'step': 811,
+    }),
+    dict({
+      'loss': 0.59409,
+      'prediction': 0.55677,
+      'step': 812,
+    }),
+    dict({
+      'loss': 0.59359,
+      'prediction': 0.55647,
+      'step': 813,
+    }),
+    dict({
+      'loss': 0.59309,
+      'prediction': 0.55616,
+      'step': 814,
+    }),
+    dict({
+      'loss': 0.59259,
+      'prediction': 0.55585,
+      'step': 815,
+    }),
+    dict({
+      'loss': 0.59209,
+      'prediction': 0.55554,
+      'step': 816,
+    }),
+    dict({
+      'loss': 0.59159,
+      'prediction': 0.55523,
+      'step': 817,
+    }),
+    dict({
+      'loss': 0.59109,
+      'prediction': 0.55492,
+      'step': 818,
+    }),
+    dict({
+      'loss': 0.59059,
+      'prediction': 0.55461,
+      'step': 819,
+    }),
+    dict({
+      'loss': 0.59009,
+      'prediction': 0.5543,
+      'step': 820,
+    }),
+    dict({
+      'loss': 0.58959,
+      'prediction': 0.55399,
+      'step': 821,
+    }),
+    dict({
+      'loss': 0.58909,
+      'prediction': 0.55368,
+      'step': 822,
+    }),
+    dict({
+      'loss': 0.58859,
+      'prediction': 0.55336,
+      'step': 823,
+    }),
+    dict({
+      'loss': 0.58809,
+      'prediction': 0.55305,
+      'step': 824,
+    }),
+    dict({
+      'loss': 0.58759,
+      'prediction': 0.55274,
+      'step': 825,
+    }),
+    dict({
+      'loss': 0.58709,
+      'prediction': 0.55242,
+      'step': 826,
+    }),
+    dict({
+      'loss': 0.58659,
+      'prediction': 0.55211,
+      'step': 827,
+    }),
+    dict({
+      'loss': 0.58609,
+      'prediction': 0.55179,
+      'step': 828,
+    }),
+    dict({
+      'loss': 0.58559,
+      'prediction': 0.55148,
+      'step': 829,
+    }),
+    dict({
+      'loss': 0.58509,
+      'prediction': 0.55116,
+      'step': 830,
+    }),
+    dict({
+      'loss': 0.58458,
+      'prediction': 0.55085,
+      'step': 831,
+    }),
+    dict({
+      'loss': 0.58408,
+      'prediction': 0.55053,
+      'step': 832,
+    }),
+    dict({
+      'loss': 0.58358,
+      'prediction': 0.55021,
+      'step': 833,
+    }),
+    dict({
+      'loss': 0.58308,
+      'prediction': 0.54989,
+      'step': 834,
+    }),
+    dict({
+      'loss': 0.58258,
+      'prediction': 0.54958,
+      'step': 835,
+    }),
+    dict({
+      'loss': 0.58208,
+      'prediction': 0.54926,
+      'step': 836,
+    }),
+    dict({
+      'loss': 0.58158,
+      'prediction': 0.54894,
+      'step': 837,
+    }),
+    dict({
+      'loss': 0.58108,
+      'prediction': 0.54862,
+      'step': 838,
+    }),
+    dict({
+      'loss': 0.58058,
+      'prediction': 0.5483,
+      'step': 839,
+    }),
+    dict({
+      'loss': 0.58008,
+      'prediction': 0.54798,
+      'step': 840,
+    }),
+    dict({
+      'loss': 0.57958,
+      'prediction': 0.54766,
+      'step': 841,
+    }),
+    dict({
+      'loss': 0.57908,
+      'prediction': 0.54733,
+      'step': 842,
+    }),
+    dict({
+      'loss': 0.57858,
+      'prediction': 0.54701,
+      'step': 843,
+    }),
+    dict({
+      'loss': 0.57808,
+      'prediction': 0.54669,
+      'step': 844,
+    }),
+    dict({
+      'loss': 0.57758,
+      'prediction': 0.54637,
+      'step': 845,
+    }),
+    dict({
+      'loss': 0.57708,
+      'prediction': 0.54604,
+      'step': 846,
+    }),
+    dict({
+      'loss': 0.57658,
+      'prediction': 0.54572,
+      'step': 847,
+    }),
+    dict({
+      'loss': 0.57608,
+      'prediction': 0.54539,
+      'step': 848,
+    }),
+    dict({
+      'loss': 0.57558,
+      'prediction': 0.54507,
+      'step': 849,
+    }),
+    dict({
+      'loss': 0.57508,
+      'prediction': 0.54474,
+      'step': 850,
+    }),
+    dict({
+      'loss': 0.57457,
+      'prediction': 0.54441,
+      'step': 851,
+    }),
+    dict({
+      'loss': 0.57407,
+      'prediction': 0.54409,
+      'step': 852,
+    }),
+    dict({
+      'loss': 0.57357,
+      'prediction': 0.54376,
+      'step': 853,
+    }),
+    dict({
+      'loss': 0.57307,
+      'prediction': 0.54343,
+      'step': 854,
+    }),
+    dict({
+      'loss': 0.57257,
+      'prediction': 0.5431,
+      'step': 855,
+    }),
+    dict({
+      'loss': 0.57207,
+      'prediction': 0.54277,
+      'step': 856,
+    }),
+    dict({
+      'loss': 0.57157,
+      'prediction': 0.54245,
+      'step': 857,
+    }),
+    dict({
+      'loss': 0.57107,
+      'prediction': 0.54212,
+      'step': 858,
+    }),
+    dict({
+      'loss': 0.57057,
+      'prediction': 0.54178,
+      'step': 859,
+    }),
+    dict({
+      'loss': 0.57007,
+      'prediction': 0.54145,
+      'step': 860,
+    }),
+    dict({
+      'loss': 0.56957,
+      'prediction': 0.54112,
+      'step': 861,
+    }),
+    dict({
+      'loss': 0.56907,
+      'prediction': 0.54079,
+      'step': 862,
+    }),
+    dict({
+      'loss': 0.56857,
+      'prediction': 0.54046,
+      'step': 863,
+    }),
+    dict({
+      'loss': 0.56807,
+      'prediction': 0.54013,
+      'step': 864,
+    }),
+    dict({
+      'loss': 0.56757,
+      'prediction': 0.53979,
+      'step': 865,
+    }),
+    dict({
+      'loss': 0.56707,
+      'prediction': 0.53946,
+      'step': 866,
+    }),
+    dict({
+      'loss': 0.56657,
+      'prediction': 0.53912,
+      'step': 867,
+    }),
+    dict({
+      'loss': 0.56607,
+      'prediction': 0.53879,
+      'step': 868,
+    }),
+    dict({
+      'loss': 0.56557,
+      'prediction': 0.53845,
+      'step': 869,
+    }),
+    dict({
+      'loss': 0.56507,
+      'prediction': 0.53812,
+      'step': 870,
+    }),
+    dict({
+      'loss': 0.56456,
+      'prediction': 0.53778,
+      'step': 871,
+    }),
+    dict({
+      'loss': 0.56406,
+      'prediction': 0.53744,
+      'step': 872,
+    }),
+    dict({
+      'loss': 0.56356,
+      'prediction': 0.53711,
+      'step': 873,
+    }),
+    dict({
+      'loss': 0.56306,
+      'prediction': 0.53677,
+      'step': 874,
+    }),
+    dict({
+      'loss': 0.56256,
+      'prediction': 0.53643,
+      'step': 875,
+    }),
+    dict({
+      'loss': 0.56206,
+      'prediction': 0.53609,
+      'step': 876,
+    }),
+    dict({
+      'loss': 0.56156,
+      'prediction': 0.53575,
+      'step': 877,
+    }),
+    dict({
+      'loss': 0.56106,
+      'prediction': 0.53541,
+      'step': 878,
+    }),
+    dict({
+      'loss': 0.56056,
+      'prediction': 0.53507,
+      'step': 879,
+    }),
+    dict({
+      'loss': 0.56006,
+      'prediction': 0.53473,
+      'step': 880,
+    }),
+    dict({
+      'loss': 0.55956,
+      'prediction': 0.53439,
+      'step': 881,
+    }),
+    dict({
+      'loss': 0.55906,
+      'prediction': 0.53405,
+      'step': 882,
+    }),
+    dict({
+      'loss': 0.55856,
+      'prediction': 0.5337,
+      'step': 883,
+    }),
+    dict({
+      'loss': 0.55806,
+      'prediction': 0.53336,
+      'step': 884,
+    }),
+    dict({
+      'loss': 0.55756,
+      'prediction': 0.53302,
+      'step': 885,
+    }),
+    dict({
+      'loss': 0.55706,
+      'prediction': 0.53267,
+      'step': 886,
+    }),
+    dict({
+      'loss': 0.55656,
+      'prediction': 0.53233,
+      'step': 887,
+    }),
+    dict({
+      'loss': 0.55606,
+      'prediction': 0.53198,
+      'step': 888,
+    }),
+    dict({
+      'loss': 0.55556,
+      'prediction': 0.53164,
+      'step': 889,
+    }),
+    dict({
+      'loss': 0.55506,
+      'prediction': 0.53129,
+      'step': 890,
+    }),
+    dict({
+      'loss': 0.55455,
+      'prediction': 0.53095,
+      'step': 891,
+    }),
+    dict({
+      'loss': 0.55405,
+      'prediction': 0.5306,
+      'step': 892,
+    }),
+    dict({
+      'loss': 0.55355,
+      'prediction': 0.53025,
+      'step': 893,
+    }),
+    dict({
+      'loss': 0.55305,
+      'prediction': 0.5299,
+      'step': 894,
+    }),
+    dict({
+      'loss': 0.55255,
+      'prediction': 0.52956,
+      'step': 895,
+    }),
+    dict({
+      'loss': 0.55205,
+      'prediction': 0.52921,
+      'step': 896,
+    }),
+    dict({
+      'loss': 0.55155,
+      'prediction': 0.52886,
+      'step': 897,
+    }),
+    dict({
+      'loss': 0.55105,
+      'prediction': 0.52851,
+      'step': 898,
+    }),
+    dict({
+      'loss': 0.55055,
+      'prediction': 0.52816,
+      'step': 899,
+    }),
+    dict({
+      'loss': 0.55005,
+      'prediction': 0.52781,
+      'step': 900,
+    }),
+    dict({
+      'loss': 0.54955,
+      'prediction': 0.52746,
+      'step': 901,
+    }),
+    dict({
+      'loss': 0.54905,
+      'prediction': 0.5271,
+      'step': 902,
+    }),
+    dict({
+      'loss': 0.54855,
+      'prediction': 0.52675,
+      'step': 903,
+    }),
+    dict({
+      'loss': 0.54805,
+      'prediction': 0.5264,
+      'step': 904,
+    }),
+    dict({
+      'loss': 0.54755,
+      'prediction': 0.52604,
+      'step': 905,
+    }),
+    dict({
+      'loss': 0.54705,
+      'prediction': 0.52569,
+      'step': 906,
+    }),
+    dict({
+      'loss': 0.54655,
+      'prediction': 0.52534,
+      'step': 907,
+    }),
+    dict({
+      'loss': 0.54605,
+      'prediction': 0.52498,
+      'step': 908,
+    }),
+    dict({
+      'loss': 0.54555,
+      'prediction': 0.52463,
+      'step': 909,
+    }),
+    dict({
+      'loss': 0.54505,
+      'prediction': 0.52427,
+      'step': 910,
+    }),
+    dict({
+      'loss': 0.54454,
+      'prediction': 0.52391,
+      'step': 911,
+    }),
+    dict({
+      'loss': 0.54404,
+      'prediction': 0.52356,
+      'step': 912,
+    }),
+    dict({
+      'loss': 0.54354,
+      'prediction': 0.5232,
+      'step': 913,
+    }),
+    dict({
+      'loss': 0.54304,
+      'prediction': 0.52284,
+      'step': 914,
+    }),
+    dict({
+      'loss': 0.54254,
+      'prediction': 0.52248,
+      'step': 915,
+    }),
+    dict({
+      'loss': 0.54204,
+      'prediction': 0.52212,
+      'step': 916,
+    }),
+    dict({
+      'loss': 0.54154,
+      'prediction': 0.52176,
+      'step': 917,
+    }),
+    dict({
+      'loss': 0.54104,
+      'prediction': 0.5214,
+      'step': 918,
+    }),
+    dict({
+      'loss': 0.54054,
+      'prediction': 0.52104,
+      'step': 919,
+    }),
+    dict({
+      'loss': 0.54004,
+      'prediction': 0.52068,
+      'step': 920,
+    }),
+    dict({
+      'loss': 0.53954,
+      'prediction': 0.52032,
+      'step': 921,
+    }),
+    dict({
+      'loss': 0.53904,
+      'prediction': 0.51996,
+      'step': 922,
+    }),
+    dict({
+      'loss': 0.53854,
+      'prediction': 0.5196,
+      'step': 923,
+    }),
+    dict({
+      'loss': 0.53804,
+      'prediction': 0.51923,
+      'step': 924,
+    }),
+    dict({
+      'loss': 0.53754,
+      'prediction': 0.51887,
+      'step': 925,
+    }),
+    dict({
+      'loss': 0.53704,
+      'prediction': 0.51851,
+      'step': 926,
+    }),
+    dict({
+      'loss': 0.53654,
+      'prediction': 0.51814,
+      'step': 927,
+    }),
+    dict({
+      'loss': 0.53604,
+      'prediction': 0.51778,
+      'step': 928,
+    }),
+    dict({
+      'loss': 0.53554,
+      'prediction': 0.51741,
+      'step': 929,
+    }),
+    dict({
+      'loss': 0.53504,
+      'prediction': 0.51704,
+      'step': 930,
+    }),
+    dict({
+      'loss': 0.53453,
+      'prediction': 0.51668,
+      'step': 931,
+    }),
+    dict({
+      'loss': 0.53403,
+      'prediction': 0.51631,
+      'step': 932,
+    }),
+    dict({
+      'loss': 0.53353,
+      'prediction': 0.51594,
+      'step': 933,
+    }),
+    dict({
+      'loss': 0.53303,
+      'prediction': 0.51558,
+      'step': 934,
+    }),
+    dict({
+      'loss': 0.53253,
+      'prediction': 0.51521,
+      'step': 935,
+    }),
+    dict({
+      'loss': 0.53203,
+      'prediction': 0.51484,
+      'step': 936,
+    }),
+    dict({
+      'loss': 0.53153,
+      'prediction': 0.51447,
+      'step': 937,
+    }),
+    dict({
+      'loss': 0.53103,
+      'prediction': 0.5141,
+      'step': 938,
+    }),
+    dict({
+      'loss': 0.53053,
+      'prediction': 0.51373,
+      'step': 939,
+    }),
+    dict({
+      'loss': 0.53003,
+      'prediction': 0.51336,
+      'step': 940,
+    }),
+    dict({
+      'loss': 0.52953,
+      'prediction': 0.51299,
+      'step': 941,
+    }),
+    dict({
+      'loss': 0.52903,
+      'prediction': 0.51261,
+      'step': 942,
+    }),
+    dict({
+      'loss': 0.52853,
+      'prediction': 0.51224,
+      'step': 943,
+    }),
+    dict({
+      'loss': 0.52803,
+      'prediction': 0.51187,
+      'step': 944,
+    }),
+    dict({
+      'loss': 0.52753,
+      'prediction': 0.5115,
+      'step': 945,
+    }),
+    dict({
+      'loss': 0.52703,
+      'prediction': 0.51112,
+      'step': 946,
+    }),
+    dict({
+      'loss': 0.52653,
+      'prediction': 0.51075,
+      'step': 947,
+    }),
+    dict({
+      'loss': 0.52603,
+      'prediction': 0.51037,
+      'step': 948,
+    }),
+    dict({
+      'loss': 0.52553,
+      'prediction': 0.51,
+      'step': 949,
+    }),
+    dict({
+      'loss': 0.52503,
+      'prediction': 0.50962,
+      'step': 950,
+    }),
+    dict({
+      'loss': 0.52452,
+      'prediction': 0.50924,
+      'step': 951,
+    }),
+    dict({
+      'loss': 0.52402,
+      'prediction': 0.50887,
+      'step': 952,
+    }),
+    dict({
+      'loss': 0.52352,
+      'prediction': 0.50849,
+      'step': 953,
+    }),
+    dict({
+      'loss': 0.52302,
+      'prediction': 0.50811,
+      'step': 954,
+    }),
+    dict({
+      'loss': 0.52252,
+      'prediction': 0.50773,
+      'step': 955,
+    }),
+    dict({
+      'loss': 0.52202,
+      'prediction': 0.50735,
+      'step': 956,
+    }),
+    dict({
+      'loss': 0.52152,
+      'prediction': 0.50697,
+      'step': 957,
+    }),
+    dict({
+      'loss': 0.52102,
+      'prediction': 0.50659,
+      'step': 958,
+    }),
+    dict({
+      'loss': 0.52052,
+      'prediction': 0.50621,
+      'step': 959,
+    }),
+    dict({
+      'loss': 0.52002,
+      'prediction': 0.50583,
+      'step': 960,
+    }),
+    dict({
+      'loss': 0.51952,
+      'prediction': 0.50545,
+      'step': 961,
+    }),
+    dict({
+      'loss': 0.51902,
+      'prediction': 0.50507,
+      'step': 962,
+    }),
+    dict({
+      'loss': 0.51852,
+      'prediction': 0.50469,
+      'step': 963,
+    }),
+    dict({
+      'loss': 0.51802,
+      'prediction': 0.5043,
+      'step': 964,
+    }),
+    dict({
+      'loss': 0.51752,
+      'prediction': 0.50392,
+      'step': 965,
+    }),
+    dict({
+      'loss': 0.51702,
+      'prediction': 0.50354,
+      'step': 966,
+    }),
+    dict({
+      'loss': 0.51652,
+      'prediction': 0.50315,
+      'step': 967,
+    }),
+    dict({
+      'loss': 0.51602,
+      'prediction': 0.50277,
+      'step': 968,
+    }),
+    dict({
+      'loss': 0.51552,
+      'prediction': 0.50238,
+      'step': 969,
+    }),
+    dict({
+      'loss': 0.51502,
+      'prediction': 0.50199,
+      'step': 970,
+    }),
+    dict({
+      'loss': 0.51451,
+      'prediction': 0.50161,
+      'step': 971,
+    }),
+    dict({
+      'loss': 0.51401,
+      'prediction': 0.50122,
+      'step': 972,
+    }),
+    dict({
+      'loss': 0.51351,
+      'prediction': 0.50083,
+      'step': 973,
+    }),
+    dict({
+      'loss': 0.51301,
+      'prediction': 0.50045,
+      'step': 974,
+    }),
+    dict({
+      'loss': 0.51251,
+      'prediction': 0.50006,
+      'step': 975,
+    }),
+    dict({
+      'loss': 0.51201,
+      'prediction': 0.49967,
+      'step': 976,
+    }),
+    dict({
+      'loss': 0.51151,
+      'prediction': 0.49928,
+      'step': 977,
+    }),
+    dict({
+      'loss': 0.51101,
+      'prediction': 0.49889,
+      'step': 978,
+    }),
+    dict({
+      'loss': 0.51051,
+      'prediction': 0.4985,
+      'step': 979,
+    }),
+    dict({
+      'loss': 0.51001,
+      'prediction': 0.49811,
+      'step': 980,
+    }),
+    dict({
+      'loss': 0.50951,
+      'prediction': 0.49772,
+      'step': 981,
+    }),
+    dict({
+      'loss': 0.50901,
+      'prediction': 0.49732,
+      'step': 982,
+    }),
+    dict({
+      'loss': 0.50851,
+      'prediction': 0.49693,
+      'step': 983,
+    }),
+    dict({
+      'loss': 0.50801,
+      'prediction': 0.49654,
+      'step': 984,
+    }),
+    dict({
+      'loss': 0.50751,
+      'prediction': 0.49614,
+      'step': 985,
+    }),
+    dict({
+      'loss': 0.50701,
+      'prediction': 0.49575,
+      'step': 986,
+    }),
+    dict({
+      'loss': 0.50651,
+      'prediction': 0.49536,
+      'step': 987,
+    }),
+    dict({
+      'loss': 0.50601,
+      'prediction': 0.49496,
+      'step': 988,
+    }),
+    dict({
+      'loss': 0.50551,
+      'prediction': 0.49457,
+      'step': 989,
+    }),
+    dict({
+      'loss': 0.50501,
+      'prediction': 0.49417,
+      'step': 990,
+    }),
+    dict({
+      'loss': 0.5045,
+      'prediction': 0.49377,
+      'step': 991,
+    }),
+    dict({
+      'loss': 0.504,
+      'prediction': 0.49338,
+      'step': 992,
+    }),
+    dict({
+      'loss': 0.5035,
+      'prediction': 0.49298,
+      'step': 993,
+    }),
+    dict({
+      'loss': 0.503,
+      'prediction': 0.49258,
+      'step': 994,
+    }),
+    dict({
+      'loss': 0.5025,
+      'prediction': 0.49218,
+      'step': 995,
+    }),
+    dict({
+      'loss': 0.502,
+      'prediction': 0.49178,
+      'step': 996,
+    }),
+    dict({
+      'loss': 0.5015,
+      'prediction': 0.49138,
+      'step': 997,
+    }),
+    dict({
+      'loss': 0.501,
+      'prediction': 0.49098,
+      'step': 998,
+    }),
+    dict({
+      'loss': 0.5005,
+      'prediction': 0.49058,
+      'step': 999,
+    }),
+    dict({
+      'loss': 0.5,
+      'prediction': 0.49018,
+      'step': 1000,
+    }),
+  ])
+# ---
+# name: test_update_sequence[extrapolator_sequence]
+  list([
+    dict({
+      'loss': 1.0,
+      'prediction': 0.99514,
+      'step': 1,
+    }),
+    dict({
+      'loss': 0.9995,
+      'prediction': 0.64118,
+      'step': 2,
+    }),
+    dict({
+      'loss': 0.999,
+      'prediction': 0.64128,
+      'step': 3,
+    }),
+    dict({
+      'loss': 0.9985,
+      'prediction': 0.64138,
+      'step': 4,
+    }),
+    dict({
+      'loss': 0.998,
+      'prediction': 0.64148,
+      'step': 5,
+    }),
+    dict({
+      'loss': 0.9975,
+      'prediction': 0.64157,
+      'step': 6,
+    }),
+    dict({
+      'loss': 0.997,
+      'prediction': 0.64167,
+      'step': 7,
+    }),
+    dict({
+      'loss': 0.9965,
+      'prediction': 0.64177,
+      'step': 8,
+    }),
+    dict({
+      'loss': 0.996,
+      'prediction': 0.64186,
+      'step': 9,
+    }),
+    dict({
+      'loss': 0.9955,
+      'prediction': 0.64196,
+      'step': 10,
+    }),
+    dict({
+      'loss': 0.99499,
+      'prediction': 0.64205,
+      'step': 11,
+    }),
+    dict({
+      'loss': 0.99449,
+      'prediction': 0.64215,
+      'step': 12,
+    }),
+    dict({
+      'loss': 0.99399,
+      'prediction': 0.64224,
+      'step': 13,
+    }),
+    dict({
+      'loss': 0.99349,
+      'prediction': 0.64233,
+      'step': 14,
+    }),
+    dict({
+      'loss': 0.99299,
+      'prediction': 0.64242,
+      'step': 15,
+    }),
+    dict({
+      'loss': 0.99249,
+      'prediction': 0.64252,
+      'step': 16,
+    }),
+    dict({
+      'loss': 0.99199,
+      'prediction': 0.64261,
+      'step': 17,
+    }),
+    dict({
+      'loss': 0.99149,
+      'prediction': 0.6427,
+      'step': 18,
+    }),
+    dict({
+      'loss': 0.99099,
+      'prediction': 0.64279,
+      'step': 19,
+    }),
+    dict({
+      'loss': 0.99049,
+      'prediction': 0.64288,
+      'step': 20,
+    }),
+    dict({
+      'loss': 0.98999,
+      'prediction': 0.64297,
+      'step': 21,
+    }),
+    dict({
+      'loss': 0.98949,
+      'prediction': 0.64306,
+      'step': 22,
+    }),
+    dict({
+      'loss': 0.98899,
+      'prediction': 0.64315,
+      'step': 23,
+    }),
+    dict({
+      'loss': 0.98849,
+      'prediction': 0.64323,
+      'step': 24,
+    }),
+    dict({
+      'loss': 0.98799,
+      'prediction': 0.64332,
+      'step': 25,
+    }),
+    dict({
+      'loss': 0.98749,
+      'prediction': 0.64341,
+      'step': 26,
+    }),
+    dict({
+      'loss': 0.98699,
+      'prediction': 0.64349,
+      'step': 27,
+    }),
+    dict({
+      'loss': 0.98649,
+      'prediction': 0.64358,
+      'step': 28,
+    }),
+    dict({
+      'loss': 0.98599,
+      'prediction': 0.64367,
+      'step': 29,
+    }),
+    dict({
+      'loss': 0.98549,
+      'prediction': 0.64375,
+      'step': 30,
+    }),
+    dict({
+      'loss': 0.98498,
+      'prediction': 0.64384,
+      'step': 31,
+    }),
+    dict({
+      'loss': 0.98448,
+      'prediction': 0.64392,
+      'step': 32,
+    }),
+    dict({
+      'loss': 0.98398,
+      'prediction': 0.644,
+      'step': 33,
+    }),
+    dict({
+      'loss': 0.98348,
+      'prediction': 0.64409,
+      'step': 34,
+    }),
+    dict({
+      'loss': 0.98298,
+      'prediction': 0.64417,
+      'step': 35,
+    }),
+    dict({
+      'loss': 0.98248,
+      'prediction': 0.64425,
+      'step': 36,
+    }),
+    dict({
+      'loss': 0.98198,
+      'prediction': 0.64433,
+      'step': 37,
+    }),
+    dict({
+      'loss': 0.98148,
+      'prediction': 0.64441,
+      'step': 38,
+    }),
+    dict({
+      'loss': 0.98098,
+      'prediction': 0.64449,
+      'step': 39,
+    }),
+    dict({
+      'loss': 0.98048,
+      'prediction': 0.64457,
+      'step': 40,
+    }),
+    dict({
+      'loss': 0.97998,
+      'prediction': 0.64465,
+      'step': 41,
+    }),
+    dict({
+      'loss': 0.97948,
+      'prediction': 0.64473,
+      'step': 42,
+    }),
+    dict({
+      'loss': 0.97898,
+      'prediction': 0.64481,
+      'step': 43,
+    }),
+    dict({
+      'loss': 0.97848,
+      'prediction': 0.64489,
+      'step': 44,
+    }),
+    dict({
+      'loss': 0.97798,
+      'prediction': 0.64496,
+      'step': 45,
+    }),
+    dict({
+      'loss': 0.97748,
+      'prediction': 0.64504,
+      'step': 46,
+    }),
+    dict({
+      'loss': 0.97698,
+      'prediction': 0.64512,
+      'step': 47,
+    }),
+    dict({
+      'loss': 0.97648,
+      'prediction': 0.64519,
+      'step': 48,
+    }),
+    dict({
+      'loss': 0.97598,
+      'prediction': 0.64527,
+      'step': 49,
+    }),
+    dict({
+      'loss': 0.97548,
+      'prediction': 0.64534,
+      'step': 50,
+    }),
+    dict({
+      'loss': 0.97497,
+      'prediction': 0.64542,
+      'step': 51,
+    }),
+    dict({
+      'loss': 0.97447,
+      'prediction': 0.64549,
+      'step': 52,
+    }),
+    dict({
+      'loss': 0.97397,
+      'prediction': 0.64557,
+      'step': 53,
+    }),
+    dict({
+      'loss': 0.97347,
+      'prediction': 0.64564,
+      'step': 54,
+    }),
+    dict({
+      'loss': 0.97297,
+      'prediction': 0.64571,
+      'step': 55,
+    }),
+    dict({
+      'loss': 0.97247,
+      'prediction': 0.64578,
+      'step': 56,
+    }),
+    dict({
+      'loss': 0.97197,
+      'prediction': 0.64585,
+      'step': 57,
+    }),
+    dict({
+      'loss': 0.97147,
+      'prediction': 0.64593,
+      'step': 58,
+    }),
+    dict({
+      'loss': 0.97097,
+      'prediction': 0.646,
+      'step': 59,
+    }),
+    dict({
+      'loss': 0.97047,
+      'prediction': 0.64607,
+      'step': 60,
+    }),
+    dict({
+      'loss': 0.96997,
+      'prediction': 0.64613,
+      'step': 61,
+    }),
+    dict({
+      'loss': 0.96947,
+      'prediction': 0.6462,
+      'step': 62,
+    }),
+    dict({
+      'loss': 0.96897,
+      'prediction': 0.64627,
+      'step': 63,
+    }),
+    dict({
+      'loss': 0.96847,
+      'prediction': 0.64634,
+      'step': 64,
+    }),
+    dict({
+      'loss': 0.96797,
+      'prediction': 0.64641,
+      'step': 65,
+    }),
+    dict({
+      'loss': 0.96747,
+      'prediction': 0.64647,
+      'step': 66,
+    }),
+    dict({
+      'loss': 0.96697,
+      'prediction': 0.64654,
+      'step': 67,
+    }),
+    dict({
+      'loss': 0.96647,
+      'prediction': 0.64661,
+      'step': 68,
+    }),
+    dict({
+      'loss': 0.96597,
+      'prediction': 0.64667,
+      'step': 69,
+    }),
+    dict({
+      'loss': 0.96547,
+      'prediction': 0.64674,
+      'step': 70,
+    }),
+    dict({
+      'loss': 0.96496,
+      'prediction': 0.6468,
+      'step': 71,
+    }),
+    dict({
+      'loss': 0.96446,
+      'prediction': 0.64687,
+      'step': 72,
+    }),
+    dict({
+      'loss': 0.96396,
+      'prediction': 0.64693,
+      'step': 73,
+    }),
+    dict({
+      'loss': 0.96346,
+      'prediction': 0.64699,
+      'step': 74,
+    }),
+    dict({
+      'loss': 0.96296,
+      'prediction': 0.64705,
+      'step': 75,
+    }),
+    dict({
+      'loss': 0.96246,
+      'prediction': 0.64712,
+      'step': 76,
+    }),
+    dict({
+      'loss': 0.96196,
+      'prediction': 0.64718,
+      'step': 77,
+    }),
+    dict({
+      'loss': 0.96146,
+      'prediction': 0.64724,
+      'step': 78,
+    }),
+    dict({
+      'loss': 0.96096,
+      'prediction': 0.6473,
+      'step': 79,
+    }),
+    dict({
+      'loss': 0.96046,
+      'prediction': 0.64736,
+      'step': 80,
+    }),
+    dict({
+      'loss': 0.95996,
+      'prediction': 0.64742,
+      'step': 81,
+    }),
+    dict({
+      'loss': 0.95946,
+      'prediction': 0.64748,
+      'step': 82,
+    }),
+    dict({
+      'loss': 0.95896,
+      'prediction': 0.64753,
+      'step': 83,
+    }),
+    dict({
+      'loss': 0.95846,
+      'prediction': 0.64759,
+      'step': 84,
+    }),
+    dict({
+      'loss': 0.95796,
+      'prediction': 0.64765,
+      'step': 85,
+    }),
+    dict({
+      'loss': 0.95746,
+      'prediction': 0.64771,
+      'step': 86,
+    }),
+    dict({
+      'loss': 0.95696,
+      'prediction': 0.64776,
+      'step': 87,
+    }),
+    dict({
+      'loss': 0.95646,
+      'prediction': 0.64782,
+      'step': 88,
+    }),
+    dict({
+      'loss': 0.95596,
+      'prediction': 0.64787,
+      'step': 89,
+    }),
+    dict({
+      'loss': 0.95546,
+      'prediction': 0.64793,
+      'step': 90,
+    }),
+    dict({
+      'loss': 0.95495,
+      'prediction': 0.64798,
+      'step': 91,
+    }),
+    dict({
+      'loss': 0.95445,
+      'prediction': 0.64804,
+      'step': 92,
+    }),
+    dict({
+      'loss': 0.95395,
+      'prediction': 0.64809,
+      'step': 93,
+    }),
+    dict({
+      'loss': 0.95345,
+      'prediction': 0.64814,
+      'step': 94,
+    }),
+    dict({
+      'loss': 0.95295,
+      'prediction': 0.6482,
+      'step': 95,
+    }),
+    dict({
+      'loss': 0.95245,
+      'prediction': 0.64825,
+      'step': 96,
+    }),
+    dict({
+      'loss': 0.95195,
+      'prediction': 0.6483,
+      'step': 97,
+    }),
+    dict({
+      'loss': 0.95145,
+      'prediction': 0.64835,
+      'step': 98,
+    }),
+    dict({
+      'loss': 0.95095,
+      'prediction': 0.6484,
+      'step': 99,
+    }),
+    dict({
+      'loss': 0.95045,
+      'prediction': 0.64845,
+      'step': 100,
+    }),
+    dict({
+      'loss': 0.94995,
+      'prediction': 0.6485,
+      'step': 101,
+    }),
+    dict({
+      'loss': 0.94945,
+      'prediction': 0.64855,
+      'step': 102,
+    }),
+    dict({
+      'loss': 0.94895,
+      'prediction': 0.6486,
+      'step': 103,
+    }),
+    dict({
+      'loss': 0.94845,
+      'prediction': 0.64864,
+      'step': 104,
+    }),
+    dict({
+      'loss': 0.94795,
+      'prediction': 0.64869,
+      'step': 105,
+    }),
+    dict({
+      'loss': 0.94745,
+      'prediction': 0.64874,
+      'step': 106,
+    }),
+    dict({
+      'loss': 0.94695,
+      'prediction': 0.64879,
+      'step': 107,
+    }),
+    dict({
+      'loss': 0.94645,
+      'prediction': 0.64883,
+      'step': 108,
+    }),
+    dict({
+      'loss': 0.94595,
+      'prediction': 0.64888,
+      'step': 109,
+    }),
+    dict({
+      'loss': 0.94545,
+      'prediction': 0.64892,
+      'step': 110,
+    }),
+    dict({
+      'loss': 0.94494,
+      'prediction': 0.64897,
+      'step': 111,
+    }),
+    dict({
+      'loss': 0.94444,
+      'prediction': 0.64901,
+      'step': 112,
+    }),
+    dict({
+      'loss': 0.94394,
+      'prediction': 0.64905,
+      'step': 113,
+    }),
+    dict({
+      'loss': 0.94344,
+      'prediction': 0.6491,
+      'step': 114,
+    }),
+    dict({
+      'loss': 0.94294,
+      'prediction': 0.64914,
+      'step': 115,
+    }),
+    dict({
+      'loss': 0.94244,
+      'prediction': 0.64918,
+      'step': 116,
+    }),
+    dict({
+      'loss': 0.94194,
+      'prediction': 0.64922,
+      'step': 117,
+    }),
+    dict({
+      'loss': 0.94144,
+      'prediction': 0.64926,
+      'step': 118,
+    }),
+    dict({
+      'loss': 0.94094,
+      'prediction': 0.6493,
+      'step': 119,
+    }),
+    dict({
+      'loss': 0.94044,
+      'prediction': 0.64934,
+      'step': 120,
+    }),
+    dict({
+      'loss': 0.93994,
+      'prediction': 0.64938,
+      'step': 121,
+    }),
+    dict({
+      'loss': 0.93944,
+      'prediction': 0.64942,
+      'step': 122,
+    }),
+    dict({
+      'loss': 0.93894,
+      'prediction': 0.64946,
+      'step': 123,
+    }),
+    dict({
+      'loss': 0.93844,
+      'prediction': 0.6495,
+      'step': 124,
+    }),
+    dict({
+      'loss': 0.93794,
+      'prediction': 0.64953,
+      'step': 125,
+    }),
+    dict({
+      'loss': 0.93744,
+      'prediction': 0.64957,
+      'step': 126,
+    }),
+    dict({
+      'loss': 0.93694,
+      'prediction': 0.64961,
+      'step': 127,
+    }),
+    dict({
+      'loss': 0.93644,
+      'prediction': 0.64964,
+      'step': 128,
+    }),
+    dict({
+      'loss': 0.93594,
+      'prediction': 0.64968,
+      'step': 129,
+    }),
+    dict({
+      'loss': 0.93544,
+      'prediction': 0.64971,
+      'step': 130,
+    }),
+    dict({
+      'loss': 0.93493,
+      'prediction': 0.64975,
+      'step': 131,
+    }),
+    dict({
+      'loss': 0.93443,
+      'prediction': 0.64978,
+      'step': 132,
+    }),
+    dict({
+      'loss': 0.93393,
+      'prediction': 0.64981,
+      'step': 133,
+    }),
+    dict({
+      'loss': 0.93343,
+      'prediction': 0.64985,
+      'step': 134,
+    }),
+    dict({
+      'loss': 0.93293,
+      'prediction': 0.64988,
+      'step': 135,
+    }),
+    dict({
+      'loss': 0.93243,
+      'prediction': 0.64991,
+      'step': 136,
+    }),
+    dict({
+      'loss': 0.93193,
+      'prediction': 0.64994,
+      'step': 137,
+    }),
+    dict({
+      'loss': 0.93143,
+      'prediction': 0.64997,
+      'step': 138,
+    }),
+    dict({
+      'loss': 0.93093,
+      'prediction': 0.65,
+      'step': 139,
+    }),
+    dict({
+      'loss': 0.93043,
+      'prediction': 0.65003,
+      'step': 140,
+    }),
+    dict({
+      'loss': 0.92993,
+      'prediction': 0.65006,
+      'step': 141,
+    }),
+    dict({
+      'loss': 0.92943,
+      'prediction': 0.65009,
+      'step': 142,
+    }),
+    dict({
+      'loss': 0.92893,
+      'prediction': 0.65012,
+      'step': 143,
+    }),
+    dict({
+      'loss': 0.92843,
+      'prediction': 0.65015,
+      'step': 144,
+    }),
+    dict({
+      'loss': 0.92793,
+      'prediction': 0.65017,
+      'step': 145,
+    }),
+    dict({
+      'loss': 0.92743,
+      'prediction': 0.6502,
+      'step': 146,
+    }),
+    dict({
+      'loss': 0.92693,
+      'prediction': 0.65023,
+      'step': 147,
+    }),
+    dict({
+      'loss': 0.92643,
+      'prediction': 0.65025,
+      'step': 148,
+    }),
+    dict({
+      'loss': 0.92593,
+      'prediction': 0.65028,
+      'step': 149,
+    }),
+    dict({
+      'loss': 0.92543,
+      'prediction': 0.6503,
+      'step': 150,
+    }),
+    dict({
+      'loss': 0.92492,
+      'prediction': 0.65033,
+      'step': 151,
+    }),
+    dict({
+      'loss': 0.92442,
+      'prediction': 0.65035,
+      'step': 152,
+    }),
+    dict({
+      'loss': 0.92392,
+      'prediction': 0.65038,
+      'step': 153,
+    }),
+    dict({
+      'loss': 0.92342,
+      'prediction': 0.6504,
+      'step': 154,
+    }),
+    dict({
+      'loss': 0.92292,
+      'prediction': 0.65042,
+      'step': 155,
+    }),
+    dict({
+      'loss': 0.92242,
+      'prediction': 0.65044,
+      'step': 156,
+    }),
+    dict({
+      'loss': 0.92192,
+      'prediction': 0.65046,
+      'step': 157,
+    }),
+    dict({
+      'loss': 0.92142,
+      'prediction': 0.65048,
+      'step': 158,
+    }),
+    dict({
+      'loss': 0.92092,
+      'prediction': 0.6505,
+      'step': 159,
+    }),
+    dict({
+      'loss': 0.92042,
+      'prediction': 0.65052,
+      'step': 160,
+    }),
+    dict({
+      'loss': 0.91992,
+      'prediction': 0.65054,
+      'step': 161,
+    }),
+    dict({
+      'loss': 0.91942,
+      'prediction': 0.65056,
+      'step': 162,
+    }),
+    dict({
+      'loss': 0.91892,
+      'prediction': 0.65058,
+      'step': 163,
+    }),
+    dict({
+      'loss': 0.91842,
+      'prediction': 0.6506,
+      'step': 164,
+    }),
+    dict({
+      'loss': 0.91792,
+      'prediction': 0.65062,
+      'step': 165,
+    }),
+    dict({
+      'loss': 0.91742,
+      'prediction': 0.65063,
+      'step': 166,
+    }),
+    dict({
+      'loss': 0.91692,
+      'prediction': 0.65065,
+      'step': 167,
+    }),
+    dict({
+      'loss': 0.91642,
+      'prediction': 0.65066,
+      'step': 168,
+    }),
+    dict({
+      'loss': 0.91592,
+      'prediction': 0.65068,
+      'step': 169,
+    }),
+    dict({
+      'loss': 0.91542,
+      'prediction': 0.65069,
+      'step': 170,
+    }),
+    dict({
+      'loss': 0.91491,
+      'prediction': 0.65071,
+      'step': 171,
+    }),
+    dict({
+      'loss': 0.91441,
+      'prediction': 0.65072,
+      'step': 172,
+    }),
+    dict({
+      'loss': 0.91391,
+      'prediction': 0.65074,
+      'step': 173,
+    }),
+    dict({
+      'loss': 0.91341,
+      'prediction': 0.65075,
+      'step': 174,
+    }),
+    dict({
+      'loss': 0.91291,
+      'prediction': 0.65076,
+      'step': 175,
+    }),
+    dict({
+      'loss': 0.91241,
+      'prediction': 0.65077,
+      'step': 176,
+    }),
+    dict({
+      'loss': 0.91191,
+      'prediction': 0.65078,
+      'step': 177,
+    }),
+    dict({
+      'loss': 0.91141,
+      'prediction': 0.65079,
+      'step': 178,
+    }),
+    dict({
+      'loss': 0.91091,
+      'prediction': 0.6508,
+      'step': 179,
+    }),
+    dict({
+      'loss': 0.91041,
+      'prediction': 0.65081,
+      'step': 180,
+    }),
+    dict({
+      'loss': 0.90991,
+      'prediction': 0.65082,
+      'step': 181,
+    }),
+    dict({
+      'loss': 0.90941,
+      'prediction': 0.65083,
+      'step': 182,
+    }),
+    dict({
+      'loss': 0.90891,
+      'prediction': 0.65084,
+      'step': 183,
+    }),
+    dict({
+      'loss': 0.90841,
+      'prediction': 0.65085,
+      'step': 184,
+    }),
+    dict({
+      'loss': 0.90791,
+      'prediction': 0.65086,
+      'step': 185,
+    }),
+    dict({
+      'loss': 0.90741,
+      'prediction': 0.65086,
+      'step': 186,
+    }),
+    dict({
+      'loss': 0.90691,
+      'prediction': 0.65087,
+      'step': 187,
+    }),
+    dict({
+      'loss': 0.90641,
+      'prediction': 0.65087,
+      'step': 188,
+    }),
+    dict({
+      'loss': 0.90591,
+      'prediction': 0.65088,
+      'step': 189,
+    }),
+    dict({
+      'loss': 0.90541,
+      'prediction': 0.65088,
+      'step': 190,
+    }),
+    dict({
+      'loss': 0.9049,
+      'prediction': 0.65089,
+      'step': 191,
+    }),
+    dict({
+      'loss': 0.9044,
+      'prediction': 0.65089,
+      'step': 192,
+    }),
+    dict({
+      'loss': 0.9039,
+      'prediction': 0.6509,
+      'step': 193,
+    }),
+    dict({
+      'loss': 0.9034,
+      'prediction': 0.6509,
+      'step': 194,
+    }),
+    dict({
+      'loss': 0.9029,
+      'prediction': 0.6509,
+      'step': 195,
+    }),
+    dict({
+      'loss': 0.9024,
+      'prediction': 0.6509,
+      'step': 196,
+    }),
+    dict({
+      'loss': 0.9019,
+      'prediction': 0.6509,
+      'step': 197,
+    }),
+    dict({
+      'loss': 0.9014,
+      'prediction': 0.6509,
+      'step': 198,
+    }),
+    dict({
+      'loss': 0.9009,
+      'prediction': 0.65091,
+      'step': 199,
+    }),
+    dict({
+      'loss': 0.9004,
+      'prediction': 0.6509,
+      'step': 200,
+    }),
+    dict({
+      'loss': 0.8999,
+      'prediction': 0.6509,
+      'step': 201,
+    }),
+    dict({
+      'loss': 0.8994,
+      'prediction': 0.6509,
+      'step': 202,
+    }),
+    dict({
+      'loss': 0.8989,
+      'prediction': 0.6509,
+      'step': 203,
+    }),
+    dict({
+      'loss': 0.8984,
+      'prediction': 0.6509,
+      'step': 204,
+    }),
+    dict({
+      'loss': 0.8979,
+      'prediction': 0.6509,
+      'step': 205,
+    }),
+    dict({
+      'loss': 0.8974,
+      'prediction': 0.65089,
+      'step': 206,
+    }),
+    dict({
+      'loss': 0.8969,
+      'prediction': 0.65089,
+      'step': 207,
+    }),
+    dict({
+      'loss': 0.8964,
+      'prediction': 0.65088,
+      'step': 208,
+    }),
+    dict({
+      'loss': 0.8959,
+      'prediction': 0.65088,
+      'step': 209,
+    }),
+    dict({
+      'loss': 0.8954,
+      'prediction': 0.65087,
+      'step': 210,
+    }),
+    dict({
+      'loss': 0.89489,
+      'prediction': 0.65087,
+      'step': 211,
+    }),
+    dict({
+      'loss': 0.89439,
+      'prediction': 0.65086,
+      'step': 212,
+    }),
+    dict({
+      'loss': 0.89389,
+      'prediction': 0.65086,
+      'step': 213,
+    }),
+    dict({
+      'loss': 0.89339,
+      'prediction': 0.65085,
+      'step': 214,
+    }),
+    dict({
+      'loss': 0.89289,
+      'prediction': 0.65084,
+      'step': 215,
+    }),
+    dict({
+      'loss': 0.89239,
+      'prediction': 0.65083,
+      'step': 216,
+    }),
+    dict({
+      'loss': 0.89189,
+      'prediction': 0.65082,
+      'step': 217,
+    }),
+    dict({
+      'loss': 0.89139,
+      'prediction': 0.65081,
+      'step': 218,
+    }),
+    dict({
+      'loss': 0.89089,
+      'prediction': 0.6508,
+      'step': 219,
+    }),
+    dict({
+      'loss': 0.89039,
+      'prediction': 0.65079,
+      'step': 220,
+    }),
+    dict({
+      'loss': 0.88989,
+      'prediction': 0.65078,
+      'step': 221,
+    }),
+    dict({
+      'loss': 0.88939,
+      'prediction': 0.65077,
+      'step': 222,
+    }),
+    dict({
+      'loss': 0.88889,
+      'prediction': 0.65076,
+      'step': 223,
+    }),
+    dict({
+      'loss': 0.88839,
+      'prediction': 0.65075,
+      'step': 224,
+    }),
+    dict({
+      'loss': 0.88789,
+      'prediction': 0.65074,
+      'step': 225,
+    }),
+    dict({
+      'loss': 0.88739,
+      'prediction': 0.65072,
+      'step': 226,
+    }),
+    dict({
+      'loss': 0.88689,
+      'prediction': 0.65071,
+      'step': 227,
+    }),
+    dict({
+      'loss': 0.88639,
+      'prediction': 0.65069,
+      'step': 228,
+    }),
+    dict({
+      'loss': 0.88589,
+      'prediction': 0.65068,
+      'step': 229,
+    }),
+    dict({
+      'loss': 0.88539,
+      'prediction': 0.65066,
+      'step': 230,
+    }),
+    dict({
+      'loss': 0.88488,
+      'prediction': 0.65065,
+      'step': 231,
+    }),
+    dict({
+      'loss': 0.88438,
+      'prediction': 0.65063,
+      'step': 232,
+    }),
+    dict({
+      'loss': 0.88388,
+      'prediction': 0.65062,
+      'step': 233,
+    }),
+    dict({
+      'loss': 0.88338,
+      'prediction': 0.6506,
+      'step': 234,
+    }),
+    dict({
+      'loss': 0.88288,
+      'prediction': 0.65058,
+      'step': 235,
+    }),
+    dict({
+      'loss': 0.88238,
+      'prediction': 0.65056,
+      'step': 236,
+    }),
+    dict({
+      'loss': 0.88188,
+      'prediction': 0.65054,
+      'step': 237,
+    }),
+    dict({
+      'loss': 0.88138,
+      'prediction': 0.65052,
+      'step': 238,
+    }),
+    dict({
+      'loss': 0.88088,
+      'prediction': 0.6505,
+      'step': 239,
+    }),
+    dict({
+      'loss': 0.88038,
+      'prediction': 0.65048,
+      'step': 240,
+    }),
+    dict({
+      'loss': 0.87988,
+      'prediction': 0.65046,
+      'step': 241,
+    }),
+    dict({
+      'loss': 0.87938,
+      'prediction': 0.65044,
+      'step': 242,
+    }),
+    dict({
+      'loss': 0.87888,
+      'prediction': 0.65042,
+      'step': 243,
+    }),
+    dict({
+      'loss': 0.87838,
+      'prediction': 0.6504,
+      'step': 244,
+    }),
+    dict({
+      'loss': 0.87788,
+      'prediction': 0.65037,
+      'step': 245,
+    }),
+    dict({
+      'loss': 0.87738,
+      'prediction': 0.65035,
+      'step': 246,
+    }),
+    dict({
+      'loss': 0.87688,
+      'prediction': 0.65033,
+      'step': 247,
+    }),
+    dict({
+      'loss': 0.87638,
+      'prediction': 0.6503,
+      'step': 248,
+    }),
+    dict({
+      'loss': 0.87588,
+      'prediction': 0.65028,
+      'step': 249,
+    }),
+    dict({
+      'loss': 0.87538,
+      'prediction': 0.65025,
+      'step': 250,
+    }),
+    dict({
+      'loss': 0.87487,
+      'prediction': 0.65023,
+      'step': 251,
+    }),
+    dict({
+      'loss': 0.87437,
+      'prediction': 0.6502,
+      'step': 252,
+    }),
+    dict({
+      'loss': 0.87387,
+      'prediction': 0.65017,
+      'step': 253,
+    }),
+    dict({
+      'loss': 0.87337,
+      'prediction': 0.65015,
+      'step': 254,
+    }),
+    dict({
+      'loss': 0.87287,
+      'prediction': 0.65012,
+      'step': 255,
+    }),
+    dict({
+      'loss': 0.87237,
+      'prediction': 0.65009,
+      'step': 256,
+    }),
+    dict({
+      'loss': 0.87187,
+      'prediction': 0.65006,
+      'step': 257,
+    }),
+    dict({
+      'loss': 0.87137,
+      'prediction': 0.65003,
+      'step': 258,
+    }),
+    dict({
+      'loss': 0.87087,
+      'prediction': 0.65,
+      'step': 259,
+    }),
+    dict({
+      'loss': 0.87037,
+      'prediction': 0.64997,
+      'step': 260,
+    }),
+    dict({
+      'loss': 0.86987,
+      'prediction': 0.64994,
+      'step': 261,
+    }),
+    dict({
+      'loss': 0.86937,
+      'prediction': 0.64991,
+      'step': 262,
+    }),
+    dict({
+      'loss': 0.86887,
+      'prediction': 0.64988,
+      'step': 263,
+    }),
+    dict({
+      'loss': 0.86837,
+      'prediction': 0.64985,
+      'step': 264,
+    }),
+    dict({
+      'loss': 0.86787,
+      'prediction': 0.64981,
+      'step': 265,
+    }),
+    dict({
+      'loss': 0.86737,
+      'prediction': 0.64978,
+      'step': 266,
+    }),
+    dict({
+      'loss': 0.86687,
+      'prediction': 0.64975,
+      'step': 267,
+    }),
+    dict({
+      'loss': 0.86637,
+      'prediction': 0.64971,
+      'step': 268,
+    }),
+    dict({
+      'loss': 0.86587,
+      'prediction': 0.64968,
+      'step': 269,
+    }),
+    dict({
+      'loss': 0.86537,
+      'prediction': 0.64964,
+      'step': 270,
+    }),
+    dict({
+      'loss': 0.86486,
+      'prediction': 0.64961,
+      'step': 271,
+    }),
+    dict({
+      'loss': 0.86436,
+      'prediction': 0.64957,
+      'step': 272,
+    }),
+    dict({
+      'loss': 0.86386,
+      'prediction': 0.64953,
+      'step': 273,
+    }),
+    dict({
+      'loss': 0.86336,
+      'prediction': 0.6495,
+      'step': 274,
+    }),
+    dict({
+      'loss': 0.86286,
+      'prediction': 0.64946,
+      'step': 275,
+    }),
+    dict({
+      'loss': 0.86236,
+      'prediction': 0.64942,
+      'step': 276,
+    }),
+    dict({
+      'loss': 0.86186,
+      'prediction': 0.64938,
+      'step': 277,
+    }),
+    dict({
+      'loss': 0.86136,
+      'prediction': 0.64934,
+      'step': 278,
+    }),
+    dict({
+      'loss': 0.86086,
+      'prediction': 0.6493,
+      'step': 279,
+    }),
+    dict({
+      'loss': 0.86036,
+      'prediction': 0.64926,
+      'step': 280,
+    }),
+    dict({
+      'loss': 0.85986,
+      'prediction': 0.64922,
+      'step': 281,
+    }),
+    dict({
+      'loss': 0.85936,
+      'prediction': 0.64918,
+      'step': 282,
+    }),
+    dict({
+      'loss': 0.85886,
+      'prediction': 0.64914,
+      'step': 283,
+    }),
+    dict({
+      'loss': 0.85836,
+      'prediction': 0.64909,
+      'step': 284,
+    }),
+    dict({
+      'loss': 0.85786,
+      'prediction': 0.64905,
+      'step': 285,
+    }),
+    dict({
+      'loss': 0.85736,
+      'prediction': 0.64901,
+      'step': 286,
+    }),
+    dict({
+      'loss': 0.85686,
+      'prediction': 0.64896,
+      'step': 287,
+    }),
+    dict({
+      'loss': 0.85636,
+      'prediction': 0.64892,
+      'step': 288,
+    }),
+    dict({
+      'loss': 0.85586,
+      'prediction': 0.64888,
+      'step': 289,
+    }),
+    dict({
+      'loss': 0.85536,
+      'prediction': 0.64883,
+      'step': 290,
+    }),
+    dict({
+      'loss': 0.85485,
+      'prediction': 0.64878,
+      'step': 291,
+    }),
+    dict({
+      'loss': 0.85435,
+      'prediction': 0.64874,
+      'step': 292,
+    }),
+    dict({
+      'loss': 0.85385,
+      'prediction': 0.64869,
+      'step': 293,
+    }),
+    dict({
+      'loss': 0.85335,
+      'prediction': 0.64864,
+      'step': 294,
+    }),
+    dict({
+      'loss': 0.85285,
+      'prediction': 0.6486,
+      'step': 295,
+    }),
+    dict({
+      'loss': 0.85235,
+      'prediction': 0.64855,
+      'step': 296,
+    }),
+    dict({
+      'loss': 0.85185,
+      'prediction': 0.6485,
+      'step': 297,
+    }),
+    dict({
+      'loss': 0.85135,
+      'prediction': 0.64845,
+      'step': 298,
+    }),
+    dict({
+      'loss': 0.85085,
+      'prediction': 0.6484,
+      'step': 299,
+    }),
+    dict({
+      'loss': 0.85035,
+      'prediction': 0.64835,
+      'step': 300,
+    }),
+    dict({
+      'loss': 0.84985,
+      'prediction': 0.6483,
+      'step': 301,
+    }),
+    dict({
+      'loss': 0.84935,
+      'prediction': 0.64825,
+      'step': 302,
+    }),
+    dict({
+      'loss': 0.84885,
+      'prediction': 0.6482,
+      'step': 303,
+    }),
+    dict({
+      'loss': 0.84835,
+      'prediction': 0.64814,
+      'step': 304,
+    }),
+    dict({
+      'loss': 0.84785,
+      'prediction': 0.64809,
+      'step': 305,
+    }),
+    dict({
+      'loss': 0.84735,
+      'prediction': 0.64804,
+      'step': 306,
+    }),
+    dict({
+      'loss': 0.84685,
+      'prediction': 0.64798,
+      'step': 307,
+    }),
+    dict({
+      'loss': 0.84635,
+      'prediction': 0.64793,
+      'step': 308,
+    }),
+    dict({
+      'loss': 0.84585,
+      'prediction': 0.64787,
+      'step': 309,
+    }),
+    dict({
+      'loss': 0.84535,
+      'prediction': 0.64782,
+      'step': 310,
+    }),
+    dict({
+      'loss': 0.84484,
+      'prediction': 0.64776,
+      'step': 311,
+    }),
+    dict({
+      'loss': 0.84434,
+      'prediction': 0.64771,
+      'step': 312,
+    }),
+    dict({
+      'loss': 0.84384,
+      'prediction': 0.64765,
+      'step': 313,
+    }),
+    dict({
+      'loss': 0.84334,
+      'prediction': 0.64759,
+      'step': 314,
+    }),
+    dict({
+      'loss': 0.84284,
+      'prediction': 0.64753,
+      'step': 315,
+    }),
+    dict({
+      'loss': 0.84234,
+      'prediction': 0.64748,
+      'step': 316,
+    }),
+    dict({
+      'loss': 0.84184,
+      'prediction': 0.64742,
+      'step': 317,
+    }),
+    dict({
+      'loss': 0.84134,
+      'prediction': 0.64736,
+      'step': 318,
+    }),
+    dict({
+      'loss': 0.84084,
+      'prediction': 0.6473,
+      'step': 319,
+    }),
+    dict({
+      'loss': 0.84034,
+      'prediction': 0.64724,
+      'step': 320,
+    }),
+    dict({
+      'loss': 0.83984,
+      'prediction': 0.64718,
+      'step': 321,
+    }),
+    dict({
+      'loss': 0.83934,
+      'prediction': 0.64711,
+      'step': 322,
+    }),
+    dict({
+      'loss': 0.83884,
+      'prediction': 0.64705,
+      'step': 323,
+    }),
+    dict({
+      'loss': 0.83834,
+      'prediction': 0.64699,
+      'step': 324,
+    }),
+    dict({
+      'loss': 0.83784,
+      'prediction': 0.64693,
+      'step': 325,
+    }),
+    dict({
+      'loss': 0.83734,
+      'prediction': 0.64686,
+      'step': 326,
+    }),
+    dict({
+      'loss': 0.83684,
+      'prediction': 0.6468,
+      'step': 327,
+    }),
+    dict({
+      'loss': 0.83634,
+      'prediction': 0.64674,
+      'step': 328,
+    }),
+    dict({
+      'loss': 0.83584,
+      'prediction': 0.64667,
+      'step': 329,
+    }),
+    dict({
+      'loss': 0.83534,
+      'prediction': 0.64661,
+      'step': 330,
+    }),
+    dict({
+      'loss': 0.83483,
+      'prediction': 0.64654,
+      'step': 331,
+    }),
+    dict({
+      'loss': 0.83433,
+      'prediction': 0.64647,
+      'step': 332,
+    }),
+    dict({
+      'loss': 0.83383,
+      'prediction': 0.64641,
+      'step': 333,
+    }),
+    dict({
+      'loss': 0.83333,
+      'prediction': 0.64634,
+      'step': 334,
+    }),
+    dict({
+      'loss': 0.83283,
+      'prediction': 0.64627,
+      'step': 335,
+    }),
+    dict({
+      'loss': 0.83233,
+      'prediction': 0.6462,
+      'step': 336,
+    }),
+    dict({
+      'loss': 0.83183,
+      'prediction': 0.64613,
+      'step': 337,
+    }),
+    dict({
+      'loss': 0.83133,
+      'prediction': 0.64606,
+      'step': 338,
+    }),
+    dict({
+      'loss': 0.83083,
+      'prediction': 0.64599,
+      'step': 339,
+    }),
+    dict({
+      'loss': 0.83033,
+      'prediction': 0.64592,
+      'step': 340,
+    }),
+    dict({
+      'loss': 0.82983,
+      'prediction': 0.64585,
+      'step': 341,
+    }),
+    dict({
+      'loss': 0.82933,
+      'prediction': 0.64578,
+      'step': 342,
+    }),
+    dict({
+      'loss': 0.82883,
+      'prediction': 0.64571,
+      'step': 343,
+    }),
+    dict({
+      'loss': 0.82833,
+      'prediction': 0.64564,
+      'step': 344,
+    }),
+    dict({
+      'loss': 0.82783,
+      'prediction': 0.64556,
+      'step': 345,
+    }),
+    dict({
+      'loss': 0.82733,
+      'prediction': 0.64549,
+      'step': 346,
+    }),
+    dict({
+      'loss': 0.82683,
+      'prediction': 0.64542,
+      'step': 347,
+    }),
+    dict({
+      'loss': 0.82633,
+      'prediction': 0.64534,
+      'step': 348,
+    }),
+    dict({
+      'loss': 0.82583,
+      'prediction': 0.64527,
+      'step': 349,
+    }),
+    dict({
+      'loss': 0.82533,
+      'prediction': 0.64519,
+      'step': 350,
+    }),
+    dict({
+      'loss': 0.82482,
+      'prediction': 0.64512,
+      'step': 351,
+    }),
+    dict({
+      'loss': 0.82432,
+      'prediction': 0.64504,
+      'step': 352,
+    }),
+    dict({
+      'loss': 0.82382,
+      'prediction': 0.64496,
+      'step': 353,
+    }),
+    dict({
+      'loss': 0.82332,
+      'prediction': 0.64489,
+      'step': 354,
+    }),
+    dict({
+      'loss': 0.82282,
+      'prediction': 0.64481,
+      'step': 355,
+    }),
+    dict({
+      'loss': 0.82232,
+      'prediction': 0.64473,
+      'step': 356,
+    }),
+    dict({
+      'loss': 0.82182,
+      'prediction': 0.64465,
+      'step': 357,
+    }),
+    dict({
+      'loss': 0.82132,
+      'prediction': 0.64457,
+      'step': 358,
+    }),
+    dict({
+      'loss': 0.82082,
+      'prediction': 0.64449,
+      'step': 359,
+    }),
+    dict({
+      'loss': 0.82032,
+      'prediction': 0.64441,
+      'step': 360,
+    }),
+    dict({
+      'loss': 0.81982,
+      'prediction': 0.64433,
+      'step': 361,
+    }),
+    dict({
+      'loss': 0.81932,
+      'prediction': 0.64425,
+      'step': 362,
+    }),
+    dict({
+      'loss': 0.81882,
+      'prediction': 0.64417,
+      'step': 363,
+    }),
+    dict({
+      'loss': 0.81832,
+      'prediction': 0.64408,
+      'step': 364,
+    }),
+    dict({
+      'loss': 0.81782,
+      'prediction': 0.644,
+      'step': 365,
+    }),
+    dict({
+      'loss': 0.81732,
+      'prediction': 0.64392,
+      'step': 366,
+    }),
+    dict({
+      'loss': 0.81682,
+      'prediction': 0.64383,
+      'step': 367,
+    }),
+    dict({
+      'loss': 0.81632,
+      'prediction': 0.64375,
+      'step': 368,
+    }),
+    dict({
+      'loss': 0.81582,
+      'prediction': 0.64367,
+      'step': 369,
+    }),
+    dict({
+      'loss': 0.81532,
+      'prediction': 0.64358,
+      'step': 370,
+    }),
+    dict({
+      'loss': 0.81481,
+      'prediction': 0.64349,
+      'step': 371,
+    }),
+    dict({
+      'loss': 0.81431,
+      'prediction': 0.64341,
+      'step': 372,
+    }),
+    dict({
+      'loss': 0.81381,
+      'prediction': 0.64332,
+      'step': 373,
+    }),
+    dict({
+      'loss': 0.81331,
+      'prediction': 0.64323,
+      'step': 374,
+    }),
+    dict({
+      'loss': 0.81281,
+      'prediction': 0.64314,
+      'step': 375,
+    }),
+    dict({
+      'loss': 0.81231,
+      'prediction': 0.64306,
+      'step': 376,
+    }),
+    dict({
+      'loss': 0.81181,
+      'prediction': 0.64297,
+      'step': 377,
+    }),
+    dict({
+      'loss': 0.81131,
+      'prediction': 0.64288,
+      'step': 378,
+    }),
+    dict({
+      'loss': 0.81081,
+      'prediction': 0.64279,
+      'step': 379,
+    }),
+    dict({
+      'loss': 0.81031,
+      'prediction': 0.6427,
+      'step': 380,
+    }),
+    dict({
+      'loss': 0.80981,
+      'prediction': 0.64261,
+      'step': 381,
+    }),
+    dict({
+      'loss': 0.80931,
+      'prediction': 0.64252,
+      'step': 382,
+    }),
+    dict({
+      'loss': 0.80881,
+      'prediction': 0.64242,
+      'step': 383,
+    }),
+    dict({
+      'loss': 0.80831,
+      'prediction': 0.64233,
+      'step': 384,
+    }),
+    dict({
+      'loss': 0.80781,
+      'prediction': 0.64224,
+      'step': 385,
+    }),
+    dict({
+      'loss': 0.80731,
+      'prediction': 0.64214,
+      'step': 386,
+    }),
+    dict({
+      'loss': 0.80681,
+      'prediction': 0.64205,
+      'step': 387,
+    }),
+    dict({
+      'loss': 0.80631,
+      'prediction': 0.64196,
+      'step': 388,
+    }),
+    dict({
+      'loss': 0.80581,
+      'prediction': 0.64186,
+      'step': 389,
+    }),
+    dict({
+      'loss': 0.80531,
+      'prediction': 0.64177,
+      'step': 390,
+    }),
+    dict({
+      'loss': 0.8048,
+      'prediction': 0.64167,
+      'step': 391,
+    }),
+    dict({
+      'loss': 0.8043,
+      'prediction': 0.64157,
+      'step': 392,
+    }),
+    dict({
+      'loss': 0.8038,
+      'prediction': 0.64148,
+      'step': 393,
+    }),
+    dict({
+      'loss': 0.8033,
+      'prediction': 0.64138,
+      'step': 394,
+    }),
+    dict({
+      'loss': 0.8028,
+      'prediction': 0.64128,
+      'step': 395,
+    }),
+    dict({
+      'loss': 0.8023,
+      'prediction': 0.64118,
+      'step': 396,
+    }),
+    dict({
+      'loss': 0.8018,
+      'prediction': 0.64108,
+      'step': 397,
+    }),
+    dict({
+      'loss': 0.8013,
+      'prediction': 0.64098,
+      'step': 398,
+    }),
+    dict({
+      'loss': 0.8008,
+      'prediction': 0.64088,
+      'step': 399,
+    }),
+    dict({
+      'loss': 0.8003,
+      'prediction': 0.64078,
+      'step': 400,
+    }),
+    dict({
+      'loss': 0.7998,
+      'prediction': 0.64068,
+      'step': 401,
+    }),
+    dict({
+      'loss': 0.7993,
+      'prediction': 0.64058,
+      'step': 402,
+    }),
+    dict({
+      'loss': 0.7988,
+      'prediction': 0.64048,
+      'step': 403,
+    }),
+    dict({
+      'loss': 0.7983,
+      'prediction': 0.64038,
+      'step': 404,
+    }),
+    dict({
+      'loss': 0.7978,
+      'prediction': 0.64027,
+      'step': 405,
+    }),
+    dict({
+      'loss': 0.7973,
+      'prediction': 0.64017,
+      'step': 406,
+    }),
+    dict({
+      'loss': 0.7968,
+      'prediction': 0.64007,
+      'step': 407,
+    }),
+    dict({
+      'loss': 0.7963,
+      'prediction': 0.63996,
+      'step': 408,
+    }),
+    dict({
+      'loss': 0.7958,
+      'prediction': 0.63986,
+      'step': 409,
+    }),
+    dict({
+      'loss': 0.7953,
+      'prediction': 0.63975,
+      'step': 410,
+    }),
+    dict({
+      'loss': 0.79479,
+      'prediction': 0.63965,
+      'step': 411,
+    }),
+    dict({
+      'loss': 0.79429,
+      'prediction': 0.63954,
+      'step': 412,
+    }),
+    dict({
+      'loss': 0.79379,
+      'prediction': 0.63943,
+      'step': 413,
+    }),
+    dict({
+      'loss': 0.79329,
+      'prediction': 0.63932,
+      'step': 414,
+    }),
+    dict({
+      'loss': 0.79279,
+      'prediction': 0.63922,
+      'step': 415,
+    }),
+    dict({
+      'loss': 0.79229,
+      'prediction': 0.63911,
+      'step': 416,
+    }),
+    dict({
+      'loss': 0.79179,
+      'prediction': 0.639,
+      'step': 417,
+    }),
+    dict({
+      'loss': 0.79129,
+      'prediction': 0.63889,
+      'step': 418,
+    }),
+    dict({
+      'loss': 0.79079,
+      'prediction': 0.63878,
+      'step': 419,
+    }),
+    dict({
+      'loss': 0.79029,
+      'prediction': 0.63867,
+      'step': 420,
+    }),
+    dict({
+      'loss': 0.78979,
+      'prediction': 0.63856,
+      'step': 421,
+    }),
+    dict({
+      'loss': 0.78929,
+      'prediction': 0.63845,
+      'step': 422,
+    }),
+    dict({
+      'loss': 0.78879,
+      'prediction': 0.63834,
+      'step': 423,
+    }),
+    dict({
+      'loss': 0.78829,
+      'prediction': 0.63822,
+      'step': 424,
+    }),
+    dict({
+      'loss': 0.78779,
+      'prediction': 0.63811,
+      'step': 425,
+    }),
+    dict({
+      'loss': 0.78729,
+      'prediction': 0.638,
+      'step': 426,
+    }),
+    dict({
+      'loss': 0.78679,
+      'prediction': 0.63788,
+      'step': 427,
+    }),
+    dict({
+      'loss': 0.78629,
+      'prediction': 0.63777,
+      'step': 428,
+    }),
+    dict({
+      'loss': 0.78579,
+      'prediction': 0.63765,
+      'step': 429,
+    }),
+    dict({
+      'loss': 0.78529,
+      'prediction': 0.63754,
+      'step': 430,
+    }),
+    dict({
+      'loss': 0.78478,
+      'prediction': 0.63742,
+      'step': 431,
+    }),
+    dict({
+      'loss': 0.78428,
+      'prediction': 0.6373,
+      'step': 432,
+    }),
+    dict({
+      'loss': 0.78378,
+      'prediction': 0.63719,
+      'step': 433,
+    }),
+    dict({
+      'loss': 0.78328,
+      'prediction': 0.63707,
+      'step': 434,
+    }),
+    dict({
+      'loss': 0.78278,
+      'prediction': 0.63695,
+      'step': 435,
+    }),
+    dict({
+      'loss': 0.78228,
+      'prediction': 0.63683,
+      'step': 436,
+    }),
+    dict({
+      'loss': 0.78178,
+      'prediction': 0.63671,
+      'step': 437,
+    }),
+    dict({
+      'loss': 0.78128,
+      'prediction': 0.6366,
+      'step': 438,
+    }),
+    dict({
+      'loss': 0.78078,
+      'prediction': 0.63648,
+      'step': 439,
+    }),
+    dict({
+      'loss': 0.78028,
+      'prediction': 0.63635,
+      'step': 440,
+    }),
+    dict({
+      'loss': 0.77978,
+      'prediction': 0.63623,
+      'step': 441,
+    }),
+    dict({
+      'loss': 0.77928,
+      'prediction': 0.63611,
+      'step': 442,
+    }),
+    dict({
+      'loss': 0.77878,
+      'prediction': 0.63599,
+      'step': 443,
+    }),
+    dict({
+      'loss': 0.77828,
+      'prediction': 0.63587,
+      'step': 444,
+    }),
+    dict({
+      'loss': 0.77778,
+      'prediction': 0.63574,
+      'step': 445,
+    }),
+    dict({
+      'loss': 0.77728,
+      'prediction': 0.63562,
+      'step': 446,
+    }),
+    dict({
+      'loss': 0.77678,
+      'prediction': 0.6355,
+      'step': 447,
+    }),
+    dict({
+      'loss': 0.77628,
+      'prediction': 0.63537,
+      'step': 448,
+    }),
+    dict({
+      'loss': 0.77578,
+      'prediction': 0.63525,
+      'step': 449,
+    }),
+    dict({
+      'loss': 0.77528,
+      'prediction': 0.63512,
+      'step': 450,
+    }),
+    dict({
+      'loss': 0.77477,
+      'prediction': 0.635,
+      'step': 451,
+    }),
+    dict({
+      'loss': 0.77427,
+      'prediction': 0.63487,
+      'step': 452,
+    }),
+    dict({
+      'loss': 0.77377,
+      'prediction': 0.63474,
+      'step': 453,
+    }),
+    dict({
+      'loss': 0.77327,
+      'prediction': 0.63462,
+      'step': 454,
+    }),
+    dict({
+      'loss': 0.77277,
+      'prediction': 0.63449,
+      'step': 455,
+    }),
+    dict({
+      'loss': 0.77227,
+      'prediction': 0.63436,
+      'step': 456,
+    }),
+    dict({
+      'loss': 0.77177,
+      'prediction': 0.63423,
+      'step': 457,
+    }),
+    dict({
+      'loss': 0.77127,
+      'prediction': 0.6341,
+      'step': 458,
+    }),
+    dict({
+      'loss': 0.77077,
+      'prediction': 0.63397,
+      'step': 459,
+    }),
+    dict({
+      'loss': 0.77027,
+      'prediction': 0.63384,
+      'step': 460,
+    }),
+    dict({
+      'loss': 0.76977,
+      'prediction': 0.63371,
+      'step': 461,
+    }),
+    dict({
+      'loss': 0.76927,
+      'prediction': 0.63358,
+      'step': 462,
+    }),
+    dict({
+      'loss': 0.76877,
+      'prediction': 0.63345,
+      'step': 463,
+    }),
+    dict({
+      'loss': 0.76827,
+      'prediction': 0.63331,
+      'step': 464,
+    }),
+    dict({
+      'loss': 0.76777,
+      'prediction': 0.63318,
+      'step': 465,
+    }),
+    dict({
+      'loss': 0.76727,
+      'prediction': 0.63305,
+      'step': 466,
+    }),
+    dict({
+      'loss': 0.76677,
+      'prediction': 0.63291,
+      'step': 467,
+    }),
+    dict({
+      'loss': 0.76627,
+      'prediction': 0.63278,
+      'step': 468,
+    }),
+    dict({
+      'loss': 0.76577,
+      'prediction': 0.63264,
+      'step': 469,
+    }),
+    dict({
+      'loss': 0.76527,
+      'prediction': 0.63251,
+      'step': 470,
+    }),
+    dict({
+      'loss': 0.76476,
+      'prediction': 0.63237,
+      'step': 471,
+    }),
+    dict({
+      'loss': 0.76426,
+      'prediction': 0.63223,
+      'step': 472,
+    }),
+    dict({
+      'loss': 0.76376,
+      'prediction': 0.6321,
+      'step': 473,
+    }),
+    dict({
+      'loss': 0.76326,
+      'prediction': 0.63196,
+      'step': 474,
+    }),
+    dict({
+      'loss': 0.76276,
+      'prediction': 0.63182,
+      'step': 475,
+    }),
+    dict({
+      'loss': 0.76226,
+      'prediction': 0.63168,
+      'step': 476,
+    }),
+    dict({
+      'loss': 0.76176,
+      'prediction': 0.63154,
+      'step': 477,
+    }),
+    dict({
+      'loss': 0.76126,
+      'prediction': 0.6314,
+      'step': 478,
+    }),
+    dict({
+      'loss': 0.76076,
+      'prediction': 0.63126,
+      'step': 479,
+    }),
+    dict({
+      'loss': 0.76026,
+      'prediction': 0.63112,
+      'step': 480,
+    }),
+    dict({
+      'loss': 0.75976,
+      'prediction': 0.63098,
+      'step': 481,
+    }),
+    dict({
+      'loss': 0.75926,
+      'prediction': 0.63084,
+      'step': 482,
+    }),
+    dict({
+      'loss': 0.75876,
+      'prediction': 0.6307,
+      'step': 483,
+    }),
+    dict({
+      'loss': 0.75826,
+      'prediction': 0.63056,
+      'step': 484,
+    }),
+    dict({
+      'loss': 0.75776,
+      'prediction': 0.63041,
+      'step': 485,
+    }),
+    dict({
+      'loss': 0.75726,
+      'prediction': 0.63027,
+      'step': 486,
+    }),
+    dict({
+      'loss': 0.75676,
+      'prediction': 0.63013,
+      'step': 487,
+    }),
+    dict({
+      'loss': 0.75626,
+      'prediction': 0.62998,
+      'step': 488,
+    }),
+    dict({
+      'loss': 0.75576,
+      'prediction': 0.62984,
+      'step': 489,
+    }),
+    dict({
+      'loss': 0.75526,
+      'prediction': 0.62969,
+      'step': 490,
+    }),
+    dict({
+      'loss': 0.75475,
+      'prediction': 0.62955,
+      'step': 491,
+    }),
+    dict({
+      'loss': 0.75425,
+      'prediction': 0.6294,
+      'step': 492,
+    }),
+    dict({
+      'loss': 0.75375,
+      'prediction': 0.62925,
+      'step': 493,
+    }),
+    dict({
+      'loss': 0.75325,
+      'prediction': 0.6291,
+      'step': 494,
+    }),
+    dict({
+      'loss': 0.75275,
+      'prediction': 0.62896,
+      'step': 495,
+    }),
+    dict({
+      'loss': 0.75225,
+      'prediction': 0.62881,
+      'step': 496,
+    }),
+    dict({
+      'loss': 0.75175,
+      'prediction': 0.62866,
+      'step': 497,
+    }),
+    dict({
+      'loss': 0.75125,
+      'prediction': 0.62851,
+      'step': 498,
+    }),
+    dict({
+      'loss': 0.75075,
+      'prediction': 0.62836,
+      'step': 499,
+    }),
+    dict({
+      'loss': 0.75025,
+      'prediction': 0.62821,
+      'step': 500,
+    }),
+    dict({
+      'loss': 0.74975,
+      'prediction': 0.62806,
+      'step': 501,
+    }),
+    dict({
+      'loss': 0.74925,
+      'prediction': 0.62791,
+      'step': 502,
+    }),
+    dict({
+      'loss': 0.74875,
+      'prediction': 0.62775,
+      'step': 503,
+    }),
+    dict({
+      'loss': 0.74825,
+      'prediction': 0.6276,
+      'step': 504,
+    }),
+    dict({
+      'loss': 0.74775,
+      'prediction': 0.62745,
+      'step': 505,
+    }),
+    dict({
+      'loss': 0.74725,
+      'prediction': 0.62729,
+      'step': 506,
+    }),
+    dict({
+      'loss': 0.74675,
+      'prediction': 0.62714,
+      'step': 507,
+    }),
+    dict({
+      'loss': 0.74625,
+      'prediction': 0.62699,
+      'step': 508,
+    }),
+    dict({
+      'loss': 0.74575,
+      'prediction': 0.62683,
+      'step': 509,
+    }),
+    dict({
+      'loss': 0.74525,
+      'prediction': 0.62668,
+      'step': 510,
+    }),
+    dict({
+      'loss': 0.74474,
+      'prediction': 0.62652,
+      'step': 511,
+    }),
+    dict({
+      'loss': 0.74424,
+      'prediction': 0.62636,
+      'step': 512,
+    }),
+    dict({
+      'loss': 0.74374,
+      'prediction': 0.62621,
+      'step': 513,
+    }),
+    dict({
+      'loss': 0.74324,
+      'prediction': 0.62605,
+      'step': 514,
+    }),
+    dict({
+      'loss': 0.74274,
+      'prediction': 0.62589,
+      'step': 515,
+    }),
+    dict({
+      'loss': 0.74224,
+      'prediction': 0.62573,
+      'step': 516,
+    }),
+    dict({
+      'loss': 0.74174,
+      'prediction': 0.62557,
+      'step': 517,
+    }),
+    dict({
+      'loss': 0.74124,
+      'prediction': 0.62541,
+      'step': 518,
+    }),
+    dict({
+      'loss': 0.74074,
+      'prediction': 0.62525,
+      'step': 519,
+    }),
+    dict({
+      'loss': 0.74024,
+      'prediction': 0.62509,
+      'step': 520,
+    }),
+    dict({
+      'loss': 0.73974,
+      'prediction': 0.62493,
+      'step': 521,
+    }),
+    dict({
+      'loss': 0.73924,
+      'prediction': 0.62477,
+      'step': 522,
+    }),
+    dict({
+      'loss': 0.73874,
+      'prediction': 0.62461,
+      'step': 523,
+    }),
+    dict({
+      'loss': 0.73824,
+      'prediction': 0.62444,
+      'step': 524,
+    }),
+    dict({
+      'loss': 0.73774,
+      'prediction': 0.62428,
+      'step': 525,
+    }),
+    dict({
+      'loss': 0.73724,
+      'prediction': 0.62412,
+      'step': 526,
+    }),
+    dict({
+      'loss': 0.73674,
+      'prediction': 0.62395,
+      'step': 527,
+    }),
+    dict({
+      'loss': 0.73624,
+      'prediction': 0.62379,
+      'step': 528,
+    }),
+    dict({
+      'loss': 0.73574,
+      'prediction': 0.62362,
+      'step': 529,
+    }),
+    dict({
+      'loss': 0.73524,
+      'prediction': 0.62346,
+      'step': 530,
+    }),
+    dict({
+      'loss': 0.73473,
+      'prediction': 0.62329,
+      'step': 531,
+    }),
+    dict({
+      'loss': 0.73423,
+      'prediction': 0.62313,
+      'step': 532,
+    }),
+    dict({
+      'loss': 0.73373,
+      'prediction': 0.62296,
+      'step': 533,
+    }),
+    dict({
+      'loss': 0.73323,
+      'prediction': 0.62279,
+      'step': 534,
+    }),
+    dict({
+      'loss': 0.73273,
+      'prediction': 0.62262,
+      'step': 535,
+    }),
+    dict({
+      'loss': 0.73223,
+      'prediction': 0.62245,
+      'step': 536,
+    }),
+    dict({
+      'loss': 0.73173,
+      'prediction': 0.62229,
+      'step': 537,
+    }),
+    dict({
+      'loss': 0.73123,
+      'prediction': 0.62212,
+      'step': 538,
+    }),
+    dict({
+      'loss': 0.73073,
+      'prediction': 0.62195,
+      'step': 539,
+    }),
+    dict({
+      'loss': 0.73023,
+      'prediction': 0.62178,
+      'step': 540,
+    }),
+    dict({
+      'loss': 0.72973,
+      'prediction': 0.6216,
+      'step': 541,
+    }),
+    dict({
+      'loss': 0.72923,
+      'prediction': 0.62143,
+      'step': 542,
+    }),
+    dict({
+      'loss': 0.72873,
+      'prediction': 0.62126,
+      'step': 543,
+    }),
+    dict({
+      'loss': 0.72823,
+      'prediction': 0.62109,
+      'step': 544,
+    }),
+    dict({
+      'loss': 0.72773,
+      'prediction': 0.62091,
+      'step': 545,
+    }),
+    dict({
+      'loss': 0.72723,
+      'prediction': 0.62074,
+      'step': 546,
+    }),
+    dict({
+      'loss': 0.72673,
+      'prediction': 0.62057,
+      'step': 547,
+    }),
+    dict({
+      'loss': 0.72623,
+      'prediction': 0.62039,
+      'step': 548,
+    }),
+    dict({
+      'loss': 0.72573,
+      'prediction': 0.62022,
+      'step': 549,
+    }),
+    dict({
+      'loss': 0.72523,
+      'prediction': 0.62004,
+      'step': 550,
+    }),
+    dict({
+      'loss': 0.72472,
+      'prediction': 0.61987,
+      'step': 551,
+    }),
+    dict({
+      'loss': 0.72422,
+      'prediction': 0.61969,
+      'step': 552,
+    }),
+    dict({
+      'loss': 0.72372,
+      'prediction': 0.61951,
+      'step': 553,
+    }),
+    dict({
+      'loss': 0.72322,
+      'prediction': 0.61933,
+      'step': 554,
+    }),
+    dict({
+      'loss': 0.72272,
+      'prediction': 0.61916,
+      'step': 555,
+    }),
+    dict({
+      'loss': 0.72222,
+      'prediction': 0.61898,
+      'step': 556,
+    }),
+    dict({
+      'loss': 0.72172,
+      'prediction': 0.6188,
+      'step': 557,
+    }),
+    dict({
+      'loss': 0.72122,
+      'prediction': 0.61862,
+      'step': 558,
+    }),
+    dict({
+      'loss': 0.72072,
+      'prediction': 0.61844,
+      'step': 559,
+    }),
+    dict({
+      'loss': 0.72022,
+      'prediction': 0.61826,
+      'step': 560,
+    }),
+    dict({
+      'loss': 0.71972,
+      'prediction': 0.61808,
+      'step': 561,
+    }),
+    dict({
+      'loss': 0.71922,
+      'prediction': 0.6179,
+      'step': 562,
+    }),
+    dict({
+      'loss': 0.71872,
+      'prediction': 0.61771,
+      'step': 563,
+    }),
+    dict({
+      'loss': 0.71822,
+      'prediction': 0.61753,
+      'step': 564,
+    }),
+    dict({
+      'loss': 0.71772,
+      'prediction': 0.61735,
+      'step': 565,
+    }),
+    dict({
+      'loss': 0.71722,
+      'prediction': 0.61716,
+      'step': 566,
+    }),
+    dict({
+      'loss': 0.71672,
+      'prediction': 0.61698,
+      'step': 567,
+    }),
+    dict({
+      'loss': 0.71622,
+      'prediction': 0.6168,
+      'step': 568,
+    }),
+    dict({
+      'loss': 0.71572,
+      'prediction': 0.61661,
+      'step': 569,
+    }),
+    dict({
+      'loss': 0.71522,
+      'prediction': 0.61642,
+      'step': 570,
+    }),
+    dict({
+      'loss': 0.71471,
+      'prediction': 0.61624,
+      'step': 571,
+    }),
+    dict({
+      'loss': 0.71421,
+      'prediction': 0.61605,
+      'step': 572,
+    }),
+    dict({
+      'loss': 0.71371,
+      'prediction': 0.61586,
+      'step': 573,
+    }),
+    dict({
+      'loss': 0.71321,
+      'prediction': 0.61568,
+      'step': 574,
+    }),
+    dict({
+      'loss': 0.71271,
+      'prediction': 0.61549,
+      'step': 575,
+    }),
+    dict({
+      'loss': 0.71221,
+      'prediction': 0.6153,
+      'step': 576,
+    }),
+    dict({
+      'loss': 0.71171,
+      'prediction': 0.61511,
+      'step': 577,
+    }),
+    dict({
+      'loss': 0.71121,
+      'prediction': 0.61492,
+      'step': 578,
+    }),
+    dict({
+      'loss': 0.71071,
+      'prediction': 0.61473,
+      'step': 579,
+    }),
+    dict({
+      'loss': 0.71021,
+      'prediction': 0.61454,
+      'step': 580,
+    }),
+    dict({
+      'loss': 0.70971,
+      'prediction': 0.61435,
+      'step': 581,
+    }),
+    dict({
+      'loss': 0.70921,
+      'prediction': 0.61416,
+      'step': 582,
+    }),
+    dict({
+      'loss': 0.70871,
+      'prediction': 0.61397,
+      'step': 583,
+    }),
+    dict({
+      'loss': 0.70821,
+      'prediction': 0.61377,
+      'step': 584,
+    }),
+    dict({
+      'loss': 0.70771,
+      'prediction': 0.61358,
+      'step': 585,
+    }),
+    dict({
+      'loss': 0.70721,
+      'prediction': 0.61339,
+      'step': 586,
+    }),
+    dict({
+      'loss': 0.70671,
+      'prediction': 0.61319,
+      'step': 587,
+    }),
+    dict({
+      'loss': 0.70621,
+      'prediction': 0.613,
+      'step': 588,
+    }),
+    dict({
+      'loss': 0.70571,
+      'prediction': 0.6128,
+      'step': 589,
+    }),
+    dict({
+      'loss': 0.70521,
+      'prediction': 0.61261,
+      'step': 590,
+    }),
+    dict({
+      'loss': 0.7047,
+      'prediction': 0.61241,
+      'step': 591,
+    }),
+    dict({
+      'loss': 0.7042,
+      'prediction': 0.61221,
+      'step': 592,
+    }),
+    dict({
+      'loss': 0.7037,
+      'prediction': 0.61202,
+      'step': 593,
+    }),
+    dict({
+      'loss': 0.7032,
+      'prediction': 0.61182,
+      'step': 594,
+    }),
+    dict({
+      'loss': 0.7027,
+      'prediction': 0.61162,
+      'step': 595,
+    }),
+    dict({
+      'loss': 0.7022,
+      'prediction': 0.61142,
+      'step': 596,
+    }),
+    dict({
+      'loss': 0.7017,
+      'prediction': 0.61122,
+      'step': 597,
+    }),
+    dict({
+      'loss': 0.7012,
+      'prediction': 0.61102,
+      'step': 598,
+    }),
+    dict({
+      'loss': 0.7007,
+      'prediction': 0.61082,
+      'step': 599,
+    }),
+    dict({
+      'loss': 0.7002,
+      'prediction': 0.61062,
+      'step': 600,
+    }),
+    dict({
+      'loss': 0.6997,
+      'prediction': 0.61042,
+      'step': 601,
+    }),
+    dict({
+      'loss': 0.6992,
+      'prediction': 0.61022,
+      'step': 602,
+    }),
+    dict({
+      'loss': 0.6987,
+      'prediction': 0.61002,
+      'step': 603,
+    }),
+    dict({
+      'loss': 0.6982,
+      'prediction': 0.60982,
+      'step': 604,
+    }),
+    dict({
+      'loss': 0.6977,
+      'prediction': 0.60961,
+      'step': 605,
+    }),
+    dict({
+      'loss': 0.6972,
+      'prediction': 0.60941,
+      'step': 606,
+    }),
+    dict({
+      'loss': 0.6967,
+      'prediction': 0.6092,
+      'step': 607,
+    }),
+    dict({
+      'loss': 0.6962,
+      'prediction': 0.609,
+      'step': 608,
+    }),
+    dict({
+      'loss': 0.6957,
+      'prediction': 0.60879,
+      'step': 609,
+    }),
+    dict({
+      'loss': 0.6952,
+      'prediction': 0.60859,
+      'step': 610,
+    }),
+    dict({
+      'loss': 0.69469,
+      'prediction': 0.60838,
+      'step': 611,
+    }),
+    dict({
+      'loss': 0.69419,
+      'prediction': 0.60818,
+      'step': 612,
+    }),
+    dict({
+      'loss': 0.69369,
+      'prediction': 0.60797,
+      'step': 613,
+    }),
+    dict({
+      'loss': 0.69319,
+      'prediction': 0.60776,
+      'step': 614,
+    }),
+    dict({
+      'loss': 0.69269,
+      'prediction': 0.60755,
+      'step': 615,
+    }),
+    dict({
+      'loss': 0.69219,
+      'prediction': 0.60734,
+      'step': 616,
+    }),
+    dict({
+      'loss': 0.69169,
+      'prediction': 0.60714,
+      'step': 617,
+    }),
+    dict({
+      'loss': 0.69119,
+      'prediction': 0.60693,
+      'step': 618,
+    }),
+    dict({
+      'loss': 0.69069,
+      'prediction': 0.60672,
+      'step': 619,
+    }),
+    dict({
+      'loss': 0.69019,
+      'prediction': 0.6065,
+      'step': 620,
+    }),
+    dict({
+      'loss': 0.68969,
+      'prediction': 0.60629,
+      'step': 621,
+    }),
+    dict({
+      'loss': 0.68919,
+      'prediction': 0.60608,
+      'step': 622,
+    }),
+    dict({
+      'loss': 0.68869,
+      'prediction': 0.60587,
+      'step': 623,
+    }),
+    dict({
+      'loss': 0.68819,
+      'prediction': 0.60566,
+      'step': 624,
+    }),
+    dict({
+      'loss': 0.68769,
+      'prediction': 0.60544,
+      'step': 625,
+    }),
+    dict({
+      'loss': 0.68719,
+      'prediction': 0.60523,
+      'step': 626,
+    }),
+    dict({
+      'loss': 0.68669,
+      'prediction': 0.60502,
+      'step': 627,
+    }),
+    dict({
+      'loss': 0.68619,
+      'prediction': 0.6048,
+      'step': 628,
+    }),
+    dict({
+      'loss': 0.68569,
+      'prediction': 0.60459,
+      'step': 629,
+    }),
+    dict({
+      'loss': 0.68519,
+      'prediction': 0.60437,
+      'step': 630,
+    }),
+    dict({
+      'loss': 0.68468,
+      'prediction': 0.60415,
+      'step': 631,
+    }),
+    dict({
+      'loss': 0.68418,
+      'prediction': 0.60394,
+      'step': 632,
+    }),
+    dict({
+      'loss': 0.68368,
+      'prediction': 0.60372,
+      'step': 633,
+    }),
+    dict({
+      'loss': 0.68318,
+      'prediction': 0.6035,
+      'step': 634,
+    }),
+    dict({
+      'loss': 0.68268,
+      'prediction': 0.60328,
+      'step': 635,
+    }),
+    dict({
+      'loss': 0.68218,
+      'prediction': 0.60307,
+      'step': 636,
+    }),
+    dict({
+      'loss': 0.68168,
+      'prediction': 0.60285,
+      'step': 637,
+    }),
+    dict({
+      'loss': 0.68118,
+      'prediction': 0.60263,
+      'step': 638,
+    }),
+    dict({
+      'loss': 0.68068,
+      'prediction': 0.60241,
+      'step': 639,
+    }),
+    dict({
+      'loss': 0.68018,
+      'prediction': 0.60219,
+      'step': 640,
+    }),
+    dict({
+      'loss': 0.67968,
+      'prediction': 0.60196,
+      'step': 641,
+    }),
+    dict({
+      'loss': 0.67918,
+      'prediction': 0.60174,
+      'step': 642,
+    }),
+    dict({
+      'loss': 0.67868,
+      'prediction': 0.60152,
+      'step': 643,
+    }),
+    dict({
+      'loss': 0.67818,
+      'prediction': 0.6013,
+      'step': 644,
+    }),
+    dict({
+      'loss': 0.67768,
+      'prediction': 0.60108,
+      'step': 645,
+    }),
+    dict({
+      'loss': 0.67718,
+      'prediction': 0.60085,
+      'step': 646,
+    }),
+    dict({
+      'loss': 0.67668,
+      'prediction': 0.60063,
+      'step': 647,
+    }),
+    dict({
+      'loss': 0.67618,
+      'prediction': 0.6004,
+      'step': 648,
+    }),
+    dict({
+      'loss': 0.67568,
+      'prediction': 0.60018,
+      'step': 649,
+    }),
+    dict({
+      'loss': 0.67518,
+      'prediction': 0.59995,
+      'step': 650,
+    }),
+    dict({
+      'loss': 0.67467,
+      'prediction': 0.59973,
+      'step': 651,
+    }),
+    dict({
+      'loss': 0.67417,
+      'prediction': 0.5995,
+      'step': 652,
+    }),
+    dict({
+      'loss': 0.67367,
+      'prediction': 0.59927,
+      'step': 653,
+    }),
+    dict({
+      'loss': 0.67317,
+      'prediction': 0.59904,
+      'step': 654,
+    }),
+    dict({
+      'loss': 0.67267,
+      'prediction': 0.59882,
+      'step': 655,
+    }),
+    dict({
+      'loss': 0.67217,
+      'prediction': 0.59859,
+      'step': 656,
+    }),
+    dict({
+      'loss': 0.67167,
+      'prediction': 0.59836,
+      'step': 657,
+    }),
+    dict({
+      'loss': 0.67117,
+      'prediction': 0.59813,
+      'step': 658,
+    }),
+    dict({
+      'loss': 0.67067,
+      'prediction': 0.5979,
+      'step': 659,
+    }),
+    dict({
+      'loss': 0.67017,
+      'prediction': 0.59767,
+      'step': 660,
+    }),
+    dict({
+      'loss': 0.66967,
+      'prediction': 0.59744,
+      'step': 661,
+    }),
+    dict({
+      'loss': 0.66917,
+      'prediction': 0.5972,
+      'step': 662,
+    }),
+    dict({
+      'loss': 0.66867,
+      'prediction': 0.59697,
+      'step': 663,
+    }),
+    dict({
+      'loss': 0.66817,
+      'prediction': 0.59674,
+      'step': 664,
+    }),
+    dict({
+      'loss': 0.66767,
+      'prediction': 0.59651,
+      'step': 665,
+    }),
+    dict({
+      'loss': 0.66717,
+      'prediction': 0.59627,
+      'step': 666,
+    }),
+    dict({
+      'loss': 0.66667,
+      'prediction': 0.59604,
+      'step': 667,
+    }),
+    dict({
+      'loss': 0.66617,
+      'prediction': 0.5958,
+      'step': 668,
+    }),
+    dict({
+      'loss': 0.66567,
+      'prediction': 0.59557,
+      'step': 669,
+    }),
+    dict({
+      'loss': 0.66517,
+      'prediction': 0.59533,
+      'step': 670,
+    }),
+    dict({
+      'loss': 0.66466,
+      'prediction': 0.5951,
+      'step': 671,
+    }),
+    dict({
+      'loss': 0.66416,
+      'prediction': 0.59486,
+      'step': 672,
+    }),
+    dict({
+      'loss': 0.66366,
+      'prediction': 0.59462,
+      'step': 673,
+    }),
+    dict({
+      'loss': 0.66316,
+      'prediction': 0.59438,
+      'step': 674,
+    }),
+    dict({
+      'loss': 0.66266,
+      'prediction': 0.59415,
+      'step': 675,
+    }),
+    dict({
+      'loss': 0.66216,
+      'prediction': 0.59391,
+      'step': 676,
+    }),
+    dict({
+      'loss': 0.66166,
+      'prediction': 0.59367,
+      'step': 677,
+    }),
+    dict({
+      'loss': 0.66116,
+      'prediction': 0.59343,
+      'step': 678,
+    }),
+    dict({
+      'loss': 0.66066,
+      'prediction': 0.59319,
+      'step': 679,
+    }),
+    dict({
+      'loss': 0.66016,
+      'prediction': 0.59295,
+      'step': 680,
+    }),
+    dict({
+      'loss': 0.65966,
+      'prediction': 0.59271,
+      'step': 681,
+    }),
+    dict({
+      'loss': 0.65916,
+      'prediction': 0.59246,
+      'step': 682,
+    }),
+    dict({
+      'loss': 0.65866,
+      'prediction': 0.59222,
+      'step': 683,
+    }),
+    dict({
+      'loss': 0.65816,
+      'prediction': 0.59198,
+      'step': 684,
+    }),
+    dict({
+      'loss': 0.65766,
+      'prediction': 0.59174,
+      'step': 685,
+    }),
+    dict({
+      'loss': 0.65716,
+      'prediction': 0.59149,
+      'step': 686,
+    }),
+    dict({
+      'loss': 0.65666,
+      'prediction': 0.59125,
+      'step': 687,
+    }),
+    dict({
+      'loss': 0.65616,
+      'prediction': 0.591,
+      'step': 688,
+    }),
+    dict({
+      'loss': 0.65566,
+      'prediction': 0.59076,
+      'step': 689,
+    }),
+    dict({
+      'loss': 0.65516,
+      'prediction': 0.59051,
+      'step': 690,
+    }),
+    dict({
+      'loss': 0.65465,
+      'prediction': 0.59027,
+      'step': 691,
+    }),
+    dict({
+      'loss': 0.65415,
+      'prediction': 0.59002,
+      'step': 692,
+    }),
+    dict({
+      'loss': 0.65365,
+      'prediction': 0.58977,
+      'step': 693,
+    }),
+    dict({
+      'loss': 0.65315,
+      'prediction': 0.58952,
+      'step': 694,
+    }),
+    dict({
+      'loss': 0.65265,
+      'prediction': 0.58928,
+      'step': 695,
+    }),
+    dict({
+      'loss': 0.65215,
+      'prediction': 0.58903,
+      'step': 696,
+    }),
+    dict({
+      'loss': 0.65165,
+      'prediction': 0.58878,
+      'step': 697,
+    }),
+    dict({
+      'loss': 0.65115,
+      'prediction': 0.58853,
+      'step': 698,
+    }),
+    dict({
+      'loss': 0.65065,
+      'prediction': 0.58828,
+      'step': 699,
+    }),
+    dict({
+      'loss': 0.65015,
+      'prediction': 0.58803,
+      'step': 700,
+    }),
+    dict({
+      'loss': 0.64965,
+      'prediction': 0.58778,
+      'step': 701,
+    }),
+    dict({
+      'loss': 0.64915,
+      'prediction': 0.58752,
+      'step': 702,
+    }),
+    dict({
+      'loss': 0.64865,
+      'prediction': 0.58727,
+      'step': 703,
+    }),
+    dict({
+      'loss': 0.64815,
+      'prediction': 0.58702,
+      'step': 704,
+    }),
+    dict({
+      'loss': 0.64765,
+      'prediction': 0.58677,
+      'step': 705,
+    }),
+    dict({
+      'loss': 0.64715,
+      'prediction': 0.58651,
+      'step': 706,
+    }),
+    dict({
+      'loss': 0.64665,
+      'prediction': 0.58626,
+      'step': 707,
+    }),
+    dict({
+      'loss': 0.64615,
+      'prediction': 0.586,
+      'step': 708,
+    }),
+    dict({
+      'loss': 0.64565,
+      'prediction': 0.58575,
+      'step': 709,
+    }),
+    dict({
+      'loss': 0.64515,
+      'prediction': 0.58549,
+      'step': 710,
+    }),
+    dict({
+      'loss': 0.64464,
+      'prediction': 0.58524,
+      'step': 711,
+    }),
+    dict({
+      'loss': 0.64414,
+      'prediction': 0.58498,
+      'step': 712,
+    }),
+    dict({
+      'loss': 0.64364,
+      'prediction': 0.58472,
+      'step': 713,
+    }),
+    dict({
+      'loss': 0.64314,
+      'prediction': 0.58446,
+      'step': 714,
+    }),
+    dict({
+      'loss': 0.64264,
+      'prediction': 0.58421,
+      'step': 715,
+    }),
+    dict({
+      'loss': 0.64214,
+      'prediction': 0.58395,
+      'step': 716,
+    }),
+    dict({
+      'loss': 0.64164,
+      'prediction': 0.58369,
+      'step': 717,
+    }),
+    dict({
+      'loss': 0.64114,
+      'prediction': 0.58343,
+      'step': 718,
+    }),
+    dict({
+      'loss': 0.64064,
+      'prediction': 0.58317,
+      'step': 719,
+    }),
+    dict({
+      'loss': 0.64014,
+      'prediction': 0.58291,
+      'step': 720,
+    }),
+    dict({
+      'loss': 0.63964,
+      'prediction': 0.58265,
+      'step': 721,
+    }),
+    dict({
+      'loss': 0.63914,
+      'prediction': 0.58238,
+      'step': 722,
+    }),
+    dict({
+      'loss': 0.63864,
+      'prediction': 0.58212,
+      'step': 723,
+    }),
+    dict({
+      'loss': 0.63814,
+      'prediction': 0.58186,
+      'step': 724,
+    }),
+    dict({
+      'loss': 0.63764,
+      'prediction': 0.5816,
+      'step': 725,
+    }),
+    dict({
+      'loss': 0.63714,
+      'prediction': 0.58133,
+      'step': 726,
+    }),
+    dict({
+      'loss': 0.63664,
+      'prediction': 0.58107,
+      'step': 727,
+    }),
+    dict({
+      'loss': 0.63614,
+      'prediction': 0.5808,
+      'step': 728,
+    }),
+    dict({
+      'loss': 0.63564,
+      'prediction': 0.58054,
+      'step': 729,
+    }),
+    dict({
+      'loss': 0.63514,
+      'prediction': 0.58027,
+      'step': 730,
+    }),
+    dict({
+      'loss': 0.63463,
+      'prediction': 0.58001,
+      'step': 731,
+    }),
+    dict({
+      'loss': 0.63413,
+      'prediction': 0.57974,
+      'step': 732,
+    }),
+    dict({
+      'loss': 0.63363,
+      'prediction': 0.57947,
+      'step': 733,
+    }),
+    dict({
+      'loss': 0.63313,
+      'prediction': 0.5792,
+      'step': 734,
+    }),
+    dict({
+      'loss': 0.63263,
+      'prediction': 0.57894,
+      'step': 735,
+    }),
+    dict({
+      'loss': 0.63213,
+      'prediction': 0.57867,
+      'step': 736,
+    }),
+    dict({
+      'loss': 0.63163,
+      'prediction': 0.5784,
+      'step': 737,
+    }),
+    dict({
+      'loss': 0.63113,
+      'prediction': 0.57813,
+      'step': 738,
+    }),
+    dict({
+      'loss': 0.63063,
+      'prediction': 0.57786,
+      'step': 739,
+    }),
+    dict({
+      'loss': 0.63013,
+      'prediction': 0.57759,
+      'step': 740,
+    }),
+    dict({
+      'loss': 0.62963,
+      'prediction': 0.57732,
+      'step': 741,
+    }),
+    dict({
+      'loss': 0.62913,
+      'prediction': 0.57704,
+      'step': 742,
+    }),
+    dict({
+      'loss': 0.62863,
+      'prediction': 0.57677,
+      'step': 743,
+    }),
+    dict({
+      'loss': 0.62813,
+      'prediction': 0.5765,
+      'step': 744,
+    }),
+    dict({
+      'loss': 0.62763,
+      'prediction': 0.57623,
+      'step': 745,
+    }),
+    dict({
+      'loss': 0.62713,
+      'prediction': 0.57595,
+      'step': 746,
+    }),
+    dict({
+      'loss': 0.62663,
+      'prediction': 0.57568,
+      'step': 747,
+    }),
+    dict({
+      'loss': 0.62613,
+      'prediction': 0.5754,
+      'step': 748,
+    }),
+    dict({
+      'loss': 0.62563,
+      'prediction': 0.57513,
+      'step': 749,
+    }),
+    dict({
+      'loss': 0.62513,
+      'prediction': 0.57485,
+      'step': 750,
+    }),
+    dict({
+      'loss': 0.62462,
+      'prediction': 0.57457,
+      'step': 751,
+    }),
+    dict({
+      'loss': 0.62412,
+      'prediction': 0.5743,
+      'step': 752,
+    }),
+    dict({
+      'loss': 0.62362,
+      'prediction': 0.57402,
+      'step': 753,
+    }),
+    dict({
+      'loss': 0.62312,
+      'prediction': 0.57374,
+      'step': 754,
+    }),
+    dict({
+      'loss': 0.62262,
+      'prediction': 0.57346,
+      'step': 755,
+    }),
+    dict({
+      'loss': 0.62212,
+      'prediction': 0.57319,
+      'step': 756,
+    }),
+    dict({
+      'loss': 0.62162,
+      'prediction': 0.57291,
+      'step': 757,
+    }),
+    dict({
+      'loss': 0.62112,
+      'prediction': 0.57263,
+      'step': 758,
+    }),
+    dict({
+      'loss': 0.62062,
+      'prediction': 0.57235,
+      'step': 759,
+    }),
+    dict({
+      'loss': 0.62012,
+      'prediction': 0.57207,
+      'step': 760,
+    }),
+    dict({
+      'loss': 0.61962,
+      'prediction': 0.57178,
+      'step': 761,
+    }),
+    dict({
+      'loss': 0.61912,
+      'prediction': 0.5715,
+      'step': 762,
+    }),
+    dict({
+      'loss': 0.61862,
+      'prediction': 0.57122,
+      'step': 763,
+    }),
+    dict({
+      'loss': 0.61812,
+      'prediction': 0.57094,
+      'step': 764,
+    }),
+    dict({
+      'loss': 0.61762,
+      'prediction': 0.57065,
+      'step': 765,
+    }),
+    dict({
+      'loss': 0.61712,
+      'prediction': 0.57037,
+      'step': 766,
+    }),
+    dict({
+      'loss': 0.61662,
+      'prediction': 0.57009,
+      'step': 767,
+    }),
+    dict({
+      'loss': 0.61612,
+      'prediction': 0.5698,
+      'step': 768,
+    }),
+    dict({
+      'loss': 0.61562,
+      'prediction': 0.56952,
+      'step': 769,
+    }),
+    dict({
+      'loss': 0.61512,
+      'prediction': 0.56923,
+      'step': 770,
+    }),
+    dict({
+      'loss': 0.61461,
+      'prediction': 0.56894,
+      'step': 771,
+    }),
+    dict({
+      'loss': 0.61411,
+      'prediction': 0.56866,
+      'step': 772,
+    }),
+    dict({
+      'loss': 0.61361,
+      'prediction': 0.56837,
+      'step': 773,
+    }),
+    dict({
+      'loss': 0.61311,
+      'prediction': 0.56808,
+      'step': 774,
+    }),
+    dict({
+      'loss': 0.61261,
+      'prediction': 0.56779,
+      'step': 775,
+    }),
+    dict({
+      'loss': 0.61211,
+      'prediction': 0.5675,
+      'step': 776,
+    }),
+    dict({
+      'loss': 0.61161,
+      'prediction': 0.56721,
+      'step': 777,
+    }),
+    dict({
+      'loss': 0.61111,
+      'prediction': 0.56693,
+      'step': 778,
+    }),
+    dict({
+      'loss': 0.61061,
+      'prediction': 0.56663,
+      'step': 779,
+    }),
+    dict({
+      'loss': 0.61011,
+      'prediction': 0.56634,
+      'step': 780,
+    }),
+    dict({
+      'loss': 0.60961,
+      'prediction': 0.56605,
+      'step': 781,
+    }),
+    dict({
+      'loss': 0.60911,
+      'prediction': 0.56576,
+      'step': 782,
+    }),
+    dict({
+      'loss': 0.60861,
+      'prediction': 0.56547,
+      'step': 783,
+    }),
+    dict({
+      'loss': 0.60811,
+      'prediction': 0.56518,
+      'step': 784,
+    }),
+    dict({
+      'loss': 0.60761,
+      'prediction': 0.56488,
+      'step': 785,
+    }),
+    dict({
+      'loss': 0.60711,
+      'prediction': 0.56459,
+      'step': 786,
+    }),
+    dict({
+      'loss': 0.60661,
+      'prediction': 0.56429,
+      'step': 787,
+    }),
+    dict({
+      'loss': 0.60611,
+      'prediction': 0.564,
+      'step': 788,
+    }),
+    dict({
+      'loss': 0.60561,
+      'prediction': 0.5637,
+      'step': 789,
+    }),
+    dict({
+      'loss': 0.60511,
+      'prediction': 0.56341,
+      'step': 790,
+    }),
+    dict({
+      'loss': 0.6046,
+      'prediction': 0.56311,
+      'step': 791,
+    }),
+    dict({
+      'loss': 0.6041,
+      'prediction': 0.56281,
+      'step': 792,
+    }),
+    dict({
+      'loss': 0.6036,
+      'prediction': 0.56252,
+      'step': 793,
+    }),
+    dict({
+      'loss': 0.6031,
+      'prediction': 0.56222,
+      'step': 794,
+    }),
+    dict({
+      'loss': 0.6026,
+      'prediction': 0.56192,
+      'step': 795,
+    }),
+    dict({
+      'loss': 0.6021,
+      'prediction': 0.56162,
+      'step': 796,
+    }),
+    dict({
+      'loss': 0.6016,
+      'prediction': 0.56132,
+      'step': 797,
+    }),
+    dict({
+      'loss': 0.6011,
+      'prediction': 0.56102,
+      'step': 798,
+    }),
+    dict({
+      'loss': 0.6006,
+      'prediction': 0.56072,
+      'step': 799,
+    }),
+    dict({
+      'loss': 0.6001,
+      'prediction': 0.56042,
+      'step': 800,
+    }),
+    dict({
+      'loss': 0.5996,
+      'prediction': 0.56012,
+      'step': 801,
+    }),
+    dict({
+      'loss': 0.5991,
+      'prediction': 0.55982,
+      'step': 802,
+    }),
+    dict({
+      'loss': 0.5986,
+      'prediction': 0.55952,
+      'step': 803,
+    }),
+    dict({
+      'loss': 0.5981,
+      'prediction': 0.55921,
+      'step': 804,
+    }),
+    dict({
+      'loss': 0.5976,
+      'prediction': 0.55891,
+      'step': 805,
+    }),
+    dict({
+      'loss': 0.5971,
+      'prediction': 0.55861,
+      'step': 806,
+    }),
+    dict({
+      'loss': 0.5966,
+      'prediction': 0.5583,
+      'step': 807,
+    }),
+    dict({
+      'loss': 0.5961,
+      'prediction': 0.558,
+      'step': 808,
+    }),
+    dict({
+      'loss': 0.5956,
+      'prediction': 0.55769,
+      'step': 809,
+    }),
+    dict({
+      'loss': 0.5951,
+      'prediction': 0.55739,
+      'step': 810,
+    }),
+    dict({
+      'loss': 0.59459,
+      'prediction': 0.55708,
+      'step': 811,
+    }),
+    dict({
+      'loss': 0.59409,
+      'prediction': 0.55677,
+      'step': 812,
+    }),
+    dict({
+      'loss': 0.59359,
+      'prediction': 0.55647,
+      'step': 813,
+    }),
+    dict({
+      'loss': 0.59309,
+      'prediction': 0.55616,
+      'step': 814,
+    }),
+    dict({
+      'loss': 0.59259,
+      'prediction': 0.55585,
+      'step': 815,
+    }),
+    dict({
+      'loss': 0.59209,
+      'prediction': 0.55554,
+      'step': 816,
+    }),
+    dict({
+      'loss': 0.59159,
+      'prediction': 0.55523,
+      'step': 817,
+    }),
+    dict({
+      'loss': 0.59109,
+      'prediction': 0.55492,
+      'step': 818,
+    }),
+    dict({
+      'loss': 0.59059,
+      'prediction': 0.55461,
+      'step': 819,
+    }),
+    dict({
+      'loss': 0.59009,
+      'prediction': 0.5543,
+      'step': 820,
+    }),
+    dict({
+      'loss': 0.58959,
+      'prediction': 0.55399,
+      'step': 821,
+    }),
+    dict({
+      'loss': 0.58909,
+      'prediction': 0.55368,
+      'step': 822,
+    }),
+    dict({
+      'loss': 0.58859,
+      'prediction': 0.55336,
+      'step': 823,
+    }),
+    dict({
+      'loss': 0.58809,
+      'prediction': 0.55305,
+      'step': 824,
+    }),
+    dict({
+      'loss': 0.58759,
+      'prediction': 0.55274,
+      'step': 825,
+    }),
+    dict({
+      'loss': 0.58709,
+      'prediction': 0.55242,
+      'step': 826,
+    }),
+    dict({
+      'loss': 0.58659,
+      'prediction': 0.55211,
+      'step': 827,
+    }),
+    dict({
+      'loss': 0.58609,
+      'prediction': 0.55179,
+      'step': 828,
+    }),
+    dict({
+      'loss': 0.58559,
+      'prediction': 0.55148,
+      'step': 829,
+    }),
+    dict({
+      'loss': 0.58509,
+      'prediction': 0.55116,
+      'step': 830,
+    }),
+    dict({
+      'loss': 0.58458,
+      'prediction': 0.55085,
+      'step': 831,
+    }),
+    dict({
+      'loss': 0.58408,
+      'prediction': 0.55053,
+      'step': 832,
+    }),
+    dict({
+      'loss': 0.58358,
+      'prediction': 0.55021,
+      'step': 833,
+    }),
+    dict({
+      'loss': 0.58308,
+      'prediction': 0.54989,
+      'step': 834,
+    }),
+    dict({
+      'loss': 0.58258,
+      'prediction': 0.54958,
+      'step': 835,
+    }),
+    dict({
+      'loss': 0.58208,
+      'prediction': 0.54926,
+      'step': 836,
+    }),
+    dict({
+      'loss': 0.58158,
+      'prediction': 0.54894,
+      'step': 837,
+    }),
+    dict({
+      'loss': 0.58108,
+      'prediction': 0.54862,
+      'step': 838,
+    }),
+    dict({
+      'loss': 0.58058,
+      'prediction': 0.5483,
+      'step': 839,
+    }),
+    dict({
+      'loss': 0.58008,
+      'prediction': 0.54798,
+      'step': 840,
+    }),
+    dict({
+      'loss': 0.57958,
+      'prediction': 0.54766,
+      'step': 841,
+    }),
+    dict({
+      'loss': 0.57908,
+      'prediction': 0.54733,
+      'step': 842,
+    }),
+    dict({
+      'loss': 0.57858,
+      'prediction': 0.54701,
+      'step': 843,
+    }),
+    dict({
+      'loss': 0.57808,
+      'prediction': 0.54669,
+      'step': 844,
+    }),
+    dict({
+      'loss': 0.57758,
+      'prediction': 0.54637,
+      'step': 845,
+    }),
+    dict({
+      'loss': 0.57708,
+      'prediction': 0.54604,
+      'step': 846,
+    }),
+    dict({
+      'loss': 0.57658,
+      'prediction': 0.54572,
+      'step': 847,
+    }),
+    dict({
+      'loss': 0.57608,
+      'prediction': 0.54539,
+      'step': 848,
+    }),
+    dict({
+      'loss': 0.57558,
+      'prediction': 0.54507,
+      'step': 849,
+    }),
+    dict({
+      'loss': 0.57508,
+      'prediction': 0.54474,
+      'step': 850,
+    }),
+    dict({
+      'loss': 0.57457,
+      'prediction': 0.54441,
+      'step': 851,
+    }),
+    dict({
+      'loss': 0.57407,
+      'prediction': 0.54409,
+      'step': 852,
+    }),
+    dict({
+      'loss': 0.57357,
+      'prediction': 0.54376,
+      'step': 853,
+    }),
+    dict({
+      'loss': 0.57307,
+      'prediction': 0.54343,
+      'step': 854,
+    }),
+    dict({
+      'loss': 0.57257,
+      'prediction': 0.5431,
+      'step': 855,
+    }),
+    dict({
+      'loss': 0.57207,
+      'prediction': 0.54277,
+      'step': 856,
+    }),
+    dict({
+      'loss': 0.57157,
+      'prediction': 0.54245,
+      'step': 857,
+    }),
+    dict({
+      'loss': 0.57107,
+      'prediction': 0.54212,
+      'step': 858,
+    }),
+    dict({
+      'loss': 0.57057,
+      'prediction': 0.54178,
+      'step': 859,
+    }),
+    dict({
+      'loss': 0.57007,
+      'prediction': 0.54145,
+      'step': 860,
+    }),
+    dict({
+      'loss': 0.56957,
+      'prediction': 0.54112,
+      'step': 861,
+    }),
+    dict({
+      'loss': 0.56907,
+      'prediction': 0.54079,
+      'step': 862,
+    }),
+    dict({
+      'loss': 0.56857,
+      'prediction': 0.54046,
+      'step': 863,
+    }),
+    dict({
+      'loss': 0.56807,
+      'prediction': 0.54013,
+      'step': 864,
+    }),
+    dict({
+      'loss': 0.56757,
+      'prediction': 0.53979,
+      'step': 865,
+    }),
+    dict({
+      'loss': 0.56707,
+      'prediction': 0.53946,
+      'step': 866,
+    }),
+    dict({
+      'loss': 0.56657,
+      'prediction': 0.53912,
+      'step': 867,
+    }),
+    dict({
+      'loss': 0.56607,
+      'prediction': 0.53879,
+      'step': 868,
+    }),
+    dict({
+      'loss': 0.56557,
+      'prediction': 0.53845,
+      'step': 869,
+    }),
+    dict({
+      'loss': 0.56507,
+      'prediction': 0.53812,
+      'step': 870,
+    }),
+    dict({
+      'loss': 0.56456,
+      'prediction': 0.53778,
+      'step': 871,
+    }),
+    dict({
+      'loss': 0.56406,
+      'prediction': 0.53744,
+      'step': 872,
+    }),
+    dict({
+      'loss': 0.56356,
+      'prediction': 0.53711,
+      'step': 873,
+    }),
+    dict({
+      'loss': 0.56306,
+      'prediction': 0.53677,
+      'step': 874,
+    }),
+    dict({
+      'loss': 0.56256,
+      'prediction': 0.53643,
+      'step': 875,
+    }),
+    dict({
+      'loss': 0.56206,
+      'prediction': 0.53609,
+      'step': 876,
+    }),
+    dict({
+      'loss': 0.56156,
+      'prediction': 0.53575,
+      'step': 877,
+    }),
+    dict({
+      'loss': 0.56106,
+      'prediction': 0.53541,
+      'step': 878,
+    }),
+    dict({
+      'loss': 0.56056,
+      'prediction': 0.53507,
+      'step': 879,
+    }),
+    dict({
+      'loss': 0.56006,
+      'prediction': 0.53473,
+      'step': 880,
+    }),
+    dict({
+      'loss': 0.55956,
+      'prediction': 0.53439,
+      'step': 881,
+    }),
+    dict({
+      'loss': 0.55906,
+      'prediction': 0.53405,
+      'step': 882,
+    }),
+    dict({
+      'loss': 0.55856,
+      'prediction': 0.5337,
+      'step': 883,
+    }),
+    dict({
+      'loss': 0.55806,
+      'prediction': 0.53336,
+      'step': 884,
+    }),
+    dict({
+      'loss': 0.55756,
+      'prediction': 0.53302,
+      'step': 885,
+    }),
+    dict({
+      'loss': 0.55706,
+      'prediction': 0.53267,
+      'step': 886,
+    }),
+    dict({
+      'loss': 0.55656,
+      'prediction': 0.53233,
+      'step': 887,
+    }),
+    dict({
+      'loss': 0.55606,
+      'prediction': 0.53198,
+      'step': 888,
+    }),
+    dict({
+      'loss': 0.55556,
+      'prediction': 0.53164,
+      'step': 889,
+    }),
+    dict({
+      'loss': 0.55506,
+      'prediction': 0.53129,
+      'step': 890,
+    }),
+    dict({
+      'loss': 0.55455,
+      'prediction': 0.53095,
+      'step': 891,
+    }),
+    dict({
+      'loss': 0.55405,
+      'prediction': 0.5306,
+      'step': 892,
+    }),
+    dict({
+      'loss': 0.55355,
+      'prediction': 0.53025,
+      'step': 893,
+    }),
+    dict({
+      'loss': 0.55305,
+      'prediction': 0.5299,
+      'step': 894,
+    }),
+    dict({
+      'loss': 0.55255,
+      'prediction': 0.52956,
+      'step': 895,
+    }),
+    dict({
+      'loss': 0.55205,
+      'prediction': 0.52921,
+      'step': 896,
+    }),
+    dict({
+      'loss': 0.55155,
+      'prediction': 0.52886,
+      'step': 897,
+    }),
+    dict({
+      'loss': 0.55105,
+      'prediction': 0.52851,
+      'step': 898,
+    }),
+    dict({
+      'loss': 0.55055,
+      'prediction': 0.52816,
+      'step': 899,
+    }),
+    dict({
+      'loss': 0.55005,
+      'prediction': 0.52781,
+      'step': 900,
+    }),
+    dict({
+      'loss': 0.54955,
+      'prediction': 0.52746,
+      'step': 901,
+    }),
+    dict({
+      'loss': 0.54905,
+      'prediction': 0.5271,
+      'step': 902,
+    }),
+    dict({
+      'loss': 0.54855,
+      'prediction': 0.52675,
+      'step': 903,
+    }),
+    dict({
+      'loss': 0.54805,
+      'prediction': 0.5264,
+      'step': 904,
+    }),
+    dict({
+      'loss': 0.54755,
+      'prediction': 0.52604,
+      'step': 905,
+    }),
+    dict({
+      'loss': 0.54705,
+      'prediction': 0.52569,
+      'step': 906,
+    }),
+    dict({
+      'loss': 0.54655,
+      'prediction': 0.52534,
+      'step': 907,
+    }),
+    dict({
+      'loss': 0.54605,
+      'prediction': 0.52498,
+      'step': 908,
+    }),
+    dict({
+      'loss': 0.54555,
+      'prediction': 0.52463,
+      'step': 909,
+    }),
+    dict({
+      'loss': 0.54505,
+      'prediction': 0.52427,
+      'step': 910,
+    }),
+    dict({
+      'loss': 0.54454,
+      'prediction': 0.52391,
+      'step': 911,
+    }),
+    dict({
+      'loss': 0.54404,
+      'prediction': 0.52356,
+      'step': 912,
+    }),
+    dict({
+      'loss': 0.54354,
+      'prediction': 0.5232,
+      'step': 913,
+    }),
+    dict({
+      'loss': 0.54304,
+      'prediction': 0.52284,
+      'step': 914,
+    }),
+    dict({
+      'loss': 0.54254,
+      'prediction': 0.52248,
+      'step': 915,
+    }),
+    dict({
+      'loss': 0.54204,
+      'prediction': 0.52212,
+      'step': 916,
+    }),
+    dict({
+      'loss': 0.54154,
+      'prediction': 0.52176,
+      'step': 917,
+    }),
+    dict({
+      'loss': 0.54104,
+      'prediction': 0.5214,
+      'step': 918,
+    }),
+    dict({
+      'loss': 0.54054,
+      'prediction': 0.52104,
+      'step': 919,
+    }),
+    dict({
+      'loss': 0.54004,
+      'prediction': 0.52068,
+      'step': 920,
+    }),
+    dict({
+      'loss': 0.53954,
+      'prediction': 0.52032,
+      'step': 921,
+    }),
+    dict({
+      'loss': 0.53904,
+      'prediction': 0.51996,
+      'step': 922,
+    }),
+    dict({
+      'loss': 0.53854,
+      'prediction': 0.5196,
+      'step': 923,
+    }),
+    dict({
+      'loss': 0.53804,
+      'prediction': 0.51923,
+      'step': 924,
+    }),
+    dict({
+      'loss': 0.53754,
+      'prediction': 0.51887,
+      'step': 925,
+    }),
+    dict({
+      'loss': 0.53704,
+      'prediction': 0.51851,
+      'step': 926,
+    }),
+    dict({
+      'loss': 0.53654,
+      'prediction': 0.51814,
+      'step': 927,
+    }),
+    dict({
+      'loss': 0.53604,
+      'prediction': 0.51778,
+      'step': 928,
+    }),
+    dict({
+      'loss': 0.53554,
+      'prediction': 0.51741,
+      'step': 929,
+    }),
+    dict({
+      'loss': 0.53504,
+      'prediction': 0.51704,
+      'step': 930,
+    }),
+    dict({
+      'loss': 0.53453,
+      'prediction': 0.51668,
+      'step': 931,
+    }),
+    dict({
+      'loss': 0.53403,
+      'prediction': 0.51631,
+      'step': 932,
+    }),
+    dict({
+      'loss': 0.53353,
+      'prediction': 0.51594,
+      'step': 933,
+    }),
+    dict({
+      'loss': 0.53303,
+      'prediction': 0.51558,
+      'step': 934,
+    }),
+    dict({
+      'loss': 0.53253,
+      'prediction': 0.51521,
+      'step': 935,
+    }),
+    dict({
+      'loss': 0.53203,
+      'prediction': 0.51484,
+      'step': 936,
+    }),
+    dict({
+      'loss': 0.53153,
+      'prediction': 0.51447,
+      'step': 937,
+    }),
+    dict({
+      'loss': 0.53103,
+      'prediction': 0.5141,
+      'step': 938,
+    }),
+    dict({
+      'loss': 0.53053,
+      'prediction': 0.51373,
+      'step': 939,
+    }),
+    dict({
+      'loss': 0.53003,
+      'prediction': 0.51336,
+      'step': 940,
+    }),
+    dict({
+      'loss': 0.52953,
+      'prediction': 0.51299,
+      'step': 941,
+    }),
+    dict({
+      'loss': 0.52903,
+      'prediction': 0.51261,
+      'step': 942,
+    }),
+    dict({
+      'loss': 0.52853,
+      'prediction': 0.51224,
+      'step': 943,
+    }),
+    dict({
+      'loss': 0.52803,
+      'prediction': 0.51187,
+      'step': 944,
+    }),
+    dict({
+      'loss': 0.52753,
+      'prediction': 0.5115,
+      'step': 945,
+    }),
+    dict({
+      'loss': 0.52703,
+      'prediction': 0.51112,
+      'step': 946,
+    }),
+    dict({
+      'loss': 0.52653,
+      'prediction': 0.51075,
+      'step': 947,
+    }),
+    dict({
+      'loss': 0.52603,
+      'prediction': 0.51037,
+      'step': 948,
+    }),
+    dict({
+      'loss': 0.52553,
+      'prediction': 0.51,
+      'step': 949,
+    }),
+    dict({
+      'loss': 0.52503,
+      'prediction': 0.50962,
+      'step': 950,
+    }),
+    dict({
+      'loss': 0.52452,
+      'prediction': 0.50924,
+      'step': 951,
+    }),
+    dict({
+      'loss': 0.52402,
+      'prediction': 0.50887,
+      'step': 952,
+    }),
+    dict({
+      'loss': 0.52352,
+      'prediction': 0.50849,
+      'step': 953,
+    }),
+    dict({
+      'loss': 0.52302,
+      'prediction': 0.50811,
+      'step': 954,
+    }),
+    dict({
+      'loss': 0.52252,
+      'prediction': 0.50773,
+      'step': 955,
+    }),
+    dict({
+      'loss': 0.52202,
+      'prediction': 0.50735,
+      'step': 956,
+    }),
+    dict({
+      'loss': 0.52152,
+      'prediction': 0.50697,
+      'step': 957,
+    }),
+    dict({
+      'loss': 0.52102,
+      'prediction': 0.50659,
+      'step': 958,
+    }),
+    dict({
+      'loss': 0.52052,
+      'prediction': 0.50621,
+      'step': 959,
+    }),
+    dict({
+      'loss': 0.52002,
+      'prediction': 0.50583,
+      'step': 960,
+    }),
+    dict({
+      'loss': 0.51952,
+      'prediction': 0.50545,
+      'step': 961,
+    }),
+    dict({
+      'loss': 0.51902,
+      'prediction': 0.50507,
+      'step': 962,
+    }),
+    dict({
+      'loss': 0.51852,
+      'prediction': 0.50469,
+      'step': 963,
+    }),
+    dict({
+      'loss': 0.51802,
+      'prediction': 0.5043,
+      'step': 964,
+    }),
+    dict({
+      'loss': 0.51752,
+      'prediction': 0.50392,
+      'step': 965,
+    }),
+    dict({
+      'loss': 0.51702,
+      'prediction': 0.50354,
+      'step': 966,
+    }),
+    dict({
+      'loss': 0.51652,
+      'prediction': 0.50315,
+      'step': 967,
+    }),
+    dict({
+      'loss': 0.51602,
+      'prediction': 0.50277,
+      'step': 968,
+    }),
+    dict({
+      'loss': 0.51552,
+      'prediction': 0.50238,
+      'step': 969,
+    }),
+    dict({
+      'loss': 0.51502,
+      'prediction': 0.50199,
+      'step': 970,
+    }),
+    dict({
+      'loss': 0.51451,
+      'prediction': 0.50161,
+      'step': 971,
+    }),
+    dict({
+      'loss': 0.51401,
+      'prediction': 0.50122,
+      'step': 972,
+    }),
+    dict({
+      'loss': 0.51351,
+      'prediction': 0.50083,
+      'step': 973,
+    }),
+    dict({
+      'loss': 0.51301,
+      'prediction': 0.50045,
+      'step': 974,
+    }),
+    dict({
+      'loss': 0.51251,
+      'prediction': 0.50006,
+      'step': 975,
+    }),
+    dict({
+      'loss': 0.51201,
+      'prediction': 0.49967,
+      'step': 976,
+    }),
+    dict({
+      'loss': 0.51151,
+      'prediction': 0.49928,
+      'step': 977,
+    }),
+    dict({
+      'loss': 0.51101,
+      'prediction': 0.49889,
+      'step': 978,
+    }),
+    dict({
+      'loss': 0.51051,
+      'prediction': 0.4985,
+      'step': 979,
+    }),
+    dict({
+      'loss': 0.51001,
+      'prediction': 0.49811,
+      'step': 980,
+    }),
+    dict({
+      'loss': 0.50951,
+      'prediction': 0.49772,
+      'step': 981,
+    }),
+    dict({
+      'loss': 0.50901,
+      'prediction': 0.49732,
+      'step': 982,
+    }),
+    dict({
+      'loss': 0.50851,
+      'prediction': 0.49693,
+      'step': 983,
+    }),
+    dict({
+      'loss': 0.50801,
+      'prediction': 0.49654,
+      'step': 984,
+    }),
+    dict({
+      'loss': 0.50751,
+      'prediction': 0.49614,
+      'step': 985,
+    }),
+    dict({
+      'loss': 0.50701,
+      'prediction': 0.49575,
+      'step': 986,
+    }),
+    dict({
+      'loss': 0.50651,
+      'prediction': 0.49536,
+      'step': 987,
+    }),
+    dict({
+      'loss': 0.50601,
+      'prediction': 0.49496,
+      'step': 988,
+    }),
+    dict({
+      'loss': 0.50551,
+      'prediction': 0.49457,
+      'step': 989,
+    }),
+    dict({
+      'loss': 0.50501,
+      'prediction': 0.49417,
+      'step': 990,
+    }),
+    dict({
+      'loss': 0.5045,
+      'prediction': 0.49377,
+      'step': 991,
+    }),
+    dict({
+      'loss': 0.504,
+      'prediction': 0.49338,
+      'step': 992,
+    }),
+    dict({
+      'loss': 0.5035,
+      'prediction': 0.49298,
+      'step': 993,
+    }),
+    dict({
+      'loss': 0.503,
+      'prediction': 0.49258,
+      'step': 994,
+    }),
+    dict({
+      'loss': 0.5025,
+      'prediction': 0.49218,
+      'step': 995,
+    }),
+    dict({
+      'loss': 0.502,
+      'prediction': 0.49178,
+      'step': 996,
+    }),
+    dict({
+      'loss': 0.5015,
+      'prediction': 0.49138,
+      'step': 997,
+    }),
+    dict({
+      'loss': 0.501,
+      'prediction': 0.49098,
+      'step': 998,
+    }),
+    dict({
+      'loss': 0.5005,
+      'prediction': 0.49058,
+      'step': 999,
+    }),
+    dict({
+      'loss': 0.5,
+      'prediction': 0.49018,
+      'step': 1000,
+    }),
+  ])
+# ---
