@@ -211,7 +211,7 @@ def plot_predicted_vs_true_loss(df, label, n_th=0, margin=0.004, minimum_step=10
 
     fig.add_trace(go.Scatter(
         x=X, y=preprocessed_losses, mode='lines', name='Preprocessed Loss',
-        line=dict(color="green", width=2)
+        line=dict(color="lightgreen", width=2)
     ))
 
     fig.add_trace(go.Scatter(
@@ -219,17 +219,27 @@ def plot_predicted_vs_true_loss(df, label, n_th=0, margin=0.004, minimum_step=10
         line=dict(color="red", width=2)
     ))
 
-    fig.add_shape(type="line", x0=minimum_step, x1=target_step, y0=target_loss, y1=target_loss,
-                  line=dict(color="gray", width=2, dash="dot"))
-    fig.add_shape(type="line", x0=minimum_step, x1=target_step, y0=target_loss + margin, y1=target_loss + margin,
-                  line=dict(color="gray", width=1, dash="dash"))
-    fig.add_shape(type="line", x0=minimum_step, x1=target_step, y0=target_loss - margin, y1=target_loss - margin,
-                  line=dict(color="gray", width=1, dash="dash"))
+    # Horizontal lines as traces so they're toggleable in legend
+    fig.add_trace(go.Scatter(
+        x=[minimum_step, target_step], y=[target_loss, target_loss],
+        mode='lines', name='Target Loss',
+        line=dict(color="gray", width=2, dash="dot")
+    ))
+    fig.add_trace(go.Scatter(
+        x=[minimum_step, target_step], y=[target_loss + margin, target_loss + margin],
+        mode='lines', name='Target + margin',
+        line=dict(color="gray", width=1, dash="dash")
+    ))
+    fig.add_trace(go.Scatter(
+        x=[minimum_step, target_step], y=[target_loss - margin, target_loss - margin],
+        mode='lines', name='Target - margin',
+        line=dict(color="gray", width=1, dash="dash")
+    ))
 
     fig.update_layout(
-        title=f'Losses for run: {selected_run_id}',
+        title=f'Losses Comparison',
         xaxis_title='Step', yaxis_title='Loss',
-        xaxis_type="log", legend=dict(x=0.8, y=0.99)
+        xaxis_type="log", legend=dict(x=0.9, y=1.25)
     )
     fig.show()
 
